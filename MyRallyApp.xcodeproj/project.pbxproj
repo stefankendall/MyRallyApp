@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5459011D18AFBAF54D873B2B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459050FA006745DA716B60E /* Default@2x.png */; };
+		5459013EBE9F0E5C78C72D14 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590E87A23E7D5927C1F916 /* Default-568h@2x.png */; };
+		54590299F3ED513FF2A2E8D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9A29360D5F7EAB9BA7 /* InfoPlist.strings */; };
+		545902ABD9D18500C3A1DD70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
+		545905203FC6E07D21036752 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */; };
+		54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */; };
+		545905CE41C29BC58CF97E5D /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459012DFA1CC5DD3898D0C3 /* RAViewController.m */; };
+		54590696986AC5498A3230C8 /* MyRallyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902458BF279B4FC5BBF2E /* MyRallyAppTests.m */; };
+		545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
+		545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */; };
+		545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5459070A5C1538565543FFB0 /* InfoPlist.strings */; };
+		545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
+		54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */; };
+		54590D375583C5BDD1B18073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545905850AE7113F4C91BEF3 /* main.m */; };
+		54590F0FF6B010B84C685BCB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9798347B62499F9D67 /* Default.png */; };
+		54590F42BD971D27C49DA8B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54590ECFD801EC237A589842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54590A4D4EAF3771C19B2603 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 545909CCA13D1F079C16F0DF;
+			remoteInfo = MyRallyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54590016F9E3E979B8086653 /* MyRallyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRallyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545900CC0D60E6C4DEAFBCB9 /* RAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAViewController.h; sourceTree = "<group>"; };
+		5459012DFA1CC5DD3898D0C3 /* RAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; };
+		5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
+		545901AC6FA27D69517B100B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		545902458BF279B4FC5BBF2E /* MyRallyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRallyAppTests.m; sourceTree = "<group>"; };
+		5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5459047929CCFB42ADC10ECD /* RAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
+		5459048B880EB8C731BC9F03 /* MyRallyApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyApp-Info.plist"; sourceTree = "<group>"; };
+		545904DEA1BDC8002694E2B3 /* MyRallyApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyRallyApp-Prefix.pch"; sourceTree = "<group>"; };
+		5459050FA006745DA716B60E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		545905850AE7113F4C91BEF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		545905E5016B73F7F7CE1513 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		545909AA9379487D3676A4FF /* MyRallyAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRallyAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		545909F5EDD2747C5672C4EE /* MyRallyAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRallyAppTests.h; sourceTree = "<group>"; };
+		54590AF58632644CB8B54476 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		54590BBFA0EAB4FAEC802058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54590C0C470DBF7512C40E5D /* MyRallyAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyAppTests-Info.plist"; sourceTree = "<group>"; };
+		54590E87A23E7D5927C1F916 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		54590F36C67DD419EB0E063A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		54590F9798347B62499F9D67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		545908FEC0A6CC600963CA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */,
+				545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */,
+				545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54590CA5484B61FECED95F89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54590F42BD971D27C49DA8B7 /* UIKit.framework in Frameworks */,
+				545902ABD9D18500C3A1DD70 /* Foundation.framework in Frameworks */,
+				545905203FC6E07D21036752 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54590147248C6AAE95C28F25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54590C0C470DBF7512C40E5D /* MyRallyAppTests-Info.plist */,
+				54590F9A29360D5F7EAB9BA7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		545902D43E8EB3F941A6F37F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54590F36C67DD419EB0E063A /* UIKit.framework */,
+				54590BBFA0EAB4FAEC802058 /* Foundation.framework */,
+				5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */,
+				54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		545906BD2BD7F4E42421C97B /* MyRallyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				54590147248C6AAE95C28F25 /* Supporting Files */,
+				545909F5EDD2747C5672C4EE /* MyRallyAppTests.h */,
+				545902458BF279B4FC5BBF2E /* MyRallyAppTests.m */,
+			);
+			path = MyRallyAppTests;
+			sourceTree = "<group>";
+		};
+		545907EB8C9EDE3B6BE12AA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5459048B880EB8C731BC9F03 /* MyRallyApp-Info.plist */,
+				5459070A5C1538565543FFB0 /* InfoPlist.strings */,
+				545905850AE7113F4C91BEF3 /* main.m */,
+				545904DEA1BDC8002694E2B3 /* MyRallyApp-Prefix.pch */,
+				54590F9798347B62499F9D67 /* Default.png */,
+				5459050FA006745DA716B60E /* Default@2x.png */,
+				54590E87A23E7D5927C1F916 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		545909BD5EA8EF8B9E70438A = {
+			isa = PBXGroup;
+			children = (
+				54590A8455E5E31CF4E2C7AC /* Products */,
+				545902D43E8EB3F941A6F37F /* Frameworks */,
+				54590A4CF9C88C408421C438 /* MyRallyApp */,
+				545906BD2BD7F4E42421C97B /* MyRallyAppTests */,
+			);
+			sourceTree = "<group>";
+		};
+		54590A4CF9C88C408421C438 /* MyRallyApp */ = {
+			isa = PBXGroup;
+			children = (
+				545907EB8C9EDE3B6BE12AA6 /* Supporting Files */,
+				5459047929CCFB42ADC10ECD /* RAAppDelegate.h */,
+				5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */,
+				545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */,
+				545900CC0D60E6C4DEAFBCB9 /* RAViewController.h */,
+				5459012DFA1CC5DD3898D0C3 /* RAViewController.m */,
+			);
+			path = MyRallyApp;
+			sourceTree = "<group>";
+		};
+		54590A8455E5E31CF4E2C7AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54590016F9E3E979B8086653 /* MyRallyApp.app */,
+				545909AA9379487D3676A4FF /* MyRallyAppTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5459081CA0B7ED8C657BE0EC /* MyRallyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54590B12CA76B09D1872A263 /* Build configuration list for PBXNativeTarget "MyRallyAppTests" */;
+			buildPhases = (
+				54590E0A8A3D2950D2BBD188 /* Sources */,
+				545908FEC0A6CC600963CA8D /* Frameworks */,
+				54590FE360B8B5B4CB773F9F /* Resources */,
+				54590BA1525A9C31CF57AC9F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5459033AD3E0FE16754607AE /* PBXTargetDependency */,
+			);
+			name = MyRallyAppTests;
+			productName = MyRallyAppTests;
+			productReference = 545909AA9379487D3676A4FF /* MyRallyAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		545909CCA13D1F079C16F0DF /* MyRallyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5459091A4E7C74478BB4A985 /* Build configuration list for PBXNativeTarget "MyRallyApp" */;
+			buildPhases = (
+				5459049D675F0AF1C13DE265 /* Sources */,
+				54590CA5484B61FECED95F89 /* Frameworks */,
+				54590AD16AE86D5A21C5B03F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyRallyApp;
+			productName = MyRallyApp;
+			productReference = 54590016F9E3E979B8086653 /* MyRallyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54590A4D4EAF3771C19B2603 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Rally;
+			};
+			buildConfigurationList = 54590742135E42E4660C8336 /* Build configuration list for PBXProject "MyRallyApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 545909BD5EA8EF8B9E70438A;
+			productRefGroup = 54590A8455E5E31CF4E2C7AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				545909CCA13D1F079C16F0DF /* MyRallyApp */,
+				5459081CA0B7ED8C657BE0EC /* MyRallyAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54590AD16AE86D5A21C5B03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */,
+				54590F0FF6B010B84C685BCB /* Default.png in Resources */,
+				5459011D18AFBAF54D873B2B /* Default@2x.png in Resources */,
+				5459013EBE9F0E5C78C72D14 /* Default-568h@2x.png in Resources */,
+				54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54590FE360B8B5B4CB773F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54590299F3ED513FF2A2E8D7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54590BA1525A9C31CF57AC9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5459049D675F0AF1C13DE265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54590D375583C5BDD1B18073 /* main.m in Sources */,
+				54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */,
+				545905CE41C29BC58CF97E5D /* RAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54590E0A8A3D2950D2BBD188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54590696986AC5498A3230C8 /* MyRallyAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5459033AD3E0FE16754607AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 545909CCA13D1F079C16F0DF /* MyRallyApp */;
+			targetProxy = 54590ECFD801EC237A589842 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54590AF58632644CB8B54476 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		5459070A5C1538565543FFB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545901AC6FA27D69517B100B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54590F9A29360D5F7EAB9BA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545905E5016B73F7F7CE1513 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		545901E56984D554D45DDEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyRallyApp/MyRallyApp-Prefix.pch";
+				INFOPLIST_FILE = "MyRallyApp/MyRallyApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		545903D470149D833D375EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54590900CEC8A011C9F313A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyRallyApp.app/MyRallyApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyRallyApp/MyRallyApp-Prefix.pch";
+				INFOPLIST_FILE = "MyRallyAppTests/MyRallyAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		545909617E3236F19B0B4186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyRallyApp/MyRallyApp-Prefix.pch";
+				INFOPLIST_FILE = "MyRallyApp/MyRallyApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54590C38830D74E94CD49EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyRallyApp.app/MyRallyApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyRallyApp/MyRallyApp-Prefix.pch";
+				INFOPLIST_FILE = "MyRallyAppTests/MyRallyAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		54590D87CAD8B6AF53ECB8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54590742135E42E4660C8336 /* Build configuration list for PBXProject "MyRallyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545903D470149D833D375EAF /* Release */,
+				54590D87CAD8B6AF53ECB8C1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5459091A4E7C74478BB4A985 /* Build configuration list for PBXNativeTarget "MyRallyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545901E56984D554D45DDEA2 /* Release */,
+				545909617E3236F19B0B4186 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54590B12CA76B09D1872A263 /* Build configuration list for PBXNativeTarget "MyRallyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54590C38830D74E94CD49EC2 /* Release */,
+				54590900CEC8A011C9F313A2 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54590A4D4EAF3771C19B2603 /* Project object */;
+}

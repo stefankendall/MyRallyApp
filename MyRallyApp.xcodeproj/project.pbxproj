@@ -13,16 +13,17 @@
 		545902ABD9D18500C3A1DD70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
 		545905203FC6E07D21036752 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */; };
 		54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */; };
-		545905CE41C29BC58CF97E5D /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459012DFA1CC5DD3898D0C3 /* RAViewController.m */; };
-		54590696986AC5498A3230C8 /* MyRallyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545902458BF279B4FC5BBF2E /* MyRallyAppTests.m */; };
+		545905CE41C29BC58CF97E5D /* RALoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459012DFA1CC5DD3898D0C3 /* RALoginController.m */; };
 		545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
 		545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */; };
 		545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5459070A5C1538565543FFB0 /* InfoPlist.strings */; };
 		545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
 		54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */; };
 		54590D375583C5BDD1B18073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545905850AE7113F4C91BEF3 /* main.m */; };
+		54590E117387BAD57A588D48 /* StoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */; };
 		54590F0FF6B010B84C685BCB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9798347B62499F9D67 /* Default.png */; };
 		54590F42BD971D27C49DA8B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
+		54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459098EC937FED54B70912A /* StoriesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +38,10 @@
 
 /* Begin PBXFileReference section */
 		54590016F9E3E979B8086653 /* MyRallyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRallyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		545900CC0D60E6C4DEAFBCB9 /* RAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAViewController.h; sourceTree = "<group>"; };
-		5459012DFA1CC5DD3898D0C3 /* RAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; };
+		545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RALoginController.h; sourceTree = "<group>"; };
+		5459012DFA1CC5DD3898D0C3 /* RALoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RALoginController.m; sourceTree = "<group>"; };
 		5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
 		545901AC6FA27D69517B100B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		545902458BF279B4FC5BBF2E /* MyRallyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRallyAppTests.m; sourceTree = "<group>"; };
 		5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5459047929CCFB42ADC10ECD /* RAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
 		5459048B880EB8C731BC9F03 /* MyRallyApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyApp-Info.plist"; sourceTree = "<group>"; };
@@ -49,12 +49,15 @@
 		5459050FA006745DA716B60E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		545905850AE7113F4C91BEF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		545905E5016B73F7F7CE1513 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54590614B4FFEFBC58CD9E5D /* StoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataSource.h; sourceTree = "<group>"; };
+		5459098EC937FED54B70912A /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
 		545909AA9379487D3676A4FF /* MyRallyAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRallyAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		545909F5EDD2747C5672C4EE /* MyRallyAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRallyAppTests.h; sourceTree = "<group>"; };
+		54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
 		54590AF58632644CB8B54476 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		54590BBFA0EAB4FAEC802058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54590C0C470DBF7512C40E5D /* MyRallyAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyAppTests-Info.plist"; sourceTree = "<group>"; };
 		54590E87A23E7D5927C1F916 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataSource.m; sourceTree = "<group>"; };
 		54590F36C67DD419EB0E063A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		54590F9798347B62499F9D67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -108,8 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				54590147248C6AAE95C28F25 /* Supporting Files */,
-				545909F5EDD2747C5672C4EE /* MyRallyAppTests.h */,
-				545902458BF279B4FC5BBF2E /* MyRallyAppTests.m */,
 			);
 			path = MyRallyAppTests;
 			sourceTree = "<group>";
@@ -145,8 +146,12 @@
 				5459047929CCFB42ADC10ECD /* RAAppDelegate.h */,
 				5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */,
 				545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */,
-				545900CC0D60E6C4DEAFBCB9 /* RAViewController.h */,
-				5459012DFA1CC5DD3898D0C3 /* RAViewController.m */,
+				545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */,
+				5459012DFA1CC5DD3898D0C3 /* RALoginController.m */,
+				5459098EC937FED54B70912A /* StoriesViewController.m */,
+				54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */,
+				54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */,
+				54590614B4FFEFBC58CD9E5D /* StoryDataSource.h */,
 			);
 			path = MyRallyApp;
 			sourceTree = "<group>";
@@ -271,7 +276,9 @@
 			files = (
 				54590D375583C5BDD1B18073 /* main.m in Sources */,
 				54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */,
-				545905CE41C29BC58CF97E5D /* RAViewController.m in Sources */,
+				545905CE41C29BC58CF97E5D /* RALoginController.m in Sources */,
+				54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */,
+				54590E117387BAD57A588D48 /* StoryDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54590696986AC5498A3230C8 /* MyRallyAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

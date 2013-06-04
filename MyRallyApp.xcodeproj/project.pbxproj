@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54590075094F5B2AE5D51FA9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 54590DA8D48E2433AF1E00DC /* Podfile */; };
 		5459011D18AFBAF54D873B2B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459050FA006745DA716B60E /* Default@2x.png */; };
 		5459013EBE9F0E5C78C72D14 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590E87A23E7D5927C1F916 /* Default-568h@2x.png */; };
 		54590299F3ED513FF2A2E8D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9A29360D5F7EAB9BA7 /* InfoPlist.strings */; };
@@ -18,6 +19,7 @@
 		545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */; };
 		545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5459070A5C1538565543FFB0 /* InfoPlist.strings */; };
 		545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
+		54590AD942C09298A1DE9F18 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 5459001F203F364BFB46923F /* Gemfile */; };
 		54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */; };
 		54590D375583C5BDD1B18073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545905850AE7113F4C91BEF3 /* main.m */; };
 		54590E117387BAD57A588D48 /* StoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */; };
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		54590016F9E3E979B8086653 /* MyRallyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRallyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5459001F203F364BFB46923F /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RALoginController.h; sourceTree = "<group>"; };
 		5459012DFA1CC5DD3898D0C3 /* RALoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RALoginController.m; sourceTree = "<group>"; };
 		5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		54590AF58632644CB8B54476 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		54590BBFA0EAB4FAEC802058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54590C0C470DBF7512C40E5D /* MyRallyAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyAppTests-Info.plist"; sourceTree = "<group>"; };
+		54590DA8D48E2433AF1E00DC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		54590E87A23E7D5927C1F916 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataSource.m; sourceTree = "<group>"; };
 		54590F36C67DD419EB0E063A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -136,6 +140,8 @@
 				545902D43E8EB3F941A6F37F /* Frameworks */,
 				54590A4CF9C88C408421C438 /* MyRallyApp */,
 				545906BD2BD7F4E42421C97B /* MyRallyAppTests */,
+				54590DA8D48E2433AF1E00DC /* Podfile */,
+				5459001F203F364BFB46923F /* Gemfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,6 +246,8 @@
 				5459011D18AFBAF54D873B2B /* Default@2x.png in Resources */,
 				5459013EBE9F0E5C78C72D14 /* Default-568h@2x.png in Resources */,
 				54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */,
+				54590075094F5B2AE5D51FA9 /* Podfile in Resources */,
+				54590AD942C09298A1DE9F18 /* Gemfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,18 +6,20 @@
 - (void)setUp {
     done = NO;
     RallyClient *client = [RallyClient instance];
-    [client setUsername:@"skendall@rallydev.com" andPassword:@"Password"];
+    [client setUsername:TEST_USER andPassword:TEST_PASSWORD];
 }
 
 - (void)testCanRetrieveActiveStories {
     [self waitForAuth];
-    [[RallyClient instance] getActiveStories:^(NSArray *stories) {
+    [[RallyClient instance] getActiveStoriesForUser:TEST_USER success:^(NSArray *stories) {
         done = YES;
         STAssertTrue( [stories count] > 0, @"");
-        NSDictionary * story = stories[0];
+        NSDictionary *story = stories[0];
         NSDictionary *owner = [story objectForKey:@"Owner"];
         STAssertNotNil(owner, @"");
-    }                                failure:^{
+        NSString *name = [owner objectForKey:@"_refObjectName"];
+        STAssertTrue( [name isEqualToString:@"Stefan"], [NSString stringWithFormat:@"%@", owner]);
+    }                                       failure:^{
         done = YES;
         STFail(@"Could not get stories");
     }];

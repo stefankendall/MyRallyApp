@@ -1,5 +1,8 @@
 #import "AFHTTPClient.h"
 
+extern NSString *const TEST_USER;
+extern NSString *const TEST_PASSWORD;
+
 @interface RallyClient : AFHTTPClient {
     __block NSString *securityToken;
 }
@@ -14,6 +17,6 @@
 
 - (NSString *)getSecurityTokenFromJson:(NSDictionary *)json;
 
-- (void) getActiveStories:(void (^)(NSArray *))success failure:(void (^)())failure;
+- (void)getActiveStoriesForUser: (NSString*) username success:(void (^)(NSArray *))success failure:(void (^)())failure;
 
 @end

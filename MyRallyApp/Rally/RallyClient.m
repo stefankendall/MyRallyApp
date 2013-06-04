@@ -2,6 +2,9 @@
 #import "AFJSONRequestOperation.h"
 #import "AFNetworkActivityIndicatorManager.h"
 
+NSString * const TEST_USER = @"skendall@rallydev.com";
+NSString * const TEST_PASSWORD = @"Password";
+
 @implementation RallyClient
 
 - (void)setUsername:(NSString *)username1 andPassword:(NSString *)password1 {
@@ -42,7 +45,7 @@
     }];
 }
 
-- (void)getActiveStories:(void (^)(NSArray *))success failure:(void (^)())failure {
+- (void)getActiveStoriesForUser: (NSString*) username success:(void (^)(NSArray *))success failure:(void (^)())failure {
     void (^requestSuccess)(AFHTTPRequestOperation *, id) = ^(AFHTTPRequestOperation *op, id json) {
         success([self getStoriesFromJson:json]);
     };
@@ -51,14 +54,17 @@
         failure();
     };
 
-    [self getPath:@"hierarchicalrequirement" parameters:[self buildAuthParams] success:requestSuccess failure:requestFailure];
+    NSMutableDictionary *params = [self authParams];
+    [params setObject:@"true" forKey:@"fetch"];
+    [params setObject:[NSString stringWithFormat:@"(Owner = %@)", username] forKey:@"query"];
+    [self getPath:@"hierarchicalrequirement" parameters:params success:requestSuccess failure:requestFailure];
 }
 
 - (NSArray *)getStoriesFromJson:(NSDictionary *)json {
     return [[json objectForKey:@"QueryResult"] objectForKey:@"Results"];
 }
 
-- (NSMutableDictionary *)buildAuthParams {
+- (NSMutableDictionary *)authParams {
     return [@{@"key" : securityToken} mutableCopy];
 }
 

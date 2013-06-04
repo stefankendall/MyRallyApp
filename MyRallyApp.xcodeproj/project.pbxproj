@@ -1,481 +1,1185 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		54590075094F5B2AE5D51FA9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 54590DA8D48E2433AF1E00DC /* Podfile */; };
-		5459011D18AFBAF54D873B2B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459050FA006745DA716B60E /* Default@2x.png */; };
-		5459013EBE9F0E5C78C72D14 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590E87A23E7D5927C1F916 /* Default-568h@2x.png */; };
-		54590299F3ED513FF2A2E8D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9A29360D5F7EAB9BA7 /* InfoPlist.strings */; };
-		545902ABD9D18500C3A1DD70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
-		545905203FC6E07D21036752 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */; };
-		54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */; };
-		545905CE41C29BC58CF97E5D /* RALoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459012DFA1CC5DD3898D0C3 /* RALoginController.m */; };
-		545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
-		545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */; };
-		545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5459070A5C1538565543FFB0 /* InfoPlist.strings */; };
-		545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
-		54590AD942C09298A1DE9F18 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 5459001F203F364BFB46923F /* Gemfile */; };
-		54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */; };
-		54590D375583C5BDD1B18073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545905850AE7113F4C91BEF3 /* main.m */; };
-		54590E117387BAD57A588D48 /* StoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */; };
-		54590F0FF6B010B84C685BCB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9798347B62499F9D67 /* Default.png */; };
-		54590F42BD971D27C49DA8B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
-		54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459098EC937FED54B70912A /* StoriesViewController.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		54590ECFD801EC237A589842 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54590A4D4EAF3771C19B2603 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 545909CCA13D1F079C16F0DF;
-			remoteInfo = MyRallyApp;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		54590016F9E3E979B8086653 /* MyRallyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRallyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5459001F203F364BFB46923F /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
-		545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RALoginController.h; sourceTree = "<group>"; };
-		5459012DFA1CC5DD3898D0C3 /* RALoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RALoginController.m; sourceTree = "<group>"; };
-		5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
-		545901AC6FA27D69517B100B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5459047929CCFB42ADC10ECD /* RAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
-		5459048B880EB8C731BC9F03 /* MyRallyApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyApp-Info.plist"; sourceTree = "<group>"; };
-		545904DEA1BDC8002694E2B3 /* MyRallyApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyRallyApp-Prefix.pch"; sourceTree = "<group>"; };
-		5459050FA006745DA716B60E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		545905850AE7113F4C91BEF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		545905E5016B73F7F7CE1513 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		54590614B4FFEFBC58CD9E5D /* StoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataSource.h; sourceTree = "<group>"; };
-		5459098EC937FED54B70912A /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
-		545909AA9379487D3676A4FF /* MyRallyAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRallyAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
-		54590AF58632644CB8B54476 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		54590BBFA0EAB4FAEC802058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		54590C0C470DBF7512C40E5D /* MyRallyAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyAppTests-Info.plist"; sourceTree = "<group>"; };
-		54590DA8D48E2433AF1E00DC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		54590E87A23E7D5927C1F916 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataSource.m; sourceTree = "<group>"; };
-		54590F36C67DD419EB0E063A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		54590F9798347B62499F9D67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		545908FEC0A6CC600963CA8D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */,
-				545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */,
-				545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54590CA5484B61FECED95F89 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54590F42BD971D27C49DA8B7 /* UIKit.framework in Frameworks */,
-				545902ABD9D18500C3A1DD70 /* Foundation.framework in Frameworks */,
-				545905203FC6E07D21036752 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		54590147248C6AAE95C28F25 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				54590C0C470DBF7512C40E5D /* MyRallyAppTests-Info.plist */,
-				54590F9A29360D5F7EAB9BA7 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		545902D43E8EB3F941A6F37F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				54590F36C67DD419EB0E063A /* UIKit.framework */,
-				54590BBFA0EAB4FAEC802058 /* Foundation.framework */,
-				5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */,
-				54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		545906BD2BD7F4E42421C97B /* MyRallyAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				54590147248C6AAE95C28F25 /* Supporting Files */,
-			);
-			path = MyRallyAppTests;
-			sourceTree = "<group>";
-		};
-		545907EB8C9EDE3B6BE12AA6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5459048B880EB8C731BC9F03 /* MyRallyApp-Info.plist */,
-				5459070A5C1538565543FFB0 /* InfoPlist.strings */,
-				545905850AE7113F4C91BEF3 /* main.m */,
-				545904DEA1BDC8002694E2B3 /* MyRallyApp-Prefix.pch */,
-				54590F9798347B62499F9D67 /* Default.png */,
-				5459050FA006745DA716B60E /* Default@2x.png */,
-				54590E87A23E7D5927C1F916 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		545909BD5EA8EF8B9E70438A = {
-			isa = PBXGroup;
-			children = (
-				54590A8455E5E31CF4E2C7AC /* Products */,
-				545902D43E8EB3F941A6F37F /* Frameworks */,
-				54590A4CF9C88C408421C438 /* MyRallyApp */,
-				545906BD2BD7F4E42421C97B /* MyRallyAppTests */,
-				54590DA8D48E2433AF1E00DC /* Podfile */,
-				5459001F203F364BFB46923F /* Gemfile */,
-			);
-			sourceTree = "<group>";
-		};
-		54590A4CF9C88C408421C438 /* MyRallyApp */ = {
-			isa = PBXGroup;
-			children = (
-				545907EB8C9EDE3B6BE12AA6 /* Supporting Files */,
-				5459047929CCFB42ADC10ECD /* RAAppDelegate.h */,
-				5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */,
-				545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */,
-				545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */,
-				5459012DFA1CC5DD3898D0C3 /* RALoginController.m */,
-				5459098EC937FED54B70912A /* StoriesViewController.m */,
-				54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */,
-				54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */,
-				54590614B4FFEFBC58CD9E5D /* StoryDataSource.h */,
-			);
-			path = MyRallyApp;
-			sourceTree = "<group>";
-		};
-		54590A8455E5E31CF4E2C7AC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				54590016F9E3E979B8086653 /* MyRallyApp.app */,
-				545909AA9379487D3676A4FF /* MyRallyAppTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		5459081CA0B7ED8C657BE0EC /* MyRallyAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54590B12CA76B09D1872A263 /* Build configuration list for PBXNativeTarget "MyRallyAppTests" */;
-			buildPhases = (
-				54590E0A8A3D2950D2BBD188 /* Sources */,
-				545908FEC0A6CC600963CA8D /* Frameworks */,
-				54590FE360B8B5B4CB773F9F /* Resources */,
-				54590BA1525A9C31CF57AC9F /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5459033AD3E0FE16754607AE /* PBXTargetDependency */,
-			);
-			name = MyRallyAppTests;
-			productName = MyRallyAppTests;
-			productReference = 545909AA9379487D3676A4FF /* MyRallyAppTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		545909CCA13D1F079C16F0DF /* MyRallyApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5459091A4E7C74478BB4A985 /* Build configuration list for PBXNativeTarget "MyRallyApp" */;
-			buildPhases = (
-				5459049D675F0AF1C13DE265 /* Sources */,
-				54590CA5484B61FECED95F89 /* Frameworks */,
-				54590AD16AE86D5A21C5B03F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MyRallyApp;
-			productName = MyRallyApp;
-			productReference = 54590016F9E3E979B8086653 /* MyRallyApp.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		54590A4D4EAF3771C19B2603 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				ORGANIZATIONNAME = Rally;
-			};
-			buildConfigurationList = 54590742135E42E4660C8336 /* Build configuration list for PBXProject "MyRallyApp" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 545909BD5EA8EF8B9E70438A;
-			productRefGroup = 54590A8455E5E31CF4E2C7AC /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				545909CCA13D1F079C16F0DF /* MyRallyApp */,
-				5459081CA0B7ED8C657BE0EC /* MyRallyAppTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		54590AD16AE86D5A21C5B03F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */,
-				54590F0FF6B010B84C685BCB /* Default.png in Resources */,
-				5459011D18AFBAF54D873B2B /* Default@2x.png in Resources */,
-				5459013EBE9F0E5C78C72D14 /* Default-568h@2x.png in Resources */,
-				54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */,
-				54590075094F5B2AE5D51FA9 /* Podfile in Resources */,
-				54590AD942C09298A1DE9F18 /* Gemfile in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54590FE360B8B5B4CB773F9F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54590299F3ED513FF2A2E8D7 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		54590BA1525A9C31CF57AC9F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		5459049D675F0AF1C13DE265 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54590D375583C5BDD1B18073 /* main.m in Sources */,
-				54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */,
-				545905CE41C29BC58CF97E5D /* RALoginController.m in Sources */,
-				54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */,
-				54590E117387BAD57A588D48 /* StoryDataSource.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54590E0A8A3D2950D2BBD188 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5459033AD3E0FE16754607AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 545909CCA13D1F079C16F0DF /* MyRallyApp */;
-			targetProxy = 54590ECFD801EC237A589842 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54590AF58632644CB8B54476 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		5459070A5C1538565543FFB0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				545901AC6FA27D69517B100B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		54590F9A29360D5F7EAB9BA7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				545905E5016B73F7F7CE1513 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		545901E56984D554D45DDEA2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyRallyApp/MyRallyApp-Prefix.pch";
-				INFOPLIST_FILE = "MyRallyApp/MyRallyApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		545903D470149D833D375EAF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		54590900CEC8A011C9F313A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyRallyApp.app/MyRallyApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyRallyApp/MyRallyApp-Prefix.pch";
-				INFOPLIST_FILE = "MyRallyAppTests/MyRallyAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		545909617E3236F19B0B4186 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyRallyApp/MyRallyApp-Prefix.pch";
-				INFOPLIST_FILE = "MyRallyApp/MyRallyApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		54590C38830D74E94CD49EC2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyRallyApp.app/MyRallyApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyRallyApp/MyRallyApp-Prefix.pch";
-				INFOPLIST_FILE = "MyRallyAppTests/MyRallyAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		54590D87CAD8B6AF53ECB8C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		54590742135E42E4660C8336 /* Build configuration list for PBXProject "MyRallyApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				545903D470149D833D375EAF /* Release */,
-				54590D87CAD8B6AF53ECB8C1 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5459091A4E7C74478BB4A985 /* Build configuration list for PBXNativeTarget "MyRallyApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				545901E56984D554D45DDEA2 /* Release */,
-				545909617E3236F19B0B4186 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		54590B12CA76B09D1872A263 /* Build configuration list for PBXNativeTarget "MyRallyAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54590C38830D74E94CD49EC2 /* Release */,
-				54590900CEC8A011C9F313A2 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 54590A4D4EAF3771C19B2603 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0AE5404DAC9F4043BBF954F4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DC9E32D4976144D9A69143C6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>1D4760DEA7FA4E07A357CD1C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>54590016F9E3E979B8086653</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MyRallyApp.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5459001F203F364BFB46923F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Gemfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590075094F5B2AE5D51FA9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590DA8D48E2433AF1E00DC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545900CC0D60E6C4DEAFBCB9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RALoginController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459011D18AFBAF54D873B2B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459050FA006745DA716B60E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5459012DFA1CC5DD3898D0C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RALoginController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459013BCFB66C92D96A37A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RAAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459013EBE9F0E5C78C72D14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590E87A23E7D5927C1F916</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590147248C6AAE95C28F25</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>54590C0C470DBF7512C40E5D</string>
+				<string>54590F9A29360D5F7EAB9BA7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545901AC6FA27D69517B100B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545901E56984D554D45DDEA2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A4A742FE260F4A77B297B6F4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MyRallyApp/MyRallyApp-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MyRallyApp/MyRallyApp-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>54590299F3ED513FF2A2E8D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590F9A29360D5F7EAB9BA7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545902ABD9D18500C3A1DD70</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590BBFA0EAB4FAEC802058</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545902D43E8EB3F941A6F37F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>54590F36C67DD419EB0E063A</string>
+				<string>54590BBFA0EAB4FAEC802058</string>
+				<string>5459038A56F7BD684A5FA8A7</string>
+				<string>54590F3FD60D1C25D15DD9BA</string>
+				<string>DC9E32D4976144D9A69143C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459033AD3E0FE16754607AE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>545909CCA13D1F079C16F0DF</string>
+			<key>targetProxy</key>
+			<string>54590ECFD801EC237A589842</string>
+		</dict>
+		<key>5459038A56F7BD684A5FA8A7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>545903C2AFA25705F1713DA6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>54590AF58632644CB8B54476</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545903D470149D833D375EAF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>5459047929CCFB42ADC10ECD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RAAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459048B880EB8C731BC9F03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.info</string>
+			<key>path</key>
+			<string>MyRallyApp-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459049D675F0AF1C13DE265</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>54590D375583C5BDD1B18073</string>
+				<string>54590B76632215B80F09DDF4</string>
+				<string>545905CE41C29BC58CF97E5D</string>
+				<string>54590F43D007FBD3B54EA2C1</string>
+				<string>54590E117387BAD57A588D48</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>545904DEA1BDC8002694E2B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MyRallyApp-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459050FA006745DA716B60E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545905203FC6E07D21036752</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459038A56F7BD684A5FA8A7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590570EC6682E6B04A155B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>545903C2AFA25705F1713DA6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545905850AE7113F4C91BEF3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545905CE41C29BC58CF97E5D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459012DFA1CC5DD3898D0C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545905E5016B73F7F7CE1513</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590614B4FFEFBC58CD9E5D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>StoryDataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545906BD2BD7F4E42421C97B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>54590147248C6AAE95C28F25</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MyRallyAppTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545906D72AF3F55C566D8583</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590F36C67DD419EB0E063A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5459070A5C1538565543FFB0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>545901AC6FA27D69517B100B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590742135E42E4660C8336</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>545903D470149D833D375EAF</string>
+				<string>54590D87CAD8B6AF53ECB8C1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>545907EA4B139C5A7390A041</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590F3FD60D1C25D15DD9BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545907EB8C9EDE3B6BE12AA6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5459048B880EB8C731BC9F03</string>
+				<string>5459070A5C1538565543FFB0</string>
+				<string>545905850AE7113F4C91BEF3</string>
+				<string>545904DEA1BDC8002694E2B3</string>
+				<string>54590F9798347B62499F9D67</string>
+				<string>5459050FA006745DA716B60E</string>
+				<string>54590E87A23E7D5927C1F916</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5459081CA0B7ED8C657BE0EC</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>54590B12CA76B09D1872A263</string>
+			<key>buildPhases</key>
+			<array>
+				<string>54590E0A8A3D2950D2BBD188</string>
+				<string>545908FEC0A6CC600963CA8D</string>
+				<string>54590FE360B8B5B4CB773F9F</string>
+				<string>54590BA1525A9C31CF57AC9F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>5459033AD3E0FE16754607AE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MyRallyAppTests</string>
+			<key>productName</key>
+			<string>MyRallyAppTests</string>
+			<key>productReference</key>
+			<string>545909AA9379487D3676A4FF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>545908A738B5EEB1DA2A1C3B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459070A5C1538565543FFB0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545908DEFA8ADB8955A965EF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590BBFA0EAB4FAEC802058</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>545908FEC0A6CC600963CA8D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>545907EA4B139C5A7390A041</string>
+				<string>545906D72AF3F55C566D8583</string>
+				<string>545908DEFA8ADB8955A965EF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>54590900CEC8A011C9F313A2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/MyRallyApp.app/MyRallyApp</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MyRallyApp/MyRallyApp-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MyRallyAppTests/MyRallyAppTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5459091A4E7C74478BB4A985</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>545901E56984D554D45DDEA2</string>
+				<string>545909617E3236F19B0B4186</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>545909617E3236F19B0B4186</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A4A742FE260F4A77B297B6F4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MyRallyApp/MyRallyApp-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MyRallyApp/MyRallyApp-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5459098EC937FED54B70912A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>StoriesViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545909AA9379487D3676A4FF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MyRallyAppTests.octest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>545909BD5EA8EF8B9E70438A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>54590A8455E5E31CF4E2C7AC</string>
+				<string>545902D43E8EB3F941A6F37F</string>
+				<string>54590A4CF9C88C408421C438</string>
+				<string>545906BD2BD7F4E42421C97B</string>
+				<string>54590DA8D48E2433AF1E00DC</string>
+				<string>5459001F203F364BFB46923F</string>
+				<string>A4A742FE260F4A77B297B6F4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>545909CCA13D1F079C16F0DF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>5459091A4E7C74478BB4A985</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1D4760DEA7FA4E07A357CD1C</string>
+				<string>5459049D675F0AF1C13DE265</string>
+				<string>54590CA5484B61FECED95F89</string>
+				<string>54590AD16AE86D5A21C5B03F</string>
+				<string>ECC965368EAE4C3A914381EF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MyRallyApp</string>
+			<key>productName</key>
+			<string>MyRallyApp</string>
+			<key>productReference</key>
+			<string>54590016F9E3E979B8086653</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>54590A4CF9C88C408421C438</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>545907EB8C9EDE3B6BE12AA6</string>
+				<string>5459047929CCFB42ADC10ECD</string>
+				<string>5459013BCFB66C92D96A37A5</string>
+				<string>545903C2AFA25705F1713DA6</string>
+				<string>545900CC0D60E6C4DEAFBCB9</string>
+				<string>5459012DFA1CC5DD3898D0C3</string>
+				<string>5459098EC937FED54B70912A</string>
+				<string>54590A8AC6B4F4C1E631B927</string>
+				<string>54590F0E9DA0D8CA3FE262F4</string>
+				<string>54590614B4FFEFBC58CD9E5D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MyRallyApp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590A4D4EAF3771C19B2603</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>ORGANIZATIONNAME</key>
+				<string>Rally</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>54590742135E42E4660C8336</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>545909BD5EA8EF8B9E70438A</string>
+			<key>productRefGroup</key>
+			<string>54590A8455E5E31CF4E2C7AC</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>545909CCA13D1F079C16F0DF</string>
+				<string>5459081CA0B7ED8C657BE0EC</string>
+			</array>
+		</dict>
+		<key>54590A8455E5E31CF4E2C7AC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>54590016F9E3E979B8086653</string>
+				<string>545909AA9379487D3676A4FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590A8AC6B4F4C1E631B927</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>StoriesViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590AD16AE86D5A21C5B03F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>545908A738B5EEB1DA2A1C3B</string>
+				<string>54590F0FF6B010B84C685BCB</string>
+				<string>5459011D18AFBAF54D873B2B</string>
+				<string>5459013EBE9F0E5C78C72D14</string>
+				<string>54590570EC6682E6B04A155B</string>
+				<string>54590075094F5B2AE5D51FA9</string>
+				<string>54590AD942C09298A1DE9F18</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>54590AD942C09298A1DE9F18</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459001F203F364BFB46923F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590AF58632644CB8B54476</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590B12CA76B09D1872A263</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>54590C38830D74E94CD49EC2</string>
+				<string>54590900CEC8A011C9F313A2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>54590B76632215B80F09DDF4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459013BCFB66C92D96A37A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590BA1525A9C31CF57AC9F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>54590BBFA0EAB4FAEC802058</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>54590C0C470DBF7512C40E5D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.info</string>
+			<key>path</key>
+			<string>MyRallyAppTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590C38830D74E94CD49EC2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/MyRallyApp.app/MyRallyApp</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MyRallyApp/MyRallyApp-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MyRallyAppTests/MyRallyAppTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>54590CA5484B61FECED95F89</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>54590F42BD971D27C49DA8B7</string>
+				<string>545902ABD9D18500C3A1DD70</string>
+				<string>545905203FC6E07D21036752</string>
+				<string>0AE5404DAC9F4043BBF954F4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>54590D375583C5BDD1B18073</key>
+		<dict>
+			<key>fileRef</key>
+			<string>545905850AE7113F4C91BEF3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590D87CAD8B6AF53ECB8C1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>54590DA8D48E2433AF1E00DC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Podfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590E0A8A3D2950D2BBD188</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>54590E117387BAD57A588D48</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590F0E9DA0D8CA3FE262F4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590E87A23E7D5927C1F916</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590ECFD801EC237A589842</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>54590A4D4EAF3771C19B2603</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>545909CCA13D1F079C16F0DF</string>
+			<key>remoteInfo</key>
+			<string>MyRallyApp</string>
+		</dict>
+		<key>54590F0E9DA0D8CA3FE262F4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>StoryDataSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590F0FF6B010B84C685BCB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590F9798347B62499F9D67</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590F36C67DD419EB0E063A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>54590F3FD60D1C25D15DD9BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>54590F42BD971D27C49DA8B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54590F36C67DD419EB0E063A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590F43D007FBD3B54EA2C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5459098EC937FED54B70912A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54590F9798347B62499F9D67</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590F9A29360D5F7EAB9BA7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>545905E5016B73F7F7CE1513</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54590FE360B8B5B4CB773F9F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>54590299F3ED513FF2A2E8D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A4A742FE260F4A77B297B6F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>DC9E32D4976144D9A69143C6</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>ECC965368EAE4C3A914381EF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>54590A4D4EAF3771C19B2603</string>
+</dict>
+</plist>

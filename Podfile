@@ -1,2 +1,3 @@
-platform :ios
-pod 'AFNetworking', '1.3.0'
+platform :ios, '6.0'
+
+pod 'AFNetworking'

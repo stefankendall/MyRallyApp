@@ -22,7 +22,8 @@
         STAssertTrue( [name isEqualToString:@"Stefan"], [NSString stringWithFormat:@"%@", owner]);
 
         NSString *scheduleState = [story objectForKey:@"ScheduleState"];
-        STAssertTrue([scheduleState isEqualToString:@"In-Progress"], @"");
+        STAssertFalse([scheduleState isEqualToString:@"Closed"], @"");
+        STAssertFalse([scheduleState isEqualToString:@"Released"], @"");
     }                                       failure:^{
         done = YES;
         STFail(@"Could not get stories");

@@ -56,7 +56,7 @@ NSString * const TEST_PASSWORD = @"Password";
 
     NSMutableDictionary *params = [self authParams];
     [params setObject:@"true" forKey:@"fetch"];
-    [params setObject:[NSString stringWithFormat:@"((Owner = %@) and (ScheduleState = In-Progress))", username] forKey:@"query"];
+    [params setObject:[NSString stringWithFormat:@"((Owner = %@) and ((ScheduleState != Closed) and (ScheduleState != Released)))", username] forKey:@"query"];
     [self getPath:@"hierarchicalrequirement" parameters:params success:requestSuccess failure:requestFailure];
 }
 

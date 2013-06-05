@@ -1,6 +1,7 @@
 #import "StoriesViewController.h"
 #import "StoryDataSource.h"
 #import "RallyClient.h"
+#import "UIScrollView+SVPullToRefresh.h"
 
 @implementation StoriesViewController
 
@@ -12,6 +13,10 @@
     storiesDataSource = [StoryDataSource new];
     [storiesTable setDataSource:storiesDataSource];
     [storiesTable setDelegate:storiesDataSource];
+
+    [storiesTable addPullToRefreshWithActionHandler:^{
+        [self authorizeAndRetrieveStories];
+    }];
 
     [loadingIndicator startAnimating];
     [self authorizeAndRetrieveStories];
@@ -39,7 +44,9 @@
 - (void)populateWithStories:(NSArray *)stories {
     storiesDataSource.stories = stories;
     [storiesTable reloadData];
+
     [loadingIndicator stopAnimating];
+    [storiesTable.pullToRefreshView stopAnimating];
 }
 
 

@@ -5,8 +5,8 @@
 
 - (void)testSetStorySetsLabels {
     StoryCell *cell = [StoryCell create];
-    [cell setStory:@{@"Name" : @"Test Name"}];
-    STAssertTrue( [[[cell nameLabel] text] isEqualToString:@"Test Name"], [[cell nameLabel] text]);
+    [cell setStory:@{@"Name" : @"Test Name", @"Description": @"Test Description"}];
+    STAssertTrue( [[[cell nameLabel] text] isEqualToString:@"Test Name"], @"");
 }
 
 @end

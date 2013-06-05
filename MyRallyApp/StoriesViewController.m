@@ -1,7 +1,6 @@
 #import "StoriesViewController.h"
 #import "StoryDataSource.h"
 #import "RallyClient.h"
-#import "StoryTableDelegate.h"
 
 @implementation StoriesViewController
 
@@ -12,8 +11,7 @@
 
     storiesDataSource = [StoryDataSource new];
     [storiesTable setDataSource:storiesDataSource];
-    storiesTableDelegate = [StoryTableDelegate new];
-    [storiesTable setDelegate:storiesTableDelegate];
+    [storiesTable setDelegate:storiesDataSource];
 
     [loadingIndicator startAnimating];
     [self authorizeAndRetrieveStories];

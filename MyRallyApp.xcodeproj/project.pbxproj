@@ -20,7 +20,6 @@
 		54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */; };
 		545905963F036EABA94CA5BE /* RallyClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901EE5792260CD7911C21 /* RallyClientTests.m */; };
 		545905CE41C29BC58CF97E5D /* RALoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459012DFA1CC5DD3898D0C3 /* RALoginController.m */; };
-		54590652DADABBBB3AE7C4D5 /* StoryTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590024B38E94DDF24F8C4B /* StoryTableDelegate.m */; };
 		545906C864EF760CEA62942A /* StoriesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F031DB5498BC7C5CF68 /* StoriesViewControllerTests.m */; };
 		545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
 		545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */; };
@@ -51,7 +50,6 @@
 /* Begin PBXFileReference section */
 		54590016F9E3E979B8086653 /* MyRallyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRallyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5459001F203F364BFB46923F /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
-		54590024B38E94DDF24F8C4B /* StoryTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTableDelegate.m; sourceTree = "<group>"; };
 		545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RALoginController.h; sourceTree = "<group>"; };
 		5459012DFA1CC5DD3898D0C3 /* RALoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RALoginController.m; sourceTree = "<group>"; };
 		5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 		54590F031DB5498BC7C5CF68 /* StoriesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewControllerTests.m; sourceTree = "<group>"; };
 		54590F36C67DD419EB0E063A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		54590F840A459B12CA056840 /* StoryTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTableDelegate.h; sourceTree = "<group>"; };
 		54590F9798347B62499F9D67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A4A742FE260F4A77B297B6F4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		DC9E32D4976144D9A69143C6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,8 +126,6 @@
 				54590BFB50AD21312F2899BB /* StoryCell.m */,
 				54590EE332CA6213C8EE9FEB /* StoryDataSource.m */,
 				545902B43279A59D1F37C1D6 /* StoryCell.xib */,
-				54590024B38E94DDF24F8C4B /* StoryTableDelegate.m */,
-				54590F840A459B12CA056840 /* StoryTableDelegate.h */,
 			);
 			path = StoryTable;
 			sourceTree = "<group>";
@@ -414,7 +409,6 @@
 				54590D9E2CC17BAD9C6A2537 /* CTCustomTableViewCell.m in Sources */,
 				545901552ACC8C59EEF8EC09 /* StoryCell.m in Sources */,
 				54590ADDDE95C6EF18700C44 /* StoryDataSource.m in Sources */,
-				54590652DADABBBB3AE7C4D5 /* StoryTableDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

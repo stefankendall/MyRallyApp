@@ -15,6 +15,7 @@
         done = YES;
         STAssertTrue( [stories count] > 0, @"");
         NSDictionary *story = stories[0];
+        NSLog(@"%@", story);
         NSDictionary *owner = [story objectForKey:@"Owner"];
         STAssertNotNil(owner, @"");
         NSString *name = [owner objectForKey:@"_refObjectName"];

@@ -1,8 +1,10 @@
 #import "StoryDataSource.h"
 
 @implementation StoryDataSource
+@synthesize stories;
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [stories count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

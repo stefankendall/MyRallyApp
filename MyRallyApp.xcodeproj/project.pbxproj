@@ -22,6 +22,7 @@
 		545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5459070A5C1538565543FFB0 /* InfoPlist.strings */; };
 		545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
 		54590AD942C09298A1DE9F18 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 5459001F203F364BFB46923F /* Gemfile */; };
+		54590B26544D878999D2E626 /* StoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901FC6704D4527FA6640F /* StoryCell.m */; };
 		54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */; };
 		54590D0602B4F43B4470C443 /* RallyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 545904BD690706011CFD8DFC /* RallyClient.m */; };
 		54590D375583C5BDD1B18073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545905850AE7113F4C91BEF3 /* main.m */; };
@@ -29,6 +30,7 @@
 		54590F0FF6B010B84C685BCB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9798347B62499F9D67 /* Default.png */; };
 		54590F42BD971D27C49DA8B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
 		54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459098EC937FED54B70912A /* StoriesViewController.m */; };
+		54590F50C076E9D615967F6D /* StoryDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459031103408DC0134384EB /* StoryDataSourceTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
 		545901AC6FA27D69517B100B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		545901EE5792260CD7911C21 /* RallyClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RallyClientTests.m; sourceTree = "<group>"; };
+		545901FC6704D4527FA6640F /* StoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCell.m; sourceTree = "<group>"; };
+		5459031103408DC0134384EB /* StoryDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataSourceTests.m; sourceTree = "<group>"; };
 		5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5459047929CCFB42ADC10ECD /* RAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
 		5459048B880EB8C731BC9F03 /* MyRallyApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyApp-Info.plist"; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		545905850AE7113F4C91BEF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		545905E5016B73F7F7CE1513 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		54590614B4FFEFBC58CD9E5D /* StoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataSource.h; sourceTree = "<group>"; };
+		545906C69244BBE8CA12E385 /* StoryDataSourceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataSourceTests.h; sourceTree = "<group>"; };
+		5459096EF8DB34560ADF7ED2 /* StoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCell.h; sourceTree = "<group>"; };
 		5459098EC937FED54B70912A /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
 		545909AA9379487D3676A4FF /* MyRallyAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRallyAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 			children = (
 				545901EE5792260CD7911C21 /* RallyClientTests.m */,
 				54590AB6418F3A1416A5462C /* RallyClientTests.h */,
+				5459031103408DC0134384EB /* StoryDataSourceTests.m */,
+				545906C69244BBE8CA12E385 /* StoryDataSourceTests.h */,
 			);
 			path = Rally;
 			sourceTree = "<group>";
@@ -190,6 +198,8 @@
 				54590F0E9DA0D8CA3FE262F4 /* StoryDataSource.m */,
 				54590614B4FFEFBC58CD9E5D /* StoryDataSource.h */,
 				545909CA0F7C2CB39DFA7A62 /* Rally */,
+				545901FC6704D4527FA6640F /* StoryCell.m */,
+				5459096EF8DB34560ADF7ED2 /* StoryCell.h */,
 			);
 			path = MyRallyApp;
 			sourceTree = "<group>";
@@ -354,6 +364,7 @@
 				54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */,
 				54590E117387BAD57A588D48 /* StoryDataSource.m in Sources */,
 				54590D0602B4F43B4470C443 /* RallyClient.m in Sources */,
+				54590B26544D878999D2E626 /* StoryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				545905963F036EABA94CA5BE /* RallyClientTests.m in Sources */,
+				54590F50C076E9D615967F6D /* StoryDataSourceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

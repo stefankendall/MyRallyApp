@@ -19,6 +19,9 @@
         STAssertNotNil(owner, @"");
         NSString *name = [owner objectForKey:@"_refObjectName"];
         STAssertTrue( [name isEqualToString:@"Stefan"], [NSString stringWithFormat:@"%@", owner]);
+
+        NSString *scheduleState = [story objectForKey:@"ScheduleState"];
+        STAssertTrue([scheduleState isEqualToString:@"In-Progress"], @"");
     }                                       failure:^{
         done = YES;
         STFail(@"Could not get stories");

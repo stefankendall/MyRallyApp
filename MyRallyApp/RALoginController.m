@@ -1,12 +1,15 @@
 #import "RALoginController.h"
-#import "StoriesViewController.h"
 
 @implementation RALoginController
 
-- (IBAction)loginTapped:(id)sender {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    StoriesViewController *storiesViewController = [storyboard instantiateViewControllerWithIdentifier:@"myStories"];
-    [self.navigationController pushViewController:storiesViewController animated:YES];
+- (void)viewDidLoad {
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideEditing)];
+    [self.view addGestureRecognizer:singleTap];
 }
+
+- (void)hideEditing {
+    [self.view endEditing:YES];
+}
+
 
 @end

@@ -1,2 +1,0 @@
-@interface StoryCell : NSObject
-@end

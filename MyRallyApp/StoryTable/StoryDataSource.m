@@ -1,12 +1,27 @@
-#import <CoreGraphics/CoreGraphics.h>
 #import "StoryDataSource.h"
 #import "StoryCell.h"
+#import "StoryDivider.h"
 
 @implementation StoryDataSource
-@synthesize stories;
+@synthesize stories, storiesByScheduleState;
+
+- (void)setStories:(NSArray *)stories1 {
+    stories = stories1;
+    storiesByScheduleState = [[StoryDivider new] storiesByScheduleState:stories];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [[storiesByScheduleState allKeys] count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [storiesByScheduleState allKeys][(NSUInteger) section];
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [stories count];
+    NSString *key = [[storiesByScheduleState allKeys] objectAtIndex:(NSUInteger) section];
+    return [storiesByScheduleState[key] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -15,7 +30,8 @@
         cell = [StoryCell create];
     }
 
-    [cell setStory:stories[(NSUInteger) [indexPath row]]];
+    NSString *key = [[storiesByScheduleState allKeys] objectAtIndex:(NSUInteger) [indexPath section]];
+    [cell setStory:storiesByScheduleState[key][(NSUInteger) [indexPath row]]];
     return cell;
 }
 

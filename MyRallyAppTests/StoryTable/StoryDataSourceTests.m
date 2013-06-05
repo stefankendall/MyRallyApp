@@ -24,4 +24,15 @@
     STAssertFalse([[cell1.nameLabel text] isEqualToString:[cell2.nameLabel text]], @"");
 }
 
+- (void) testReturnsOrderedScheduleStates {
+    StoryDataSource *dataSource = [StoryDataSource new];
+    dataSource.stories = @[
+            @{@"Name" : @"Test Story", @"ScheduleState" : @"In-Progress"},
+            @{@"Name" : @"Test Story2", @"ScheduleState" : @"Completed"}
+    ];
+
+    NSArray *orderedStates = [dataSource getOrderedScheduleStates];
+    STAssertTrue([orderedStates[0] isEqualToString:@"In-Progress"], @"");
+}
+
 @end

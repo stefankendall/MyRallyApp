@@ -92,19 +92,17 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6Wn-sh-5zt">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="9jT-rY-g9E"/>
-                                </constraints>
                             </tableView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1HV-ko-z9e"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Wn-sh-5zt" firstAttribute="leading" secondItem="5A5-IC-Z2Y" secondAttribute="leading" constant="-6" id="2vF-0a-YS7"/>
                             <constraint firstItem="1HV-ko-z9e" firstAttribute="centerY" secondItem="6Wn-sh-5zt" secondAttribute="centerY" type="default" id="6dV-Tg-p2J"/>
+                            <constraint firstItem="6Wn-sh-5zt" firstAttribute="trailing" secondItem="5A5-IC-Z2Y" secondAttribute="trailing" type="default" id="BlM-34-rEr"/>
                             <constraint firstItem="6Wn-sh-5zt" firstAttribute="top" secondItem="5A5-IC-Z2Y" secondAttribute="top" type="default" id="E6i-md-BRC"/>
+                            <constraint firstItem="6Wn-sh-5zt" firstAttribute="centerX" secondItem="1HV-ko-z9e" secondAttribute="centerX" type="default" id="T9f-B5-v3q"/>
                             <constraint firstItem="6Wn-sh-5zt" firstAttribute="bottom" secondItem="5A5-IC-Z2Y" secondAttribute="bottom" type="default" id="cHL-Qc-P2T"/>
-                            <constraint firstItem="1HV-ko-z9e" firstAttribute="centerX" secondItem="5A5-IC-Z2Y" secondAttribute="centerX" type="default" id="xcL-C5-9cv"/>
+                            <constraint firstItem="6Wn-sh-5zt" firstAttribute="leading" secondItem="5A5-IC-Z2Y" secondAttribute="leading" type="default" id="uA2-VS-NZt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Stories" id="jWl-qv-0ii"/>

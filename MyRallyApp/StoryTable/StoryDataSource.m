@@ -1,4 +1,5 @@
 #import "StoryDataSource.h"
+#import "StoryCell.h"
 
 @implementation StoryDataSource
 @synthesize stories;
@@ -8,7 +9,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    StoryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StoryCell"];
+    if (cell == nil ) {
+        cell = [StoryCell create];
+    }
+
+    [cell setStory:stories[(NSUInteger) [indexPath row]]];
+    return cell;
 }
 
 @end

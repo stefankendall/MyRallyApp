@@ -3,4 +3,6 @@
 
 @interface RALoginController : UIViewController
 {}
+
+-(IBAction) loginTapped: (id) sender;
 @end

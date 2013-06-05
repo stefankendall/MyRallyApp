@@ -1,21 +1,12 @@
 #import "RALoginController.h"
-
-@interface RALoginController ()
-
-@end
+#import "StoriesViewController.h"
 
 @implementation RALoginController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)loginTapped:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    StoriesViewController *storiesViewController = [storyboard instantiateViewControllerWithIdentifier:@"myStories"];
+    [self.navigationController pushViewController:storiesViewController animated:YES];
 }
 
 @end

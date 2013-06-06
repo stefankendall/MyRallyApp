@@ -6,7 +6,7 @@
 
 - (void)testGetsStoryCells {
     StoryDataSource *dataSource = [StoryDataSource new];
-    dataSource.stories = @[@{@"Name" : @"Test Story"}];
+    dataSource.stories = @[@{@"Name" : @"Test Story", @"ScheduleState": @"In-Progress"}];
 
     StoryCell *cell = (StoryCell *) [dataSource tableView:nil cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     STAssertNotNil(cell, @"");

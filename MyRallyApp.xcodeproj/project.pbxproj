@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AE5404DAC9F4043BBF954F4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9E32D4976144D9A69143C6 /* libPods.a */; settings = {}; };
+		0AE5404DAC9F4043BBF954F4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9E32D4976144D9A69143C6 /* libPods.a */; };
 		54590075094F5B2AE5D51FA9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 54590DA8D48E2433AF1E00DC /* Podfile */; };
 		545900BB8C25A6F6C02DC7EE /* StoryDividerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EB6DD2C862A7F173308 /* StoryDividerTests.m */; };
 		5459011D18AFBAF54D873B2B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459050FA006745DA716B60E /* Default@2x.png */; };
 		5459013EBE9F0E5C78C72D14 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590E87A23E7D5927C1F916 /* Default-568h@2x.png */; };
+		5459014A93F7B70F79887D5D /* Rakefile in Resources */ = {isa = PBXBuildFile; fileRef = 545902A171696C380F7EC69D /* Rakefile */; };
 		545901552ACC8C59EEF8EC09 /* StoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BFB50AD21312F2899BB /* StoryCell.m */; };
 		545902249B0D9EED72C8F440 /* StoryCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906C19DECACCC57A04A50 /* StoryCellTests.m */; };
 		54590299F3ED513FF2A2E8D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9A29360D5F7EAB9BA7 /* InfoPlist.strings */; };
@@ -21,13 +22,13 @@
 		54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */; };
 		545905963F036EABA94CA5BE /* RallyClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901EE5792260CD7911C21 /* RallyClientTests.m */; };
 		545905CE41C29BC58CF97E5D /* RALoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459012DFA1CC5DD3898D0C3 /* RALoginController.m */; };
-		545906C864EF760CEA62942A /* StoriesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F031DB5498BC7C5CF68 /* StoriesViewControllerTests.m */; };
 		545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
 		545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */; };
 		54590807A33783883F9D0F79 /* StoryDivider.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D8C123753B1C89E0656 /* StoryDivider.m */; };
 		545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5459070A5C1538565543FFB0 /* InfoPlist.strings */; };
 		545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
 		54590A316F9A9D921D8B6815 /* StoryDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CEA2C5C135F462DD18B /* StoryDataSourceTests.m */; };
+		54590A52A4A01B57F2614749 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 545900B22C603F92D364A590 /* .travis.yml */; };
 		54590AD942C09298A1DE9F18 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 5459001F203F364BFB46923F /* Gemfile */; };
 		54590ADDDE95C6EF18700C44 /* StoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EE332CA6213C8EE9FEB /* StoryDataSource.m */; };
 		54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */; };
@@ -50,14 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02AFF5751760D04D0069E4C3 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		54590016F9E3E979B8086653 /* MyRallyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRallyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5459001F203F364BFB46923F /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		545900B22C603F92D364A590 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RALoginController.h; sourceTree = "<group>"; };
 		5459012DFA1CC5DD3898D0C3 /* RALoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RALoginController.m; sourceTree = "<group>"; };
 		5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
 		54590153E68EC1845FEDCA7C /* StoryCellTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCellTests.h; sourceTree = "<group>"; };
 		545901AC6FA27D69517B100B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		545901EE5792260CD7911C21 /* RallyClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RallyClientTests.m; sourceTree = "<group>"; };
+		545902A171696C380F7EC69D /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		545902B43279A59D1F37C1D6 /* StoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
 		545902C7E34AD6AEFCE55E64 /* StoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCell.h; sourceTree = "<group>"; };
 		5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,7 +75,6 @@
 		545905E5016B73F7F7CE1513 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		545906C19DECACCC57A04A50 /* StoryCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCellTests.m; sourceTree = "<group>"; };
 		545906C8CAC7177E64851A11 /* CTCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCustomTableViewCell.h; sourceTree = "<group>"; };
-		5459074E00903517C7C25E8D /* StoriesViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewControllerTests.h; sourceTree = "<group>"; };
 		545907764D6CA1B6931325E3 /* StoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataSource.h; sourceTree = "<group>"; };
 		5459098EC937FED54B70912A /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
 		545909AA9379487D3676A4FF /* MyRallyAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRallyAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,13 +93,12 @@
 		54590E87A23E7D5927C1F916 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		54590EB6DD2C862A7F173308 /* StoryDividerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDividerTests.m; sourceTree = "<group>"; };
 		54590EE332CA6213C8EE9FEB /* StoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataSource.m; sourceTree = "<group>"; };
-		54590F031DB5498BC7C5CF68 /* StoriesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewControllerTests.m; sourceTree = "<group>"; };
 		54590F36C67DD419EB0E063A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		54590F8E9464851CEAC9F593 /* StoryDividerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDividerTests.h; sourceTree = "<group>"; };
 		54590F9798347B62499F9D67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A4A742FE260F4A77B297B6F4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		DC9E32D4976144D9A69143C6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9E32D4976144D9A69143C6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +198,6 @@
 				54590147248C6AAE95C28F25 /* Supporting Files */,
 				545902D9BA4E17F379C913E0 /* Rally */,
 				545906747B03BD2C9684C3A5 /* StoryTable */,
-				54590F031DB5498BC7C5CF68 /* StoriesViewControllerTests.m */,
-				5459074E00903517C7C25E8D /* StoriesViewControllerTests.h */,
 			);
 			path = MyRallyAppTests;
 			sourceTree = "<group>";
@@ -219,6 +219,7 @@
 		545909BD5EA8EF8B9E70438A = {
 			isa = PBXGroup;
 			children = (
+				02AFF5751760D04D0069E4C3 /* libPods.a */,
 				54590A8455E5E31CF4E2C7AC /* Products */,
 				545902D43E8EB3F941A6F37F /* Frameworks */,
 				54590A4CF9C88C408421C438 /* MyRallyApp */,
@@ -226,6 +227,8 @@
 				54590DA8D48E2433AF1E00DC /* Podfile */,
 				5459001F203F364BFB46923F /* Gemfile */,
 				A4A742FE260F4A77B297B6F4 /* Pods.xcconfig */,
+				545902A171696C380F7EC69D /* Rakefile */,
+				545900B22C603F92D364A590 /* .travis.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -324,8 +327,6 @@
 			mainGroup = 545909BD5EA8EF8B9E70438A;
 			productRefGroup = 54590A8455E5E31CF4E2C7AC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				545909CCA13D1F079C16F0DF /* MyRallyApp */,
@@ -347,6 +348,8 @@
 				54590075094F5B2AE5D51FA9 /* Podfile in Resources */,
 				54590AD942C09298A1DE9F18 /* Gemfile in Resources */,
 				54590430BCADA08D534E054E /* StoryCell.xib in Resources */,
+				5459014A93F7B70F79887D5D /* Rakefile in Resources */,
+				54590A52A4A01B57F2614749 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +377,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 1;
 		};
 		54590BA1525A9C31CF57AC9F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -402,7 +404,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -430,7 +431,6 @@
 				545905963F036EABA94CA5BE /* RallyClientTests.m in Sources */,
 				54590A316F9A9D921D8B6815 /* StoryDataSourceTests.m in Sources */,
 				545902249B0D9EED72C8F440 /* StoryCellTests.m in Sources */,
-				545906C864EF760CEA62942A /* StoriesViewControllerTests.m in Sources */,
 				545900BB8C25A6F6C02DC7EE /* StoryDividerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +610,7 @@
 				545909617E3236F19B0B4186 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54590B12CA76B09D1872A263 /* Build configuration list for PBXNativeTarget "MyRallyAppTests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +619,7 @@
 				54590900CEC8A011C9F313A2 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

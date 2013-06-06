@@ -1,384 +1,2886 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		001C0D8DAE214AD6B0BD55F1 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3194F6233E49839F70C75B /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		14E7C4CFD6AC465585860777 /* SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 352F67D833FC4CDDBC470E80 /* SVPullToRefresh.h */; settings = {}; };
-		1A7FFC2D44D84DCABDAF92A5 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE38E1D61B7F41A6B2887472 /* AFHTTPClient.h */; settings = {}; };
-		1E74873FBCEB48CCB3411DEA /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6E25EA944AD89435097F /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		2C22693511E449B29918D53C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C7301CA1BC40CE9B238154 /* AFNetworkActivityIndicatorManager.h */; settings = {}; };
-		35ABA33C686D42B2B748F049 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9A8AEC72C54D2BA334E206 /* AFPropertyListRequestOperation.h */; settings = {}; };
-		3C31CB7C355C404D97540C31 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B96F23D19346B59BBA53A5 /* UIScrollView+SVPullToRefresh.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		4509A1B98268406C949E8366 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E418E1D9B02E463C9A377AD3 /* AFNetworking.h */; settings = {}; };
-		4C414AEF214A4F85B7933804 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B91424F67ED940F996F2E40A /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		544839D73BD745CBB5C997D0 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8FA4759EF14F3D90BFB79A /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		5DAE8000A08D4563B0F1F07C /* UIScrollView+SVInfiniteScrolling.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D6219E770D47E8834E2338 /* UIScrollView+SVInfiniteScrolling.h */; settings = {}; };
-		670B067C305041BCABA4AAA6 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B0C999B5294EC6804D5FDD /* UIImageView+AFNetworking.h */; settings = {}; };
-		70D65992F959466DBB36BB73 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C0E7ECD1842D99C8F39F4 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		76BD946D60CA4619B4FFEA8B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6974C6D5E2AA46A58C527068 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		811ED80249004A33ACF5A599 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AEFB2DB5866484186F50EF1 /* AFHTTPRequestOperation.h */; settings = {}; };
-		8170D2C4FD9C41A4907AF754 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191D7C55C174DF797378C5C /* UIScrollView+SVInfiniteScrolling.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		B534682B3F024E839462E1CB /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C01C1A07DA184DFF98521F28 /* AFURLConnectionOperation.h */; settings = {}; };
-		BC7CDEC7FE32459F9F5774E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B905C026D994FA3A3D142F1 /* Foundation.framework */; settings = {}; };
-		BCFA246420284AB98C847D31 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 846284ABB41A477398685693 /* AFImageRequestOperation.h */; settings = {}; };
-		C7DB4D1C973A49718AD3D7F4 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C969F7AABA642EDAA3FCF4D /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		CC2C303373904BBBA8FD3F8E /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D15A8708768E458C8F8D90F7 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		CFCB2DC180E94AB3BBD4B0A6 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 64EFBBD20A6145F495D4F916 /* AFXMLRequestOperation.h */; settings = {}; };
-		D25B2741EB76444AB511B2E5 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A5B25E22D34E3DBE03513F /* AFJSONRequestOperation.h */; settings = {}; };
-		DF100F02B578437C8B0B0D85 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A3BC7E6A394F179F559DA9 /* Pods-dummy.m */; settings = {}; };
-		DF6F781467E24F8D8936AFDD /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE97D4CEC2174CD8B10286D1 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		FA84E130593846D1BB79ED1E /* UIScrollView+SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D3EAE5120D47FD8BD874F2 /* UIScrollView+SVPullToRefresh.h */; settings = {}; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		03B4D24370284D8C9382D0F7 /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-prefix.pch"; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
-		1AEFB2DB5866484186F50EF1 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		352F67D833FC4CDDBC470E80 /* SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVPullToRefresh.h; path = SVPullToRefresh/SVPullToRefresh/SVPullToRefresh.h; sourceTree = SOURCE_ROOT; };
-		44D6219E770D47E8834E2338 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVInfiniteScrolling.h"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.h"; sourceTree = SOURCE_ROOT; };
-		485504A2CD4C454E9D28787C /* Security.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		49B96F23D19346B59BBA53A5 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVPullToRefresh.m"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVPullToRefresh.m"; sourceTree = SOURCE_ROOT; };
-		4D54B7380BBA4BC1A9295787 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.plist"; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
-		50D3EAE5120D47FD8BD874F2 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVPullToRefresh.h"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVPullToRefresh.h"; sourceTree = SOURCE_ROOT; };
-		5191D7C55C174DF797378C5C /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVInfiniteScrolling.m"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.m"; sourceTree = SOURCE_ROOT; };
-		530B258384A54AC7BF1EDB6E /* SystemConfiguration.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		58C7301CA1BC40CE9B238154 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = SOURCE_ROOT; };
-		64EFBBD20A6145F495D4F916 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		676C0E7ECD1842D99C8F39F4 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = SOURCE_ROOT; };
-		68C12C273B8243FD87EEB339 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6974C6D5E2AA46A58C527068 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = SOURCE_ROOT; };
-		6B905C026D994FA3A3D142F1 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6DB557B6B9D24130BE4483F8 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-resources.sh"; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
-		70A5B25E22D34E3DBE03513F /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		75B9D9F164684F41B5695A41 /* MobileCoreServices.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		82B0C999B5294EC6804D5FDD /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = SOURCE_ROOT; };
-		846284ABB41A477398685693 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		85A3BC7E6A394F179F559DA9 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-dummy.m"; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
-		89D1F57938C24085B21476E9 /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		9C969F7AABA642EDAA3FCF4D /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = SOURCE_ROOT; };
-		9F3194F6233E49839F70C75B /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		A51F3DE1E27141B39D932B8A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B91424F67ED940F996F2E40A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		BC8FA4759EF14F3D90BFB79A /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		BE97D4CEC2174CD8B10286D1 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		C01C1A07DA184DFF98521F28 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = SOURCE_ROOT; };
-		CBCF1ABEE0A44B21B9A756D2 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-environment.h"; path = "Pods-environment.h"; sourceTree = SOURCE_ROOT; };
-		CE38E1D61B7F41A6B2887472 /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
-		D15A8708768E458C8F8D90F7 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		D3D5D494AD654218B0EF3686 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		D63D466E5D4241E099C8B6BC /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.markdown"; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
-		D8DE6E25EA944AD89435097F /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
-		DC9A8AEC72C54D2BA334E206 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		E418E1D9B02E463C9A377AD3 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking/AFNetworking.h; sourceTree = SOURCE_ROOT; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C3BA2D2F011949939D16C31D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BC7CDEC7FE32459F9F5774E6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		10242AC17CE04E4A8B0B78B6 = {
-			isa = PBXGroup;
-			children = (
-				D1BBBFC5A327480592B13280 /* Frameworks */,
-				8E3124123FFC4BC6868F069D /* Pods */,
-				1F975AB7E16944479CD41C99 /* Products */,
-				9D7F2575D3454DCD8C9D7A63 /* Targets Support Files */,
-				68C12C273B8243FD87EEB339 /* Podfile */,
-			);
-			sourceTree = "<group>";
-		};
-		1F975AB7E16944479CD41C99 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A51F3DE1E27141B39D932B8A /* libPods.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		42C9BC2F381B42F5A6D0E3A9 /* SVPullToRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				352F67D833FC4CDDBC470E80 /* SVPullToRefresh.h */,
-				44D6219E770D47E8834E2338 /* UIScrollView+SVInfiniteScrolling.h */,
-				5191D7C55C174DF797378C5C /* UIScrollView+SVInfiniteScrolling.m */,
-				50D3EAE5120D47FD8BD874F2 /* UIScrollView+SVPullToRefresh.h */,
-				49B96F23D19346B59BBA53A5 /* UIScrollView+SVPullToRefresh.m */,
-			);
-			name = SVPullToRefresh;
-			sourceTree = "<group>";
-		};
-		7B161618118742D68123FCFF /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				CE38E1D61B7F41A6B2887472 /* AFHTTPClient.h */,
-				D8DE6E25EA944AD89435097F /* AFHTTPClient.m */,
-				1AEFB2DB5866484186F50EF1 /* AFHTTPRequestOperation.h */,
-				B91424F67ED940F996F2E40A /* AFHTTPRequestOperation.m */,
-				846284ABB41A477398685693 /* AFImageRequestOperation.h */,
-				BC8FA4759EF14F3D90BFB79A /* AFImageRequestOperation.m */,
-				70A5B25E22D34E3DBE03513F /* AFJSONRequestOperation.h */,
-				9F3194F6233E49839F70C75B /* AFJSONRequestOperation.m */,
-				58C7301CA1BC40CE9B238154 /* AFNetworkActivityIndicatorManager.h */,
-				6974C6D5E2AA46A58C527068 /* AFNetworkActivityIndicatorManager.m */,
-				E418E1D9B02E463C9A377AD3 /* AFNetworking.h */,
-				DC9A8AEC72C54D2BA334E206 /* AFPropertyListRequestOperation.h */,
-				BE97D4CEC2174CD8B10286D1 /* AFPropertyListRequestOperation.m */,
-				C01C1A07DA184DFF98521F28 /* AFURLConnectionOperation.h */,
-				9C969F7AABA642EDAA3FCF4D /* AFURLConnectionOperation.m */,
-				64EFBBD20A6145F495D4F916 /* AFXMLRequestOperation.h */,
-				D15A8708768E458C8F8D90F7 /* AFXMLRequestOperation.m */,
-				82B0C999B5294EC6804D5FDD /* UIImageView+AFNetworking.h */,
-				676C0E7ECD1842D99C8F39F4 /* UIImageView+AFNetworking.m */,
-			);
-			name = AFNetworking;
-			sourceTree = "<group>";
-		};
-		8E3124123FFC4BC6868F069D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7B161618118742D68123FCFF /* AFNetworking */,
-				42C9BC2F381B42F5A6D0E3A9 /* SVPullToRefresh */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9D7F2575D3454DCD8C9D7A63 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C89B24A086B442B4BA8A41DE /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C89B24A086B442B4BA8A41DE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D3D5D494AD654218B0EF3686 /* Pods.xcconfig */,
-				CBCF1ABEE0A44B21B9A756D2 /* Pods-environment.h */,
-				03B4D24370284D8C9382D0F7 /* Pods-prefix.pch */,
-				6DB557B6B9D24130BE4483F8 /* Pods-resources.sh */,
-				4D54B7380BBA4BC1A9295787 /* Pods-acknowledgements.plist */,
-				D63D466E5D4241E099C8B6BC /* Pods-acknowledgements.markdown */,
-				85A3BC7E6A394F179F559DA9 /* Pods-dummy.m */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D1BBBFC5A327480592B13280 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6B905C026D994FA3A3D142F1 /* Foundation.framework */,
-				75B9D9F164684F41B5695A41 /* MobileCoreServices.framework */,
-				89D1F57938C24085B21476E9 /* QuartzCore.framework */,
-				485504A2CD4C454E9D28787C /* Security.framework */,
-				530B258384A54AC7BF1EDB6E /* SystemConfiguration.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		0C4FD9C288784FE3BD69C2B5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A7FFC2D44D84DCABDAF92A5 /* AFHTTPClient.h in Headers */,
-				811ED80249004A33ACF5A599 /* AFHTTPRequestOperation.h in Headers */,
-				BCFA246420284AB98C847D31 /* AFImageRequestOperation.h in Headers */,
-				D25B2741EB76444AB511B2E5 /* AFJSONRequestOperation.h in Headers */,
-				2C22693511E449B29918D53C /* AFNetworkActivityIndicatorManager.h in Headers */,
-				4509A1B98268406C949E8366 /* AFNetworking.h in Headers */,
-				35ABA33C686D42B2B748F049 /* AFPropertyListRequestOperation.h in Headers */,
-				B534682B3F024E839462E1CB /* AFURLConnectionOperation.h in Headers */,
-				CFCB2DC180E94AB3BBD4B0A6 /* AFXMLRequestOperation.h in Headers */,
-				670B067C305041BCABA4AAA6 /* UIImageView+AFNetworking.h in Headers */,
-				14E7C4CFD6AC465585860777 /* SVPullToRefresh.h in Headers */,
-				5DAE8000A08D4563B0F1F07C /* UIScrollView+SVInfiniteScrolling.h in Headers */,
-				FA84E130593846D1BB79ED1E /* UIScrollView+SVPullToRefresh.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		ADD8985299204FA39E566C7B /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F83991A491DD44DFB3F01931 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				72827DEA99F74D71A27188BB /* Sources */,
-				C3BA2D2F011949939D16C31D /* Frameworks */,
-				0C4FD9C288784FE3BD69C2B5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = A51F3DE1E27141B39D932B8A /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		3FA1B5797CA445E192A3F952 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0450;
-			};
-			buildConfigurationList = 5E43CDE7C46B4D33A5AE6E4B /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 10242AC17CE04E4A8B0B78B6;
-			productRefGroup = 1F975AB7E16944479CD41C99 /* Products */;
-			projectReferences = (
-			);
-			targets = (
-				ADD8985299204FA39E566C7B /* Pods */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		72827DEA99F74D71A27188BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E74873FBCEB48CCB3411DEA /* AFHTTPClient.m in Sources */,
-				4C414AEF214A4F85B7933804 /* AFHTTPRequestOperation.m in Sources */,
-				544839D73BD745CBB5C997D0 /* AFImageRequestOperation.m in Sources */,
-				001C0D8DAE214AD6B0BD55F1 /* AFJSONRequestOperation.m in Sources */,
-				76BD946D60CA4619B4FFEA8B /* AFNetworkActivityIndicatorManager.m in Sources */,
-				DF6F781467E24F8D8936AFDD /* AFPropertyListRequestOperation.m in Sources */,
-				C7DB4D1C973A49718AD3D7F4 /* AFURLConnectionOperation.m in Sources */,
-				CC2C303373904BBBA8FD3F8E /* AFXMLRequestOperation.m in Sources */,
-				70D65992F959466DBB36BB73 /* UIImageView+AFNetworking.m in Sources */,
-				8170D2C4FD9C41A4907AF754 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
-				3C31CB7C355C404D97540C31 /* UIScrollView+SVPullToRefresh.m in Sources */,
-				DF100F02B578437C8B0B0D85 /* Pods-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin XCBuildConfiguration section */
-		48AE8A075CB94DD58DE5AD68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3D5D494AD654218B0EF3686 /* Pods.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
-				PODS_ROOT = "${SRCROOT}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		8FFD818DE0464C3F9449F65D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-			};
-			name = Debug;
-		};
-		AD63E4E8C4264F909B41CE94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3D5D494AD654218B0EF3686 /* Pods.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
-				PODS_ROOT = "${SRCROOT}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BDD139BB52A44ED2B5B3FCE5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		5E43CDE7C46B4D33A5AE6E4B /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BDD139BB52A44ED2B5B3FCE5 /* Release */,
-				8FFD818DE0464C3F9449F65D /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F83991A491DD44DFB3F01931 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD63E4E8C4264F909B41CE94 /* Release */,
-				48AE8A075CB94DD58DE5AD68 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 3FA1B5797CA445E192A3F952 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0099AA1CCC7C4CFE9FBEDF34</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAFormModelManager.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAFormModelManager.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>011BF50FC3DE4ACC80FC43AC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>12FE4324452F42EF8EB8C4C6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>018F28EB6BCA4F9E9CA8ABFD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAFormFieldStyle.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAFormFieldStyle.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>02046754203B4BB8BFB93486</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2CB727E15B2E4A94B6A5DCE2</string>
+				<string>E94977CDB51E42B495A47C90</string>
+				<string>ED60164435D44F34AAC04D26</string>
+				<string>267FD014F58743EBA39A9777</string>
+				<string>A1EDCCC6F1A348B2B31F699A</string>
+				<string>FF3EFC5D82254B0E9FB091FE</string>
+				<string>C0F68468A5264028B4C6023F</string>
+				<string>89764066F1304126A772760B</string>
+				<string>058A0D58DF984AF48D7723CA</string>
+				<string>3AE4AC8635594360B64DDF3E</string>
+				<string>DA9ED490A98E4D0BAD694601</string>
+				<string>018F28EB6BCA4F9E9CA8ABFD</string>
+				<string>0099AA1CCC7C4CFE9FBEDF34</string>
+				<string>1B43F4AE33724F5FBD98792B</string>
+				<string>930FAE302C9B4416A915E667</string>
+				<string>898C570B173B4B889C44A5C6</string>
+				<string>86B6DF8F24E444508FA0DB95</string>
+				<string>FA355423D1844838B0D689F7</string>
+				<string>2E8EA2DD88044B3A910AF6C6</string>
+				<string>0687D694018C48ABBB8E9737</string>
+				<string>63726F414A964513BDFF76CD</string>
+				<string>67E6F040DC7F419EBC8EB05F</string>
+				<string>0472F58FA2D048379FDBE68F</string>
+				<string>75795E8102254ED88A02CC59</string>
+				<string>8B26478F299E494AA019A2F1</string>
+				<string>0DE155CC30024D888F8956F6</string>
+				<string>5D1D82B1F8914C62B970FC8E</string>
+				<string>A123F73440FE4EA7865D7FA5</string>
+				<string>35947FACE48F4096B9C1FB34</string>
+				<string>31F85F89AA1C4A69AB5C9735</string>
+				<string>1F6C77AC49F149D1A8975974</string>
+				<string>A723626180B84506A3CBBC54</string>
+				<string>FB9EA61CA8EC4328B061E487</string>
+				<string>7751A4AC62D946E1843E9B1B</string>
+				<string>62B774F48A17495991EEF263</string>
+				<string>2F6A0FF76191464BB2EF1EB2</string>
+				<string>41BC2E9BB3A34762827759D4</string>
+				<string>ED56124CA1754356815BF6B3</string>
+				<string>34D8CA5A5B614A12AB134862</string>
+				<string>6D52542D227D4308B0554C18</string>
+				<string>A60936EDB5F34826B6BD90F2</string>
+				<string>96552040F2CF4FE38D0BEB96</string>
+				<string>3A9239BFABEB47D39D6A0717</string>
+				<string>72EF0B6BD3C54CCF96A88E3A</string>
+				<string>A8C3A50CC2D54E48A835478E</string>
+				<string>D829E731707746F2996BA2B0</string>
+				<string>0F4AFAB4F9CD42D6B57458DC</string>
+				<string>0436CB6473DD44528C26ADDE</string>
+				<string>C705E03539B24F648B96E600</string>
+				<string>16DDBC47E4AF4CA59B2FEFD8</string>
+				<string>DD9BE170F63946FF9678B3A5</string>
+				<string>CB6E44708FFB4519BBE1DD1D</string>
+				<string>4328C880D04D400AAA16BA64</string>
+				<string>A511281F84A04F0F9A0F2E15</string>
+				<string>2698942B6C8E41538D1D5311</string>
+				<string>6F2DBD526DD84918A03BF4EC</string>
+				<string>71E1E3D66CF843D8815554B0</string>
+				<string>2592D2DD6B2C40529162AEFE</string>
+				<string>BE4A41E892EC4752B149960A</string>
+				<string>496D8C5D1BCB46AEA9CA7177</string>
+				<string>1687B1DDE9234C5190151433</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>IBAForms</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0436CB6473DD44528C26ADDE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAReadOnlyTextFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAReadOnlyTextFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>0472F58FA2D048379FDBE68F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAInputRequestorFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAInputRequestorFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>058A0D58DF984AF48D7723CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAFormDataSource.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAFormDataSource.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>0687D694018C48ABBB8E9737</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAInputProvider.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAInputProvider.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>084CDB95742B484DABBEB1FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DD9BE170F63946FF9678B3A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>0886B422B16641E18619E6CF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7C704062C2754287800AE140</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>0959E5CBC990469AB9A5E529</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E46700269240485F87C11C0B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>0A246851A71047EAA155739B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0D11E4C65CDD4FA7A62B43B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>113A7E92466B45BB8A694985</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>0DE155CC30024D888F8956F6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAMultiplePickListInputProvider.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAMultiplePickListInputProvider.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>0E30681F122E4A8A8D6E8A7C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Pods-environment.h</string>
+			<key>path</key>
+			<string>Pods-environment.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>0F03D0853162444F9A8174E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D9E51308C2E547C8B39FA556</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F22986D7C704579886E22B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIImageView+AFNetworking.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/UIImageView+AFNetworking.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>0F4AFAB4F9CD42D6B57458DC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAPickListFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAPickListFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>113A7E92466B45BB8A694985</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFHTTPClient.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFHTTPClient.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>11E72B54003645C298B13E5B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Security.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>1249CC33FAA14A89B9C793C0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0DE155CC30024D888F8956F6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>12B34233DBC841B786C8A0BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F6C77AC49F149D1A8975974</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>12FE4324452F42EF8EB8C4C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFHTTPRequestOperation.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFHTTPRequestOperation.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>15C7675886984E61B1FC83FE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods-resources.sh</string>
+			<key>path</key>
+			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>1687B1DDE9234C5190151433</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAInputNavigationToolbar.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/input/views/IBAInputNavigationToolbar.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>16DDBC47E4AF4CA59B2FEFD8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBATitleFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBATitleFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>18540ADD597A4387B1DD596B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75A7FEC60F984A69A19EF8BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>1877AF4C6E8F4A0B990D9B0E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>86B6DF8F24E444508FA0DB95</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>18BFA8CFBB3C427F9F99FA7C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B792B346D27643F483326960</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>1B43F4AE33724F5FBD98792B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAForms.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAForms.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>1C9148A76F814CADA225060E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A123F73440FE4EA7865D7FA5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>1C968BBD233B4F3FB674E54F</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0450</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>D9C1AE732FA04D86B64D86EC</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>55133E2AFFD546DA98F23D76</string>
+			<key>productRefGroup</key>
+			<string>8C197757EEE0409A8957B465</string>
+			<key>projectReferences</key>
+			<array/>
+			<key>targets</key>
+			<array>
+				<string>B8716AD848E84B0CAC0E1527</string>
+			</array>
+		</dict>
+		<key>1CF0963FD3184096A82D29CA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4328C880D04D400AAA16BA64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>1D3D3E6C5AB643E1A77B41FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2698942B6C8E41538D1D5311</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>1F3959589CEB4A34BFBBE2B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFXMLRequestOperation.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFXMLRequestOperation.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>1F6C77AC49F149D1A8975974</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBATextFormField+Factory.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBATextFormField+Factory.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>1FBC946C7B184F7CA5C6FEA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>898C570B173B4B889C44A5C6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>24A1E22E8B0B4C73B58BEC50</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFNetworkActivityIndicatorManager.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2592D2DD6B2C40529162AEFE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAMultiplePickListInputProvider.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/input/controllers/IBAMultiplePickListInputProvider.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2624271DF1584B29B0285836</key>
+		<dict>
+			<key>fileRef</key>
+			<string>930FAE302C9B4416A915E667</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>267FD014F58743EBA39A9777</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBACommon.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBACommon.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2698942B6C8E41538D1D5311</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBATextFormFieldCell.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/views/IBATextFormFieldCell.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2CB727E15B2E4A94B6A5DCE2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBABooleanFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBABooleanFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2E8EA2DD88044B3A910AF6C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAInputNavigationToolbar.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAInputNavigationToolbar.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2F6A0FF76191464BB2EF1EB2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBATextFormField+Factory.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/categories/IBATextFormField+Factory.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2FBFA619614C4A23800505ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2E8EA2DD88044B3A910AF6C6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>30EB7C7C8488447085202B43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F3959589CEB4A34BFBBE2B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>31CC14AF56EE4263AEB9547D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0436CB6473DD44528C26ADDE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>31F85F89AA1C4A69AB5C9735</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBASinglePickListInputProvider.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBASinglePickListInputProvider.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>34D8CA5A5B614A12AB134862</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBADateFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBADateFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>35947FACE48F4096B9C1FB34</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAReadOnlyTextFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAReadOnlyTextFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>35E08B21574F402C923A60FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ABF1ED067164488396276760</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>3A621538898E4DE7B4E19C52</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C705E03539B24F648B96E600</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>3A9239BFABEB47D39D6A0717</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAFormSection.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAFormSection.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>3AE4AC8635594360B64DDF3E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>3C54D0DE2C724B3ABC218157</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F22986D7C704579886E22B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>3E071EA2A1B34E3CBEFDFED6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8C3A50CC2D54E48A835478E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>3E08CD45B83542938EA5BE9D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIScrollView+SVPullToRefresh.h</string>
+			<key>path</key>
+			<string>SVPullToRefresh/SVPullToRefresh/UIScrollView+SVPullToRefresh.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>3F22CCBDD5174B56870A1D3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A60936EDB5F34826B6BD90F2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>41BC2E9BB3A34762827759D4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBABooleanFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBABooleanFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>4222CCC3A0804D7EBA637EDF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFJSONRequestOperation.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFJSONRequestOperation.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>4328C880D04D400AAA16BA64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAFormFieldCell.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/views/IBAFormFieldCell.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>433B260CC06B401EAC99275A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>31F85F89AA1C4A69AB5C9735</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>437FB45A6C554C7ABF84E406</key>
+		<dict>
+			<key>fileRef</key>
+			<string>34D8CA5A5B614A12AB134862</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>43B063F61A624D569CBA7EF4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4222CCC3A0804D7EBA637EDF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>4485B885C78241859C660018</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8B26478F299E494AA019A2F1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>483986CEC6A54AEFABF4572E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A1EDCCC6F1A348B2B31F699A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>494FBB638A3D403386C49E15</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FCA74B4EE8E04DD3AD1D8442</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>496D8C5D1BCB46AEA9CA7177</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBATextInputProvider.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/input/controllers/IBATextInputProvider.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>532B0CDC35294B258CAFD17C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>BEE808C0D04B47E899F12314</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PODS_HEADERS_SEARCH_PATHS</key>
+				<string>${PODS_BUILD_HEADERS_SEARCH_PATHS}</string>
+				<key>PODS_ROOT</key>
+				<string>${SRCROOT}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>543E4A302CF2488DB3D7922A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75795E8102254ED88A02CC59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>55133E2AFFD546DA98F23D76</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CF2397ECCE08415E8222CE26</string>
+				<string>FEDDDC6F512C41829530F653</string>
+				<string>8C197757EEE0409A8957B465</string>
+				<string>0F03D0853162444F9A8174E4</string>
+				<string>5C7541E20A3B48F78A6012EF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>552A96D006764D8E91740C00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA355423D1844838B0D689F7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>5764F1D7CA744126AB1C13D9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>267FD014F58743EBA39A9777</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>5C7541E20A3B48F78A6012EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>5CE5D31E583349A1AA89BC86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFPropertyListRequestOperation.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFPropertyListRequestOperation.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>5D1D82B1F8914C62B970FC8E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAPickListFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAPickListFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>5E7DB8C2E6CD4A7484A77469</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F6A0FF76191464BB2EF1EB2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>609066A3A54E4CA4AACA4CA7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>62B774F48A17495991EEF263</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBATitleFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBATitleFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>63726F414A964513BDFF76CD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAInputRequestor.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAInputRequestor.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>65787C83C5AB4025A0126290</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79540D99EFDC4E87B5C4C1B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>67E6F040DC7F419EBC8EB05F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAInputRequestorDataSource.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAInputRequestorDataSource.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>6D52542D227D4308B0554C18</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAFormDataSource.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAFormDataSource.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>6F2DBD526DD84918A03BF4EC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBADateInputProvider.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/input/controllers/IBADateInputProvider.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>6FED0FF59B8D45B3BF307D8C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6D52542D227D4308B0554C18</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>71E1E3D66CF843D8815554B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAInputManager.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/input/controllers/IBAInputManager.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>72EF0B6BD3C54CCF96A88E3A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAFormViewController.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAFormViewController.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>74014B4E736B4CDC80FCB3BC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA9ED490A98E4D0BAD694601</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>74180E19DEE247FD841119C5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63726F414A964513BDFF76CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>75795E8102254ED88A02CC59</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBALabelFormCell.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBALabelFormCell.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>75A7FEC60F984A69A19EF8BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFURLConnectionOperation.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFURLConnectionOperation.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>75E7A1C587CA4E7286842BB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2CB727E15B2E4A94B6A5DCE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>7734E96B4D474BFABD8567B1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1B43F4AE33724F5FBD98792B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>7751A4AC62D946E1843E9B1B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBATextInputProvider.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBATextInputProvider.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>784D8DBFCD914FE3BC30E5E7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8E78D1226EE64B9FBD9F0AE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>791C2E82311D47819C5578A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>496D8C5D1BCB46AEA9CA7177</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>79540D99EFDC4E87B5C4C1B7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Pods-dummy.m</string>
+			<key>path</key>
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>798C9E0B1E904104849CCA22</key>
+		<dict>
+			<key>fileRef</key>
+			<string>89764066F1304126A772760B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>7B02DD9B2DD54B7F8F3FED6E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0472F58FA2D048379FDBE68F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>7C704062C2754287800AE140</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFJSONRequestOperation.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFJSONRequestOperation.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>7E4266EDBB3C4F6C9C6F1744</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1687B1DDE9234C5190151433</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>7EE7ACB28A09483DB9975F3D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F9C3BBD9C57A48F6840B737F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>7FA8D1E56F204F06AB794A65</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BE4A41E892EC4752B149960A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>800D2202212A4A3181C2FF39</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F2DBD526DD84918A03BF4EC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>8308AA6F8DED409CBE5FCA67</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>86B6DF8F24E444508FA0DB95</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAInputCommon.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAInputCommon.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>88BBD2F821E840DCBE045907</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5CE5D31E583349A1AA89BC86</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>89764066F1304126A772760B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAFormConstants.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAFormConstants.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>898C570B173B4B889C44A5C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAFormViewController.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAFormViewController.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>89F951CC2E2841BB8B3EA76A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8B26478F299E494AA019A2F1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBALabelFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBALabelFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>8C197757EEE0409A8957B465</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A05A94D3841C440187AF86AC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D00E11AFBDB49A9A142967E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9CB019138E414E879A2BE5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>8E0E5707A07C419592EDA302</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D829E731707746F2996BA2B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>8E1D2A2BF2AB4114B396CB1A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFURLConnectionOperation.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFURLConnectionOperation.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>8E78D1226EE64B9FBD9F0AE2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SVPullToRefresh.h</string>
+			<key>path</key>
+			<string>SVPullToRefresh/SVPullToRefresh/SVPullToRefresh.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>90752B69C1574D199956B342</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E9CCFE6D859B459ABCA04F5A</string>
+				<string>532B0CDC35294B258CAFD17C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>930FAE302C9B4416A915E667</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAFormSection.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAFormSection.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93AA445FC4D6477DB1623B37</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BBCD0034DA354413904C9B94</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>9489ABB568594C55813AC643</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>96552040F2CF4FE38D0BEB96</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAFormFieldStyle.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAFormFieldStyle.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>974F00DFC2C3424BB00E6E43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FB9EA61CA8EC4328B061E487</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>9BC172F315C44B4394FAFCBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62B774F48A17495991EEF263</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>9C02E41B31604707AF0077B5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>A05A94D3841C440187AF86AC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A123F73440FE4EA7865D7FA5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAPickListOptionsProvider.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAPickListOptionsProvider.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>A14D1CD40B1541CA8273EC79</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C0F68468A5264028B4C6023F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>A1E961A52797493598DD9DA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8E1D2A2BF2AB4114B396CB1A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>A1EDCCC6F1A348B2B31F699A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBADateFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBADateFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>A511281F84A04F0F9A0F2E15</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBALabelFormCell.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/views/IBALabelFormCell.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>A5C0076EF6D5476CB8354FDB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5D1D82B1F8914C62B970FC8E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>A60936EDB5F34826B6BD90F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>A65904A734CD40C386D3AF42</key>
+		<dict>
+			<key>fileRef</key>
+			<string>058A0D58DF984AF48D7723CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>A723626180B84506A3CBBC54</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBATextFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBATextFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>A8C3A50CC2D54E48A835478E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAInputRequestorFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAInputRequestorFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>AA6700807F1D46BB94C1188A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0D11E4C65CDD4FA7A62B43B4</string>
+				<string>D99E89295F194AA4A0127BA6</string>
+				<string>7EE7ACB28A09483DB9975F3D</string>
+				<string>43B063F61A624D569CBA7EF4</string>
+				<string>CDF12E9C83914599837F579B</string>
+				<string>88BBD2F821E840DCBE045907</string>
+				<string>18540ADD597A4387B1DD596B</string>
+				<string>494FBB638A3D403386C49E15</string>
+				<string>3C54D0DE2C724B3ABC218157</string>
+				<string>5E7DB8C2E6CD4A7484A77469</string>
+				<string>D2BA988EE8274C0688FEDF36</string>
+				<string>B39A915FE2F64538BF783690</string>
+				<string>437FB45A6C554C7ABF84E406</string>
+				<string>6FED0FF59B8D45B3BF307D8C</string>
+				<string>3F22CCBDD5174B56870A1D3F</string>
+				<string>CB35D85805CB4794BC92AB5A</string>
+				<string>EF1F9454B4464C40BF9D663D</string>
+				<string>BE9A6F02F59F45A4BA7E06F0</string>
+				<string>3E071EA2A1B34E3CBEFDFED6</string>
+				<string>8E0E5707A07C419592EDA302</string>
+				<string>EDA4FAD2463040ADA72D3788</string>
+				<string>31CC14AF56EE4263AEB9547D</string>
+				<string>3A621538898E4DE7B4E19C52</string>
+				<string>AFE2F597A5A64019B509778D</string>
+				<string>084CDB95742B484DABBEB1FB</string>
+				<string>CA479E8BB1884C618C6B1F07</string>
+				<string>1CF0963FD3184096A82D29CA</string>
+				<string>F0056AE62FD44456B179068B</string>
+				<string>1D3D3E6C5AB643E1A77B41FF</string>
+				<string>800D2202212A4A3181C2FF39</string>
+				<string>B1D9A29D36A84E8C8BF82D68</string>
+				<string>E470ADB37FF24478A4C7F01A</string>
+				<string>7FA8D1E56F204F06AB794A65</string>
+				<string>791C2E82311D47819C5578A5</string>
+				<string>7E4266EDBB3C4F6C9C6F1744</string>
+				<string>C9B1BEEACA85427CB40DF481</string>
+				<string>DE24D24E5AF6404BB9379B45</string>
+				<string>65787C83C5AB4025A0126290</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AA95755BF7AE4F73AC066AE8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>ABF1ED067164488396276760</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>AFE2F597A5A64019B509778D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>16DDBC47E4AF4CA59B2FEFD8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>B1D9A29D36A84E8C8BF82D68</key>
+		<dict>
+			<key>fileRef</key>
+			<string>71E1E3D66CF843D8815554B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>B39A915FE2F64538BF783690</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED56124CA1754356815BF6B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>B45D2F6A52994965ACDCCA9C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E08CD45B83542938EA5BE9D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>B540B09FCA2C4B7E9E87F29B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7751A4AC62D946E1843E9B1B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>B792B346D27643F483326960</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIScrollView+SVInfiniteScrolling.h</string>
+			<key>path</key>
+			<string>SVPullToRefresh/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>B8716AD848E84B0CAC0E1527</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>90752B69C1574D199956B342</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AA6700807F1D46BB94C1188A</string>
+				<string>C1397419963D430E957817BF</string>
+				<string>D762CD7C04AE49BEB7CD1C32</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>productName</key>
+			<string>Pods</string>
+			<key>productReference</key>
+			<string>A05A94D3841C440187AF86AC</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>BBCD0034DA354413904C9B94</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFHTTPClient.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFHTTPClient.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>BE4A41E892EC4752B149960A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBASinglePickListInputProvider.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/input/controllers/IBASinglePickListInputProvider.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>BE9A6F02F59F45A4BA7E06F0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>72EF0B6BD3C54CCF96A88E3A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>BEE808C0D04B47E899F12314</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C0F68468A5264028B4C6023F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBADateInputProvider.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBADateInputProvider.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C1397419963D430E957817BF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35E08B21574F402C923A60FB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C1CC84467D344D2095171275</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIScrollView+SVPullToRefresh.m</string>
+			<key>path</key>
+			<string>SVPullToRefresh/SVPullToRefresh/UIScrollView+SVPullToRefresh.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C3F3B149EC0D48F197BA561C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFNetworkActivityIndicatorManager.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C705E03539B24F648B96E600</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBATextFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBATextFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C88A806AC1FA4E9284D82104</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods-prefix.pch</string>
+			<key>path</key>
+			<string>Pods-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C90168F245274FAEAB821F33</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0099AA1CCC7C4CFE9FBEDF34</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>C9B1BEEACA85427CB40DF481</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E38EFA3C63E44619BA1CAAC1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>CA479E8BB1884C618C6B1F07</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB6E44708FFB4519BBE1DD1D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>CB35D85805CB4794BC92AB5A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>96552040F2CF4FE38D0BEB96</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>CB6E44708FFB4519BBE1DD1D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBADateFormFieldCell.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/views/IBADateFormFieldCell.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>CB81A54795B24D80ACDCDD5B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0687D694018C48ABBB8E9737</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>CDF12E9C83914599837F579B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3F3B149EC0D48F197BA561C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>CE9CB019138E414E879A2BE5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFImageRequestOperation.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFImageRequestOperation.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>CF2397ECCE08415E8222CE26</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AA95755BF7AE4F73AC066AE8</string>
+				<string>ABF1ED067164488396276760</string>
+				<string>D117D2D00FA8432CAB45482D</string>
+				<string>609066A3A54E4CA4AACA4CA7</string>
+				<string>11E72B54003645C298B13E5B</string>
+				<string>9C02E41B31604707AF0077B5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D0EF76B6C0D2407AA9DF73E6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIImageView+AFNetworking.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/UIImageView+AFNetworking.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>D117D2D00FA8432CAB45482D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MobileCoreServices.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>D288481EDA1B46D79A55E815</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8E78D1226EE64B9FBD9F0AE2</string>
+				<string>B792B346D27643F483326960</string>
+				<string>E38EFA3C63E44619BA1CAAC1</string>
+				<string>3E08CD45B83542938EA5BE9D</string>
+				<string>C1CC84467D344D2095171275</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SVPullToRefresh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2BA988EE8274C0688FEDF36</key>
+		<dict>
+			<key>fileRef</key>
+			<string>41BC2E9BB3A34762827759D4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>D762CD7C04AE49BEB7CD1C32</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93AA445FC4D6477DB1623B37</string>
+				<string>011BF50FC3DE4ACC80FC43AC</string>
+				<string>8D00E11AFBDB49A9A142967E</string>
+				<string>0886B422B16641E18619E6CF</string>
+				<string>DCBFCC1951924ACA924D7E2A</string>
+				<string>D939464D4F1346FF9623AC05</string>
+				<string>0959E5CBC990469AB9A5E529</string>
+				<string>A1E961A52797493598DD9DA4</string>
+				<string>30EB7C7C8488447085202B43</string>
+				<string>F20B9362F80A438D9E2AC271</string>
+				<string>75E7A1C587CA4E7286842BB6</string>
+				<string>FEA17D1C01CE474FAA4D7CF3</string>
+				<string>FF30AD30DE7B4CBF93898FFF</string>
+				<string>5764F1D7CA744126AB1C13D9</string>
+				<string>483986CEC6A54AEFABF4572E</string>
+				<string>E43CFB849DED4B64A91DFF5C</string>
+				<string>A14D1CD40B1541CA8273EC79</string>
+				<string>798C9E0B1E904104849CCA22</string>
+				<string>A65904A734CD40C386D3AF42</string>
+				<string>EBA239288E8141AE8D50CCA5</string>
+				<string>74014B4E736B4CDC80FCB3BC</string>
+				<string>F4A8701DE59149DEAD4FDDA4</string>
+				<string>C90168F245274FAEAB821F33</string>
+				<string>7734E96B4D474BFABD8567B1</string>
+				<string>2624271DF1584B29B0285836</string>
+				<string>1FBC946C7B184F7CA5C6FEA8</string>
+				<string>1877AF4C6E8F4A0B990D9B0E</string>
+				<string>552A96D006764D8E91740C00</string>
+				<string>2FBFA619614C4A23800505ED</string>
+				<string>CB81A54795B24D80ACDCDD5B</string>
+				<string>74180E19DEE247FD841119C5</string>
+				<string>DFC926DECDA44BFA894CD464</string>
+				<string>7B02DD9B2DD54B7F8F3FED6E</string>
+				<string>543E4A302CF2488DB3D7922A</string>
+				<string>4485B885C78241859C660018</string>
+				<string>1249CC33FAA14A89B9C793C0</string>
+				<string>A5C0076EF6D5476CB8354FDB</string>
+				<string>1C9148A76F814CADA225060E</string>
+				<string>DBC6C8BC6CB6434DB76018A7</string>
+				<string>433B260CC06B401EAC99275A</string>
+				<string>12B34233DBC841B786C8A0BA</string>
+				<string>DA6DADDC3E77498B92754EF6</string>
+				<string>974F00DFC2C3424BB00E6E43</string>
+				<string>B540B09FCA2C4B7E9E87F29B</string>
+				<string>9BC172F315C44B4394FAFCBF</string>
+				<string>784D8DBFCD914FE3BC30E5E7</string>
+				<string>18BFA8CFBB3C427F9F99FA7C</string>
+				<string>B45D2F6A52994965ACDCCA9C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D829E731707746F2996BA2B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBALabelFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBALabelFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>D939464D4F1346FF9623AC05</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D94379C271BF416CA507DD4A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>D94379C271BF416CA507DD4A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFNetworking.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFNetworking.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>D99E89295F194AA4A0127BA6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC8A24DBB4444310892263A4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>D9C1AE732FA04D86B64D86EC</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>89F951CC2E2841BB8B3EA76A</string>
+				<string>0A246851A71047EAA155739B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D9E51308C2E547C8B39FA556</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BEE808C0D04B47E899F12314</string>
+				<string>0E30681F122E4A8A8D6E8A7C</string>
+				<string>C88A806AC1FA4E9284D82104</string>
+				<string>15C7675886984E61B1FC83FE</string>
+				<string>8308AA6F8DED409CBE5FCA67</string>
+				<string>9489ABB568594C55813AC643</string>
+				<string>79540D99EFDC4E87B5C4C1B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA6DADDC3E77498B92754EF6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A723626180B84506A3CBBC54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>DA9ED490A98E4D0BAD694601</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAFormFieldCell.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAFormFieldCell.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>DBC6C8BC6CB6434DB76018A7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35947FACE48F4096B9C1FB34</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>DCBFCC1951924ACA924D7E2A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>24A1E22E8B0B4C73B58BEC50</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>DD9BE170F63946FF9678B3A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBABooleanSwitchCell.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/views/IBABooleanSwitchCell.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>DE24D24E5AF6404BB9379B45</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C1CC84467D344D2095171275</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>DFC926DECDA44BFA894CD464</key>
+		<dict>
+			<key>fileRef</key>
+			<string>67E6F040DC7F419EBC8EB05F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>E38EFA3C63E44619BA1CAAC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIScrollView+SVInfiniteScrolling.m</string>
+			<key>path</key>
+			<string>SVPullToRefresh/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>E43CFB849DED4B64A91DFF5C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF3EFC5D82254B0E9FB091FE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>E46700269240485F87C11C0B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFPropertyListRequestOperation.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFPropertyListRequestOperation.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>E470ADB37FF24478A4C7F01A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2592D2DD6B2C40529162AEFE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>E531B0650E4C43EC9A5A0CBB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BBCD0034DA354413904C9B94</string>
+				<string>113A7E92466B45BB8A694985</string>
+				<string>12FE4324452F42EF8EB8C4C6</string>
+				<string>EC8A24DBB4444310892263A4</string>
+				<string>CE9CB019138E414E879A2BE5</string>
+				<string>F9C3BBD9C57A48F6840B737F</string>
+				<string>7C704062C2754287800AE140</string>
+				<string>4222CCC3A0804D7EBA637EDF</string>
+				<string>24A1E22E8B0B4C73B58BEC50</string>
+				<string>C3F3B149EC0D48F197BA561C</string>
+				<string>D94379C271BF416CA507DD4A</string>
+				<string>E46700269240485F87C11C0B</string>
+				<string>5CE5D31E583349A1AA89BC86</string>
+				<string>8E1D2A2BF2AB4114B396CB1A</string>
+				<string>75A7FEC60F984A69A19EF8BB</string>
+				<string>1F3959589CEB4A34BFBBE2B6</string>
+				<string>FCA74B4EE8E04DD3AD1D8442</string>
+				<string>D0EF76B6C0D2407AA9DF73E6</string>
+				<string>0F22986D7C704579886E22B6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AFNetworking</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E94977CDB51E42B495A47C90</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBABooleanSwitchCell.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBABooleanSwitchCell.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>E9CCFE6D859B459ABCA04F5A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>BEE808C0D04B47E899F12314</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PODS_HEADERS_SEARCH_PATHS</key>
+				<string>${PODS_BUILD_HEADERS_SEARCH_PATHS}</string>
+				<key>PODS_ROOT</key>
+				<string>${SRCROOT}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>EBA239288E8141AE8D50CCA5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3AE4AC8635594360B64DDF3E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>EC8A24DBB4444310892263A4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFHTTPRequestOperation.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFHTTPRequestOperation.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>ED56124CA1754356815BF6B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>IBAButtonFormField.m</string>
+			<key>path</key>
+			<string>IBAForms/library/src/forms/controllers/IBAButtonFormField.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>ED60164435D44F34AAC04D26</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAButtonFormField.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAButtonFormField.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>EDA4FAD2463040ADA72D3788</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F4AFAB4F9CD42D6B57458DC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>EF1F9454B4464C40BF9D663D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3A9239BFABEB47D39D6A0717</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>F0056AE62FD44456B179068B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A511281F84A04F0F9A0F2E15</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>F20B9362F80A438D9E2AC271</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D0EF76B6C0D2407AA9DF73E6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>F4A8701DE59149DEAD4FDDA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>018F28EB6BCA4F9E9CA8ABFD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>F9C3BBD9C57A48F6840B737F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFImageRequestOperation.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFImageRequestOperation.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FA355423D1844838B0D689F7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBAInputManager.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBAInputManager.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FB9EA61CA8EC4328B061E487</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBATextFormFieldCell.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBATextFormFieldCell.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FCA74B4EE8E04DD3AD1D8442</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFXMLRequestOperation.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking/AFXMLRequestOperation.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FEA17D1C01CE474FAA4D7CF3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E94977CDB51E42B495A47C90</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>FEDDDC6F512C41829530F653</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E531B0650E4C43EC9A5A0CBB</string>
+				<string>02046754203B4BB8BFB93486</string>
+				<string>D288481EDA1B46D79A55E815</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF30AD30DE7B4CBF93898FFF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED60164435D44F34AAC04D26</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>FF3EFC5D82254B0E9FB091FE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IBADateFormFieldCell.h</string>
+			<key>path</key>
+			<string>IBAForms/library/headers/IBAForms/IBADateFormFieldCell.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>1C968BBD233B4F3FB674E54F</string>
+</dict>
+</plist>

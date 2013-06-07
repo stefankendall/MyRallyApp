@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="D7W-BL-k3e">
-                            <rect key="frame" x="0.0" y="110" width="320" height="63"/>
+                            <rect key="frame" x="0.0" y="110" width="320" height="151"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYj-gE-XoG">
@@ -47,14 +47,30 @@
                                         <segue destination="o1S-Ea-BuF" kind="push" identifier="loginSegue" id="dA0-K9-nz1"/>
                                     </connections>
                                 </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TM-jT-dl9">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="DEBUG">
+                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="o1S-Ea-BuF" kind="push" id="8gh-5v-7Gv"/>
+                                    </connections>
+                                </button>
                                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Iu9-nE-ueV"/>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="Iu9-nE-ueV" firstAttribute="centerX" secondItem="HYj-gE-XoG" secondAttribute="centerX" type="default" id="4dg-3N-ETg"/>
                                 <constraint firstItem="HYj-gE-XoG" firstAttribute="top" secondItem="D7W-BL-k3e" secondAttribute="top" type="default" id="E7c-f7-w9v"/>
+                                <constraint firstItem="3TM-jT-dl9" firstAttribute="leading" secondItem="HYj-gE-XoG" secondAttribute="leading" type="default" id="GRh-Br-l1y"/>
                                 <constraint firstItem="HYj-gE-XoG" firstAttribute="centerX" secondItem="D7W-BL-k3e" secondAttribute="centerX" type="default" id="NvT-HP-jhF"/>
+                                <constraint firstItem="3TM-jT-dl9" firstAttribute="centerY" secondItem="D7W-BL-k3e" secondAttribute="centerY" type="default" id="TtU-gB-zuJ"/>
                                 <constraint firstItem="Iu9-nE-ueV" firstAttribute="centerY" secondItem="HYj-gE-XoG" secondAttribute="centerY" type="default" id="YnR-BI-iQW"/>
+                                <constraint firstItem="3TM-jT-dl9" firstAttribute="trailing" secondItem="HYj-gE-XoG" secondAttribute="trailing" type="default" id="ZQG-m7-rfo"/>
                             </constraints>
                         </view>
                         <sections>
@@ -138,6 +154,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="My Rally" id="Udy-g9-5rb"/>
                     <connections>
+                        <outlet property="debugButton" destination="3TM-jT-dl9" id="Btq-SB-Xlc"/>
                         <outlet property="emailCell" destination="fXB-Mi-rcq" id="Is4-yx-2R2"/>
                         <outlet property="emailField" destination="E5L-6p-KGs" id="kbd-9j-nFy"/>
                         <outlet property="loadingIndicator" destination="Iu9-nE-ueV" id="BJL-zg-am8"/>
@@ -194,6 +211,7 @@
         <class className="RALoginController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RALoginController.h"/>
             <relationships>
+                <relationship kind="outlet" name="debugButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="emailCell" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="loadingIndicator" candidateClass="UIActivityIndicatorView"/>
@@ -215,4 +233,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="dA0-K9-nz1"/>
+    </inferredMetricsTieBreakers>
 </document>

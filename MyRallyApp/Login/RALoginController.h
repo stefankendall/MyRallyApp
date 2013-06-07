@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 @property(nonatomic, strong) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIButton *debugButton;
 
 - (void)authorizeFailure;
 

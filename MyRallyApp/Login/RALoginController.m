@@ -32,6 +32,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+#if (TARGET_IPHONE_SIMULATOR)
+    [self.debugButton setHidden:NO];
+#endif
+
     EZFormTextField *emailFormField = [self.loginForm formFieldForKey:@"email"];
     [emailFormField useTextField:self.emailField];
 
@@ -92,6 +96,10 @@
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if( sender == self.debugButton ){
+        return YES;
+    }
+
     return authorized;
 }
 

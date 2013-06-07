@@ -1,4 +1,5 @@
 #import "RALoginController.h"
+#import "RallyClient.h"
 
 #define kFieldLabelTag 101
 
@@ -11,6 +12,7 @@
 
 - (void)awakeFromNib {
     [self initializeForm];
+    authorized = NO;
 }
 
 - (void)initializeForm {
@@ -65,6 +67,45 @@
 
 - (void)attemptLogin {
     [self.view endEditing:YES];
+    [self showHideFields:YES];
+
+    NSString *email = [self.emailField text];
+    NSString *password = [self.passwordField text];
+    [[RallyClient instance] setUsername:email andPassword:password];
+    [[RallyClient instance] authorize:^{
+        [self showHideFields:NO];
+        [self authorizeSuccess];
+    } failure:^{
+        [self showHideFields:NO];
+        [self authorizeFailure];
+    }];
+}
+
+- (void)authorizeFailure {
+    authorized = NO;
+    [self.passwordField setText:@""];
+}
+
+- (void)authorizeSuccess {
+    authorized = YES;
+    [self performSegueWithIdentifier:@"loginSegue" sender:self];
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    return authorized;
+}
+
+- (void)showHideFields: (BOOL) isLoading {
+    if( isLoading ){
+        [self.loadingIndicator startAnimating];
+    }
+    else {
+        [self.loadingIndicator stopAnimating];
+    }
+
+    [self.loginButton setHidden:isLoading];
+    [self.emailField setEnabled:!isLoading];
+    [self.passwordField setEnabled:!isLoading];
 }
 
 - (void)updateValidityIndicatorForField:(EZFormField *)formField {

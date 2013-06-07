@@ -22,6 +22,7 @@
 		54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */; };
 		545905963F036EABA94CA5BE /* RallyClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901EE5792260CD7911C21 /* RallyClientTests.m */; };
 		545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
+		5459070E7A7A0836376F3A30 /* RALoginControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907F3B75E09EDCFC172FC /* RALoginControllerTests.m */; };
 		545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */; };
 		54590807A33783883F9D0F79 /* StoryDivider.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D8C123753B1C89E0656 /* StoryDivider.m */; };
 		545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5459070A5C1538565543FFB0 /* InfoPlist.strings */; };
@@ -75,11 +76,13 @@
 		545906C19DECACCC57A04A50 /* StoryCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCellTests.m; sourceTree = "<group>"; };
 		545906C8CAC7177E64851A11 /* CTCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCustomTableViewCell.h; sourceTree = "<group>"; };
 		545907764D6CA1B6931325E3 /* StoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataSource.h; sourceTree = "<group>"; };
+		545907F3B75E09EDCFC172FC /* RALoginControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginControllerTests.m; sourceTree = "<group>"; };
 		5459098EC937FED54B70912A /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
 		545909AA9379487D3676A4FF /* MyRallyAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRallyAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
 		54590AB6418F3A1416A5462C /* RallyClientTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RallyClientTests.h; sourceTree = "<group>"; };
 		54590AF58632644CB8B54476 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		54590B4F34E4AF3EB405CB17 /* RALoginControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginControllerTests.h; sourceTree = "<group>"; };
 		54590BBFA0EAB4FAEC802058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54590BE03D81C4F8EB8305AD /* CTCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCustomTableViewCell.m; sourceTree = "<group>"; };
 		54590BFB50AD21312F2899BB /* StoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCell.m; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				54590147248C6AAE95C28F25 /* Supporting Files */,
 				545902D9BA4E17F379C913E0 /* Rally */,
 				545906747B03BD2C9684C3A5 /* StoryTable */,
+				545907F3B75E09EDCFC172FC /* RALoginControllerTests.m */,
+				54590B4F34E4AF3EB405CB17 /* RALoginControllerTests.h */,
 			);
 			path = MyRallyAppTests;
 			sourceTree = "<group>";
@@ -440,6 +445,7 @@
 				54590A316F9A9D921D8B6815 /* StoryDataSourceTests.m in Sources */,
 				545902249B0D9EED72C8F440 /* StoryCellTests.m in Sources */,
 				545900BB8C25A6F6C02DC7EE /* StoryDividerTests.m in Sources */,
+				5459070E7A7A0836376F3A30 /* RALoginControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="zt3-J5-Emd">
             <objects>
-                <navigationController definesPresentationContext="YES" id="1QT-Rc-IZ3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainNav" definesPresentationContext="YES" id="1QT-Rc-IZ3" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Xh-ck-Apq">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -22,7 +22,7 @@
         <!--Login Controller - My Rally-->
         <scene sceneID="8GT-qU-fDV">
             <objects>
-                <tableViewController id="RD1-TP-7qk" customClass="RALoginController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="login" id="RD1-TP-7qk" customClass="RALoginController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="PUs-dU-Ck9">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,12 +43,18 @@
                                     <state key="highlighted">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="o1S-Ea-BuF" kind="push" identifier="loginSegue" id="dA0-K9-nz1"/>
+                                    </connections>
                                 </button>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Iu9-nE-ueV"/>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstItem="Iu9-nE-ueV" firstAttribute="centerX" secondItem="HYj-gE-XoG" secondAttribute="centerX" type="default" id="4dg-3N-ETg"/>
                                 <constraint firstItem="HYj-gE-XoG" firstAttribute="top" secondItem="D7W-BL-k3e" secondAttribute="top" type="default" id="E7c-f7-w9v"/>
                                 <constraint firstItem="HYj-gE-XoG" firstAttribute="centerX" secondItem="D7W-BL-k3e" secondAttribute="centerX" type="default" id="NvT-HP-jhF"/>
+                                <constraint firstItem="Iu9-nE-ueV" firstAttribute="centerY" secondItem="HYj-gE-XoG" secondAttribute="centerY" type="default" id="YnR-BI-iQW"/>
                             </constraints>
                         </view>
                         <sections>
@@ -134,6 +140,7 @@
                     <connections>
                         <outlet property="emailCell" destination="fXB-Mi-rcq" id="Is4-yx-2R2"/>
                         <outlet property="emailField" destination="E5L-6p-KGs" id="kbd-9j-nFy"/>
+                        <outlet property="loadingIndicator" destination="Iu9-nE-ueV" id="BJL-zg-am8"/>
                         <outlet property="loginButton" destination="HYj-gE-XoG" id="fZL-hO-N8P"/>
                         <outlet property="passwordCell" destination="wbY-Ng-7FF" id="1GY-9W-U1K"/>
                         <outlet property="passwordField" destination="QhR-Xn-9k3" id="DXj-k4-XeJ"/>
@@ -151,7 +158,7 @@
             <objects>
                 <viewController storyboardIdentifier="myStories" id="o1S-Ea-BuF" customClass="StoriesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5A5-IC-Z2Y">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6Wn-sh-5zt">
@@ -189,6 +196,7 @@
             <relationships>
                 <relationship kind="outlet" name="emailCell" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="loadingIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="passwordCell" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>

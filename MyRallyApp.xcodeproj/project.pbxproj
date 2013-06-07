@@ -21,12 +21,12 @@
 		545905203FC6E07D21036752 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */; };
 		54590570EC6682E6B04A155B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */; };
 		545905963F036EABA94CA5BE /* RallyClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901EE5792260CD7911C21 /* RallyClientTests.m */; };
-		545905CE41C29BC58CF97E5D /* RALoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459012DFA1CC5DD3898D0C3 /* RALoginController.m */; };
 		545906D72AF3F55C566D8583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
 		545907EA4B139C5A7390A041 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */; };
 		54590807A33783883F9D0F79 /* StoryDivider.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D8C123753B1C89E0656 /* StoryDivider.m */; };
 		545908A738B5EEB1DA2A1C3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5459070A5C1538565543FFB0 /* InfoPlist.strings */; };
 		545908DEFA8ADB8955A965EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590BBFA0EAB4FAEC802058 /* Foundation.framework */; };
+		5459090D7D6797221D1D8FD7 /* RALoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590354395AFEE037C83D1D /* RALoginController.m */; };
 		54590A316F9A9D921D8B6815 /* StoryDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CEA2C5C135F462DD18B /* StoryDataSourceTests.m */; };
 		54590A52A4A01B57F2614749 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 545900B22C603F92D364A590 /* .travis.yml */; };
 		54590AD942C09298A1DE9F18 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 5459001F203F364BFB46923F /* Gemfile */; };
@@ -55,8 +55,6 @@
 		54590016F9E3E979B8086653 /* MyRallyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRallyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5459001F203F364BFB46923F /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		545900B22C603F92D364A590 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
-		545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RALoginController.h; sourceTree = "<group>"; };
-		5459012DFA1CC5DD3898D0C3 /* RALoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RALoginController.m; sourceTree = "<group>"; };
 		5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
 		54590153E68EC1845FEDCA7C /* StoryCellTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCellTests.h; sourceTree = "<group>"; };
 		545901AC6FA27D69517B100B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -64,6 +62,7 @@
 		545902A171696C380F7EC69D /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		545902B43279A59D1F37C1D6 /* StoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
 		545902C7E34AD6AEFCE55E64 /* StoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCell.h; sourceTree = "<group>"; };
+		54590354395AFEE037C83D1D /* RALoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginController.m; sourceTree = "<group>"; };
 		5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5459047929CCFB42ADC10ECD /* RAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
 		5459048B880EB8C731BC9F03 /* MyRallyApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyApp-Info.plist"; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		54590BFB50AD21312F2899BB /* StoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCell.m; sourceTree = "<group>"; };
 		54590C0C470DBF7512C40E5D /* MyRallyAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MyRallyAppTests-Info.plist"; sourceTree = "<group>"; };
 		54590CEA2C5C135F462DD18B /* StoryDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataSourceTests.m; sourceTree = "<group>"; };
+		54590D0D7BF7DBD83FBE16E3 /* RALoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginController.h; sourceTree = "<group>"; };
 		54590D8C123753B1C89E0656 /* StoryDivider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDivider.m; sourceTree = "<group>"; };
 		54590DA8D48E2433AF1E00DC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		54590E10EEDF311395C86EBA /* RallyClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RallyClient.h; sourceTree = "<group>"; };
@@ -248,13 +248,12 @@
 				5459047929CCFB42ADC10ECD /* RAAppDelegate.h */,
 				5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */,
 				545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */,
-				545900CC0D60E6C4DEAFBCB9 /* RALoginController.h */,
-				5459012DFA1CC5DD3898D0C3 /* RALoginController.m */,
 				5459098EC937FED54B70912A /* StoriesViewController.m */,
 				54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */,
 				545909CA0F7C2CB39DFA7A62 /* Rally */,
 				5459051D356FBCF103B61FAE /* Lib */,
 				5459001DCB6B47CF9DC1F620 /* StoryTable */,
+				54590E90A3409AF78BAB758A /* Login */,
 			);
 			path = MyRallyApp;
 			sourceTree = "<group>";
@@ -266,6 +265,15 @@
 				545909AA9379487D3676A4FF /* MyRallyAppTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		54590E90A3409AF78BAB758A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				54590354395AFEE037C83D1D /* RALoginController.m */,
+				54590D0D7BF7DBD83FBE16E3 /* RALoginController.h */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,13 +422,13 @@
 			files = (
 				54590D375583C5BDD1B18073 /* main.m in Sources */,
 				54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */,
-				545905CE41C29BC58CF97E5D /* RALoginController.m in Sources */,
 				54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */,
 				54590D0602B4F43B4470C443 /* RallyClient.m in Sources */,
 				54590D9E2CC17BAD9C6A2537 /* CTCustomTableViewCell.m in Sources */,
 				545901552ACC8C59EEF8EC09 /* StoryCell.m in Sources */,
 				54590ADDDE95C6EF18700C44 /* StoryDataSource.m in Sources */,
 				54590807A33783883F9D0F79 /* StoryDivider.m in Sources */,
+				5459090D7D6797221D1D8FD7 /* RALoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

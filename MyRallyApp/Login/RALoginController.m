@@ -114,22 +114,12 @@
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if (sender == self.debugButton) {
+        [[RallyClient instance] setUsername:@"skendall@rallydev.com" andPassword:@"Password"];
         return YES;
     }
 
     return authorized;
 }
-
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if( sender == self.debugButton ){
-        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-        [prefs setObject:@"skendall@rallydev.com" forKey:@"email"];
-        [prefs setObject:@"Password" forKey:@"password"];
-    }
-
-    [super performSegueWithIdentifier:identifier sender:sender];
-}
-
 
 - (void)showHideFields:(BOOL)isLoading {
     if (isLoading) {

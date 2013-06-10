@@ -37,8 +37,13 @@
 		54590D9E2CC17BAD9C6A2537 /* CTCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590BE03D81C4F8EB8305AD /* CTCustomTableViewCell.m */; };
 		54590F0FF6B010B84C685BCB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9798347B62499F9D67 /* Default.png */; };
 		54590F42BD971D27C49DA8B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
-		54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459098EC937FED54B70912A /* StoriesViewController.m */; };
+		D03D021294220E6040FB1F69 /* StoriesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D080937F28342C3FCAC9B /* StoriesViewControllerTests.m */; };
+		D03D038491B199CDCF0161BA /* StoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D046DB31A8543825D324D /* StoryStore.m */; };
+		D03D0809E6D0E681EE933963 /* StoryDetailViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0CF9577C97871357FC1A /* StoryDetailViewControllerTests.m */; };
 		D03D09BEFFAA480D5286F278 /* RALoginControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0F5C853F2ED1FE009FC0 /* RALoginControllerTests.m */; };
+		D03D0C15068CA820574A481D /* StoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0A39395CCF39373B5E52 /* StoryDetailViewController.m */; };
+		D03D0D54F3F7232BB5EC2A98 /* StoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0C3F49AB1E1045F37ABD /* StoriesViewController.m */; };
+		D03D0EB74094C1E09413D883 /* StoryStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0FC0A8B3CA00C3A9143E /* StoryStoreTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +81,7 @@
 		545906C19DECACCC57A04A50 /* StoryCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCellTests.m; sourceTree = "<group>"; };
 		545906C8CAC7177E64851A11 /* CTCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCustomTableViewCell.h; sourceTree = "<group>"; };
 		545907764D6CA1B6931325E3 /* StoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataSource.h; sourceTree = "<group>"; };
-		5459098EC937FED54B70912A /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
 		545909AA9379487D3676A4FF /* MyRallyAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRallyAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
 		54590AB6418F3A1416A5462C /* RallyClientTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RallyClientTests.h; sourceTree = "<group>"; };
 		54590AF58632644CB8B54476 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		54590BBFA0EAB4FAEC802058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,8 +102,20 @@
 		54590F8E9464851CEAC9F593 /* StoryDividerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDividerTests.h; sourceTree = "<group>"; };
 		54590F9798347B62499F9D67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A4A742FE260F4A77B297B6F4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D03D01C0D3B7668F6BFCBE6F /* StoryStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryStoreTests.h; sourceTree = "<group>"; };
+		D03D045A5039416BEC8C9E93 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
+		D03D046DB31A8543825D324D /* StoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryStore.m; sourceTree = "<group>"; };
+		D03D06E361AF7C59D4DFE397 /* StoriesViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewControllerTests.h; sourceTree = "<group>"; };
 		D03D06E531EE9FD6149B2E1B /* RALoginControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginControllerTests.h; sourceTree = "<group>"; };
+		D03D07B3354D4D1D158EA35A /* StoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDetailViewController.h; sourceTree = "<group>"; };
+		D03D080937F28342C3FCAC9B /* StoriesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewControllerTests.m; sourceTree = "<group>"; };
+		D03D0A39395CCF39373B5E52 /* StoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDetailViewController.m; sourceTree = "<group>"; };
+		D03D0C3F49AB1E1045F37ABD /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
+		D03D0CF9577C97871357FC1A /* StoryDetailViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDetailViewControllerTests.m; sourceTree = "<group>"; };
+		D03D0E4F0331F13669AF1063 /* StoryDetailViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDetailViewControllerTests.h; sourceTree = "<group>"; };
 		D03D0F5C853F2ED1FE009FC0 /* RALoginControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginControllerTests.m; sourceTree = "<group>"; };
+		D03D0FC0A8B3CA00C3A9143E /* StoryStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryStoreTests.m; sourceTree = "<group>"; };
+		D03D0FC7C11B761CF78F204C /* StoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryStore.h; sourceTree = "<group>"; };
 		DC9E32D4976144D9A69143C6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +154,9 @@
 				545902B43279A59D1F37C1D6 /* StoryCell.xib */,
 				54590D8C123753B1C89E0656 /* StoryDivider.m */,
 				54590561D1DE5C1D0379829C /* StoryDivider.h */,
+				D03D04C994DAB1ACD5D622B3 /* Detail */,
+				D03D045A5039416BEC8C9E93 /* StoriesViewController.h */,
+				D03D0C3F49AB1E1045F37ABD /* StoriesViewController.m */,
 			);
 			path = StoryTable;
 			sourceTree = "<group>";
@@ -169,6 +187,8 @@
 			children = (
 				545901EE5792260CD7911C21 /* RallyClientTests.m */,
 				54590AB6418F3A1416A5462C /* RallyClientTests.h */,
+				D03D0FC0A8B3CA00C3A9143E /* StoryStoreTests.m */,
+				D03D01C0D3B7668F6BFCBE6F /* StoryStoreTests.h */,
 			);
 			path = Rally;
 			sourceTree = "<group>";
@@ -191,6 +211,9 @@
 				54590153E68EC1845FEDCA7C /* StoryCellTests.h */,
 				54590EB6DD2C862A7F173308 /* StoryDividerTests.m */,
 				54590F8E9464851CEAC9F593 /* StoryDividerTests.h */,
+				D03D085B11F5F12544892E15 /* Detail */,
+				D03D080937F28342C3FCAC9B /* StoriesViewControllerTests.m */,
+				D03D06E361AF7C59D4DFE397 /* StoriesViewControllerTests.h */,
 			);
 			path = StoryTable;
 			sourceTree = "<group>";
@@ -241,6 +264,8 @@
 			children = (
 				545904BD690706011CFD8DFC /* RallyClient.m */,
 				54590E10EEDF311395C86EBA /* RallyClient.h */,
+				D03D046DB31A8543825D324D /* StoryStore.m */,
+				D03D0FC7C11B761CF78F204C /* StoryStore.h */,
 			);
 			path = Rally;
 			sourceTree = "<group>";
@@ -252,8 +277,6 @@
 				5459047929CCFB42ADC10ECD /* RAAppDelegate.h */,
 				5459013BCFB66C92D96A37A5 /* RAAppDelegate.m */,
 				545903C2AFA25705F1713DA6 /* MainStoryboard.storyboard */,
-				5459098EC937FED54B70912A /* StoriesViewController.m */,
-				54590A8AC6B4F4C1E631B927 /* StoriesViewController.h */,
 				545909CA0F7C2CB39DFA7A62 /* Rally */,
 				5459051D356FBCF103B61FAE /* Lib */,
 				5459001DCB6B47CF9DC1F620 /* StoryTable */,
@@ -278,6 +301,24 @@
 				54590D0D7BF7DBD83FBE16E3 /* RALoginController.h */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		D03D04C994DAB1ACD5D622B3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D03D0A39395CCF39373B5E52 /* StoryDetailViewController.m */,
+				D03D07B3354D4D1D158EA35A /* StoryDetailViewController.h */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D03D085B11F5F12544892E15 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D03D0CF9577C97871357FC1A /* StoryDetailViewControllerTests.m */,
+				D03D0E4F0331F13669AF1063 /* StoryDetailViewControllerTests.h */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		D03D0E7070A7605073702245 /* Login */ = {
@@ -435,13 +476,15 @@
 			files = (
 				54590D375583C5BDD1B18073 /* main.m in Sources */,
 				54590B76632215B80F09DDF4 /* RAAppDelegate.m in Sources */,
-				54590F43D007FBD3B54EA2C1 /* StoriesViewController.m in Sources */,
 				54590D0602B4F43B4470C443 /* RallyClient.m in Sources */,
 				54590D9E2CC17BAD9C6A2537 /* CTCustomTableViewCell.m in Sources */,
 				545901552ACC8C59EEF8EC09 /* StoryCell.m in Sources */,
 				54590ADDDE95C6EF18700C44 /* StoryDataSource.m in Sources */,
 				54590807A33783883F9D0F79 /* StoryDivider.m in Sources */,
 				5459090D7D6797221D1D8FD7 /* RALoginController.m in Sources */,
+				D03D0C15068CA820574A481D /* StoryDetailViewController.m in Sources */,
+				D03D0D54F3F7232BB5EC2A98 /* StoriesViewController.m in Sources */,
+				D03D038491B199CDCF0161BA /* StoryStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +497,9 @@
 				545902249B0D9EED72C8F440 /* StoryCellTests.m in Sources */,
 				545900BB8C25A6F6C02DC7EE /* StoryDividerTests.m in Sources */,
 				D03D09BEFFAA480D5286F278 /* RALoginControllerTests.m in Sources */,
+				D03D0809E6D0E681EE933963 /* StoryDetailViewControllerTests.m in Sources */,
+				D03D021294220E6040FB1F69 /* StoriesViewControllerTests.m in Sources */,
+				D03D0EB74094C1E09413D883 /* StoryStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

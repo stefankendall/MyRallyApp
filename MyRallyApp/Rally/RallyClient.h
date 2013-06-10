@@ -19,4 +19,6 @@ extern NSString *const TEST_PASSWORD;
 
 - (void)getActiveStoriesForUser: (NSString*) username success:(void (^)(NSArray *))success failure:(void (^)())failure;
 
+@property(nonatomic, strong) NSString *username;
+
 @end

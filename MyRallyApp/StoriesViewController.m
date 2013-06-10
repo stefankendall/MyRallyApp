@@ -28,7 +28,6 @@
 
 - (void)authorizeAndRetrieveStories {
     RallyClient *client = [RallyClient instance];
-    [client setUsername:@"skendall@rallydev.com" andPassword:@"Password"];
     [client authorize:^{
         [self retrieveStories];
     }         failure:^{
@@ -38,7 +37,7 @@
 
 - (void)retrieveStories {
     RallyClient *client = [RallyClient instance];
-    [client getActiveStoriesForUser:@"skendall@rallydev.com" success:^(NSArray *stories) {
+    [client getActiveStoriesForUser:client.username success:^(NSArray *stories) {
         [self populateWithStories:stories];
     }                       failure:^{
         [NSException raise:@"Could not get stories. Handle this." format:@""];

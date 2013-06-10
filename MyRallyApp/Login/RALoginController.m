@@ -50,6 +50,19 @@
     self.formCells = @{@"email" : self.emailCell, @"password" : self.passwordCell};
     [self updateLoginOnValidity];
     [self.loginButton addTarget:self action:@selector(attemptLogin) forControlEvents:UIControlEventTouchUpInside];
+
+    [self loginIfCredentialsPresent];
+}
+
+- (void)loginIfCredentialsPresent {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *email = [prefs objectForKey:@"email"];
+    NSString *password = [prefs objectForKey:@"password"];
+
+    if (email && password) {
+        [[RallyClient instance] setUsername:email andPassword:password];
+        [self performSegueWithIdentifier:@"loginSegue" sender:self];
+    }
 }
 
 - (void)updateLoginOnValidity {
@@ -79,7 +92,7 @@
     [[RallyClient instance] authorize:^{
         [self showHideFields:NO];
         [self authorizeSuccess];
-    } failure:^{
+    }                         failure:^{
         [self showHideFields:NO];
         [self authorizeFailure];
     }];
@@ -92,19 +105,34 @@
 
 - (void)authorizeSuccess {
     authorized = YES;
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setObject:[self.emailField text] forKey:@"email"];
+    [prefs setObject:[self.passwordField text] forKey:@"password"];
+
     [self performSegueWithIdentifier:@"loginSegue" sender:self];
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if( sender == self.debugButton ){
+    if (sender == self.debugButton) {
         return YES;
     }
 
     return authorized;
 }
 
-- (void)showHideFields: (BOOL) isLoading {
-    if( isLoading ){
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if( sender == self.debugButton ){
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        [prefs setObject:@"skendall@rallydev.com" forKey:@"email"];
+        [prefs setObject:@"Password" forKey:@"password"];
+    }
+
+    [super performSegueWithIdentifier:identifier sender:sender];
+}
+
+
+- (void)showHideFields:(BOOL)isLoading {
+    if (isLoading) {
         [self.loadingIndicator startAnimating];
     }
     else {

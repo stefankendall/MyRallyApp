@@ -3,11 +3,27 @@
 
 @implementation RALoginControllerTests
 
+- (void) setUp {
+    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+}
+
 - (void)testAuthorizeSuccessSeguesToNextScreen {
     RALoginController *controller = [self getController];
 
     [controller authorizeSuccess];
     STAssertEquals([controller.navigationController.viewControllers count], 2U, @"");
+}
+
+- (void)testAuthorizeSuccessSavesEmailAndPassword{
+    RALoginController *controller = [self getController];
+    [controller.emailField setText:@"skendall@rallydev.com"];
+    [controller.passwordField setText:@"Password"];
+    [controller authorizeSuccess];
+
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    STAssertNotNil([prefs objectForKey:@"email"], @"");
+    STAssertNotNil([prefs objectForKey:@"password"], @"");
 }
 
 - (void)testSegueIsBlockedByAuth {
@@ -25,6 +41,26 @@
     [controller authorizeFailure];
 
     STAssertTrue([[controller.passwordField text] isEqualToString:@""], @"");
+}
+
+- (void)testSeguesWhenUsernameAndPasswordAreStored {
+    RALoginController *controller = [self getController];
+
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setObject:@"skendall@rallydev.com" forKey:@"email"];
+    [prefs setObject:@"Password" forKey:@"password"];
+
+    [controller viewDidLoad];
+
+    STAssertEquals([controller.navigationController.viewControllers count], 2U, @"");
+}
+
+- (void)testDoesNotSegueWhenUsernameAndPasswordNotStored {
+    RALoginController *controller = [self getController];
+
+    [controller viewDidLoad];
+
+    STAssertEquals([controller.navigationController.viewControllers count], 1U, @"");
 }
 
 - (RALoginController *)getController {

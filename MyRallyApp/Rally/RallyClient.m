@@ -8,6 +8,7 @@ NSString * const TEST_PASSWORD = @"Password";
 @implementation RallyClient
 
 - (void)setUsername:(NSString *)username1 andPassword:(NSString *)password1 {
+    self.username = username1;
     [self clearAuthorizationHeader];
     [self setAuthorizationHeaderWithUsername:username1 password:password1];
 }

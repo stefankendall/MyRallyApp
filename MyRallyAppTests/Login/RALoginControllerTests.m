@@ -1,5 +1,6 @@
 #import "RALoginControllerTests.h"
 #import "RALoginController.h"
+#import "SenTestCase+ControllerTestAdditions.h"
 
 @implementation RALoginControllerTests
 
@@ -9,14 +10,14 @@
 }
 
 - (void)testAuthorizeSuccessSeguesToNextScreen {
-    RALoginController *controller = [self getController];
+    RALoginController *controller = [self getControllerByStoryboardIdentifier:@"login"];
 
     [controller authorizeSuccess];
     STAssertEquals([controller.navigationController.viewControllers count], 2U, @"");
 }
 
 - (void)testAuthorizeSuccessSavesEmailAndPassword{
-    RALoginController *controller = [self getController];
+    RALoginController *controller = [self getControllerByStoryboardIdentifier:@"login"];
     [controller.emailField setText:@"skendall@rallydev.com"];
     [controller.passwordField setText:@"Password"];
     [controller authorizeSuccess];
@@ -27,7 +28,7 @@
 }
 
 - (void)testSegueIsBlockedByAuth {
-    RALoginController *controller = [self getController];
+    RALoginController *controller = [self getControllerByStoryboardIdentifier:@"login"];
 
     STAssertFalse([controller shouldPerformSegueWithIdentifier:@"loginSegue" sender:controller], @"");
 
@@ -36,7 +37,7 @@
 }
 
 - (void)testFailureClearsPassword {
-    RALoginController *controller = [self getController];
+    RALoginController *controller = [self getControllerByStoryboardIdentifier:@"login"];
     [controller.passwordField setText:@"test"];
     [controller authorizeFailure];
 
@@ -44,7 +45,7 @@
 }
 
 - (void)testSeguesWhenUsernameAndPasswordAreStored {
-    RALoginController *controller = [self getController];
+    RALoginController *controller = [self getControllerByStoryboardIdentifier:@"login"];
 
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setObject:@"skendall@rallydev.com" forKey:@"email"];
@@ -56,20 +57,11 @@
 }
 
 - (void)testDoesNotSegueWhenUsernameAndPasswordNotStored {
-    RALoginController *controller = [self getController];
+    RALoginController *controller = [self getControllerByStoryboardIdentifier:@"login"];
 
     [controller viewDidLoad];
 
     STAssertEquals([controller.navigationController.viewControllers count], 1U, @"");
-}
-
-- (RALoginController *)getController {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    RALoginController *controller = [storyboard instantiateViewControllerWithIdentifier:@"login"];
-    UINavigationController *mainNav = [storyboard instantiateViewControllerWithIdentifier:@"mainNav"];
-    [mainNav setViewControllers:@[controller]];
-    [controller viewDidLoad];
-    return controller;
 }
 
 @end

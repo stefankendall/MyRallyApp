@@ -38,6 +38,7 @@
 		54590F0FF6B010B84C685BCB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590F9798347B62499F9D67 /* Default.png */; };
 		54590F42BD971D27C49DA8B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54590F36C67DD419EB0E063A /* UIKit.framework */; };
 		D03D021294220E6040FB1F69 /* StoriesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D080937F28342C3FCAC9B /* StoriesViewControllerTests.m */; };
+		D03D021AED36A8A5F52F45B2 /* SenTestCase+ControllerTestAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0BC4413D71DAA650FA81 /* SenTestCase+ControllerTestAdditions.m */; };
 		D03D038491B199CDCF0161BA /* StoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D046DB31A8543825D324D /* StoryStore.m */; };
 		D03D0809E6D0E681EE933963 /* StoryDetailViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0CF9577C97871357FC1A /* StoryDetailViewControllerTests.m */; };
 		D03D09BEFFAA480D5286F278 /* RALoginControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0F5C853F2ED1FE009FC0 /* RALoginControllerTests.m */; };
@@ -110,9 +111,11 @@
 		D03D07B3354D4D1D158EA35A /* StoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDetailViewController.h; sourceTree = "<group>"; };
 		D03D080937F28342C3FCAC9B /* StoriesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewControllerTests.m; sourceTree = "<group>"; };
 		D03D0A39395CCF39373B5E52 /* StoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDetailViewController.m; sourceTree = "<group>"; };
+		D03D0BC4413D71DAA650FA81 /* SenTestCase+ControllerTestAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+ControllerTestAdditions.m"; sourceTree = "<group>"; };
 		D03D0C3F49AB1E1045F37ABD /* StoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesViewController.m; sourceTree = "<group>"; };
 		D03D0CF9577C97871357FC1A /* StoryDetailViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDetailViewControllerTests.m; sourceTree = "<group>"; };
 		D03D0E4F0331F13669AF1063 /* StoryDetailViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDetailViewControllerTests.h; sourceTree = "<group>"; };
+		D03D0E87DA5CF329E2AD8B24 /* SenTestCase+ControllerTestAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestCase+ControllerTestAdditions.h"; sourceTree = "<group>"; };
 		D03D0F5C853F2ED1FE009FC0 /* RALoginControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginControllerTests.m; sourceTree = "<group>"; };
 		D03D0FC0A8B3CA00C3A9143E /* StoryStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryStoreTests.m; sourceTree = "<group>"; };
 		D03D0FC7C11B761CF78F204C /* StoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryStore.h; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 				545902D9BA4E17F379C913E0 /* Rally */,
 				545906747B03BD2C9684C3A5 /* StoryTable */,
 				D03D0E7070A7605073702245 /* Login */,
+				D03D0BC4413D71DAA650FA81 /* SenTestCase+ControllerTestAdditions.m */,
+				D03D0E87DA5CF329E2AD8B24 /* SenTestCase+ControllerTestAdditions.h */,
 			);
 			path = MyRallyAppTests;
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 				D03D0809E6D0E681EE933963 /* StoryDetailViewControllerTests.m in Sources */,
 				D03D021294220E6040FB1F69 /* StoriesViewControllerTests.m in Sources */,
 				D03D0EB74094C1E09413D883 /* StoryStoreTests.m in Sources */,
+				D03D021AED36A8A5F52F45B2 /* SenTestCase+ControllerTestAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

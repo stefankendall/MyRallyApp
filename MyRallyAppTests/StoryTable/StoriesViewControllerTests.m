@@ -2,6 +2,7 @@
 #import "StoriesViewController.h"
 #import "StoryStore.h"
 #import "StoryDivider.h"
+#import "SenTestCase+ControllerTestAdditions.h"
 
 @implementation StoriesViewControllerTests
 
@@ -15,7 +16,7 @@
 }
 
 - (void)testSelectRowUsesStoryInSection {
-    StoriesViewController *controller = [self getController];
+    StoriesViewController *controller = [self getControllerByStoryboardIdentifier:@"myStories"];
     [controller tableView:nil didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     NSDictionary *story1 = controller.storyInDetail;
 
@@ -24,15 +25,6 @@
 
     STAssertNotNil(story1, @"");
     STAssertFalse( story1 == story2, @"" );
-}
-
-- (StoriesViewController *)getController {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    StoriesViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"myStories"];
-    UINavigationController *mainNav = [storyboard instantiateViewControllerWithIdentifier:@"mainNav"];
-    [mainNav setViewControllers:@[controller]];
-    [controller viewDidLoad];
-    return controller;
 }
 
 @end

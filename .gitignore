@@ -13,3 +13,4 @@ build/*
 !default.xcworkspace
 *.moved-aside
 DerivedData
+xcuserdata

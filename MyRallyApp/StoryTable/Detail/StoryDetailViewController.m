@@ -21,19 +21,28 @@
     [self.featureLabel setText:[self replaceIfNull:self.story[@"Feature"]]];
     [self.readyLabel setText:[self booleanNameOf:self.story[@"Ready"]]];
     [self.blockedLabel setText:[self booleanNameOf:self.story[@"Blocked"]]];
-    [self.blockedReason setText:[self replaceIfNull:self.story[@"BlockedReason"]]];
+    [self.blockedReasonLabel setText:[self replaceIfNull:self.story[@"BlockedReason"]]];
     [self.releaseLabel setText:[self replaceIfNull:self.story[@"Release"]]];
     [self.iterationLabel setText:[self replaceIfNull:self.story[@"Iteration"]]];
-//    [self.planEstimateLabel setText:[self replaceIfNull:self.story[@"PlanEstimate"]]];
-//    [self.taskEstimateTotalLabel setText:[self replaceIfNull:self.story[@"TaskEstimateTotal"]]];
-//    [self.taskRemainingTotalLabel setText:[self replaceIfNull:self.story[@"TaskRemainingTotal"]]];
-//    [self.taskActualTotalLabel setText:[self replaceIfNull:self.story[@"TaskActualTotal"]]];
+    [self.planEstimateLabel setText:[self convertNumeric:self.story[@"PlanEstimate"]]];
+    [self.taskEstimateTotalLabel setText:[self convertNumeric:self.story[@"TaskEstimateTotal"]]];
+    [self.taskRemainingTotalLabel setText:[self convertNumeric:self.story[@"TaskRemainingTotal"]]];
+    [self.taskActualTotalLabel setText:[self convertNumeric:self.story[@"TaskActualTotal"]]];
     [self.acceptedDateLabel setText:[self replaceIfNull:self.story[@"AcceptedDate"]]];
+}
+
+- (NSString *)convertNumeric:(id)o {
+    NSNumber *number = o;
+    if ([number isKindOfClass:NSNull.class]) {
+        return @"";
+    }
+
+    return [NSString stringWithFormat:@"%d", [number intValue]];
 }
 
 - (NSString *)booleanNameOf:(id)o {
     NSNumber *number = o;
-    if([number intValue] > 0 ){
+    if ([number intValue] > 0) {
         return @"Yes";
     }
     else {

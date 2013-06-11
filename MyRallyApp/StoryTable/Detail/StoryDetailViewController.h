@@ -4,7 +4,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *featureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *readyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *blockedLabel;
-@property (weak, nonatomic) IBOutlet UILabel *blockedReason;
+@property (weak, nonatomic) IBOutlet UILabel *blockedReasonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *releaseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *iterationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *planEstimateLabel;

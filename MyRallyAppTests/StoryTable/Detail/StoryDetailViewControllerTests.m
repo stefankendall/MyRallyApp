@@ -41,7 +41,14 @@
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
     [controller setStory:@{@"BlockedReason" : @"reason"}];
     [controller setupFields];
-    STAssertEqualObjects([controller.blockedLabel text], @"reason", @"");
+    STAssertEqualObjects([controller.blockedReasonLabel text], @"reason", @"");
+}
+
+- (void) testPlanEstimate {
+    StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
+    [controller setStory:@{@"PlanEstimate" : @1}];
+    [controller setupFields];
+    STAssertEqualObjects([controller.planEstimateLabel text], @"1", @"");
 }
 
 @end

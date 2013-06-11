@@ -53,3 +53,4 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods (~> 0.20.2)
+  rake

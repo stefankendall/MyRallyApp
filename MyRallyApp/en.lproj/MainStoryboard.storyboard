@@ -669,7 +669,7 @@
                     <connections>
                         <outlet property="acceptedDateLabel" destination="O3Z-oP-Ndr" id="K95-Cd-6pk"/>
                         <outlet property="blockedLabel" destination="MqT-T8-6YZ" id="9Si-Ol-nqb"/>
-                        <outlet property="blockedReason" destination="YQX-yg-9S0" id="J8w-aO-jXj"/>
+                        <outlet property="blockedReasonLabel" destination="YQX-yg-9S0" id="J8w-aO-jXj"/>
                         <outlet property="featureLabel" destination="uxM-oT-guc" id="nAz-rO-CXO"/>
                         <outlet property="iterationLabel" destination="jUR-OL-POh" id="bF2-HM-Sa3"/>
                         <outlet property="nameLabel" destination="sIW-Fk-A00" id="PY9-Ou-0Im"/>
@@ -714,7 +714,7 @@
             <relationships>
                 <relationship kind="outlet" name="acceptedDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="blockedLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="blockedReason" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="blockedReasonLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="featureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="iterationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>

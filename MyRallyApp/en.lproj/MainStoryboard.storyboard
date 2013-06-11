@@ -221,7 +221,7 @@
         <scene sceneID="dP5-A0-7Ec">
             <objects>
                 <tableViewController storyboardIdentifier="detailView" id="PEv-Vp-0KV" customClass="StoryDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="KUg-iD-Wqe">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="KUg-iD-Wqe">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -237,29 +237,29 @@
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS6-Ga-fgm">
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ogW-bp-9J8"/>
                                                         <constraint firstAttribute="width" constant="70" id="uFJ-rv-N5k"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIW-Fk-A00">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TQh-JP-S0N">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="182" id="fD9-Xe-ZVx"/>
+                                                        <constraint firstAttribute="width" constant="207" id="WTS-C7-aCP"/>
+                                                        <constraint firstAttribute="height" constant="30" id="yOM-v6-yBv"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="RS6-Ga-fgm" firstAttribute="leading" secondItem="j1W-8Z-MH2" secondAttribute="leading" constant="30" id="4vY-uJ-gGL"/>
                                             <constraint firstItem="RS6-Ga-fgm" firstAttribute="top" secondItem="j1W-8Z-MH2" secondAttribute="top" constant="12" id="EYp-pP-7Av"/>
-                                            <constraint firstItem="sIW-Fk-A00" firstAttribute="top" secondItem="RS6-Ga-fgm" secondAttribute="top" type="default" id="aEq-xh-fvb"/>
-                                            <constraint firstItem="sIW-Fk-A00" firstAttribute="leading" secondItem="RS6-Ga-fgm" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="b6j-0s-NaK"/>
-                                            <constraint firstItem="sIW-Fk-A00" firstAttribute="baseline" secondItem="RS6-Ga-fgm" secondAttribute="baseline" type="default" id="v3I-U4-Y2u"/>
+                                            <constraint firstItem="TQh-JP-S0N" firstAttribute="centerY" secondItem="j1W-8Z-MH2" secondAttribute="centerY" type="default" id="PXl-Tl-kVl"/>
+                                            <constraint firstItem="TQh-JP-S0N" firstAttribute="leading" secondItem="j1W-8Z-MH2" secondAttribute="leading" constant="83" id="Y3A-TZ-I1S"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
@@ -672,7 +672,7 @@
                         <outlet property="blockedReasonLabel" destination="YQX-yg-9S0" id="J8w-aO-jXj"/>
                         <outlet property="featureLabel" destination="uxM-oT-guc" id="nAz-rO-CXO"/>
                         <outlet property="iterationLabel" destination="jUR-OL-POh" id="bF2-HM-Sa3"/>
-                        <outlet property="nameLabel" destination="sIW-Fk-A00" id="PY9-Ou-0Im"/>
+                        <outlet property="nameTextField" destination="TQh-JP-S0N" id="0At-Y2-k3J"/>
                         <outlet property="planEstimateLabel" destination="Hjk-M6-Tho" id="C9W-G7-iVe"/>
                         <outlet property="readyLabel" destination="qSQ-nU-Y1a" id="Bwh-wP-bit"/>
                         <outlet property="releaseLabel" destination="w78-oO-QhF" id="GG7-q5-PMw"/>
@@ -717,7 +717,7 @@
                 <relationship kind="outlet" name="blockedReasonLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="featureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="iterationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="planEstimateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="readyLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="releaseLabel" candidateClass="UILabel"/>

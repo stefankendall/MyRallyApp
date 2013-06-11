@@ -1,6 +1,9 @@
-@interface StoryDetailViewController : UITableViewController
+#import "EZForm.h"
+
+@interface StoryDetailViewController : UITableViewController<EZFormDelegate>
 {}
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UILabel *featureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *readyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *blockedLabel;

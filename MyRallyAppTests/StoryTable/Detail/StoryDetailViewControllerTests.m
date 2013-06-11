@@ -12,7 +12,7 @@
     [controller setStory:@{@"FormattedID" : formattedId, @"Name" : name, @"Feature" : feature}];
     [controller setupFields];
     STAssertEqualObjects(controller.navigationItem.title, formattedId, @"");
-    STAssertEqualObjects([controller.nameLabel text], name, @"");
+    STAssertEqualObjects([controller.nameTextField text], name, @"");
     STAssertEqualObjects([controller.featureLabel text], feature, @"");
 }
 

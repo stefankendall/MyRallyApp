@@ -2,4 +2,4 @@ platform :ios, '6.0'
 
 pod 'AFNetworking'
 pod 'SVPullToRefresh'
-pod 'EZForm'
+pod 'EZForm', '1.2.0'

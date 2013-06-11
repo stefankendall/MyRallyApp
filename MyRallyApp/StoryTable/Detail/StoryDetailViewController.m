@@ -16,7 +16,7 @@
     self.form.inputAccessoryType = EZFormInputAccessoryTypeStandard;
     [self.form setDelegate:self];
 
-    EZFormTextField *nameField = [[EZFormTextField alloc] initWithKey:@"name"];
+    EZFormTextField *nameField = [[EZFormTextField alloc] initWithKey:@"Name"];
     nameField.validationMinCharacters = 1;
     [self.form addFormField:nameField];
 }
@@ -26,7 +26,7 @@
 }
 
 - (void)wireFormFields {
-    EZFormTextField *nameFormField = [self.form formFieldForKey:@"name"];
+    EZFormTextField *nameFormField = [self.form formFieldForKey:@"Name"];
     [nameFormField useTextField:self.nameTextField];
 }
 
@@ -54,7 +54,10 @@
 
 - (void)form:(EZForm *)form fieldDidEndEditing:(EZFormField *)formField
 {
-    NSLog(@"formField:%@ didEndEditing",formField);
+    NSString *propertyName = [formField key];
+    id newValue = [formField fieldValue];
+
+
 }
 
 

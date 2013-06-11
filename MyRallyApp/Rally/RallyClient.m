@@ -2,8 +2,8 @@
 #import "AFJSONRequestOperation.h"
 #import "AFNetworkActivityIndicatorManager.h"
 
-NSString * const TEST_USER = @"skendall@rallydev.com";
-NSString * const TEST_PASSWORD = @"Password";
+NSString *const TEST_USER = @"skendall@rallydev.com";
+NSString *const TEST_PASSWORD = @"Password";
 
 @implementation RallyClient
 
@@ -46,7 +46,7 @@ NSString * const TEST_PASSWORD = @"Password";
     }];
 }
 
-- (void)getActiveStoriesForUser: (NSString*) username success:(void (^)(NSArray *))success failure:(void (^)())failure {
+- (void)getActiveStoriesForUser:(NSString *)username success:(void (^)(NSArray *))success failure:(void (^)())failure {
     void (^requestSuccess)(AFHTTPRequestOperation *, id) = ^(AFHTTPRequestOperation *op, id json) {
         success([self getStoriesFromJson:json]);
     };
@@ -59,6 +59,29 @@ NSString * const TEST_PASSWORD = @"Password";
     [params setObject:@"true" forKey:@"fetch"];
     [params setObject:[NSString stringWithFormat:@"((Owner = %@) and ((ScheduleState != Closed) and (ScheduleState != Released)))", username] forKey:@"query"];
     [self getPath:@"hierarchicalrequirement" parameters:params success:requestSuccess failure:requestFailure];
+}
+
+- (void)updateFieldOnStory:(NSDictionary *)story withName:(NSString *)name withValue:(id)value withSuccess:(void (^)())successCallback andFailure:(void (^)())failureCallback {
+    NSString *objectId = [story objectForKey:@"ObjectID"];
+    NSString *updatePath = [self buildAuthorizedPostUrl:objectId];
+
+    NSMutableDictionary *updateStory = [story mutableCopy];
+    [updateStory setObject:value forKey:name];
+
+    void (^requestSuccess)(AFHTTPRequestOperation *, id) = ^(AFHTTPRequestOperation *op, id json) {
+        NSLog(@"%@", json);
+        successCallback();
+    };
+    void (^requestFailure)(AFHTTPRequestOperation *, NSError *) = ^(AFHTTPRequestOperation *op, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+        failureCallback();
+    };
+
+    [self postPath:updatePath parameters:updateStory success:requestSuccess failure:requestFailure];
+}
+
+- (NSString *)buildAuthorizedPostUrl:(NSString *)objectId {
+    return [NSString stringWithFormat:@"hierarchicalrequirement/%@?key=%@", objectId, securityToken];
 }
 
 - (NSArray *)getStoriesFromJson:(NSDictionary *)json {

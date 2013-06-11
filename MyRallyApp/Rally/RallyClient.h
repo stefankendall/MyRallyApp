@@ -17,7 +17,12 @@ extern NSString *const TEST_PASSWORD;
 
 - (NSString *)getSecurityTokenFromJson:(NSDictionary *)json;
 
-- (void)getActiveStoriesForUser: (NSString*) username success:(void (^)(NSArray *))success failure:(void (^)())failure;
+- (void)getActiveStoriesForUser:(NSString *)username success:(void (^)(NSArray *))success failure:(void (^)())failure;
+
+- (void)updateFieldOnStory:(NSDictionary *)story
+                  withName:(NSString *)name withValue:(id)value
+               withSuccess:(void (^)())successCallback
+                andFailure:(void (^)())failureCallback;
 
 @property(nonatomic, strong) NSString *username;
 

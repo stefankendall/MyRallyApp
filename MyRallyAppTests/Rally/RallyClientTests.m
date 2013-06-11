@@ -1,9 +1,19 @@
 #import "RallyClientTests.h"
 #import "RallyClient.h"
 
+@interface RallyClientTests ()
+
+@property(nonatomic, copy) void(^failureCallback)();
+@end
+
 @implementation RallyClientTests
 
 - (void)setUp {
+    self.failureCallback = ^{
+        done = YES;
+        STFail(@"Callback failed");
+    };
+
     done = NO;
     RallyClient *client = [RallyClient instance];
     [client setUsername:TEST_USER andPassword:TEST_PASSWORD];
@@ -24,19 +34,14 @@
         NSString *scheduleState = [story objectForKey:@"ScheduleState"];
         STAssertFalse([scheduleState isEqualToString:@"Closed"], @"");
         STAssertFalse([scheduleState isEqualToString:@"Released"], @"");
-    }                                       failure:^{
-        done = YES;
-        STFail(@"Could not get stories");
-    }];
+    }                                       failure:self.failureCallback];
     [self waitForCompletion:5];
 }
 
 - (void)waitForAuth {
     [[RallyClient instance] authorize:^{
         done = YES;
-    }                         failure:^{
-        STFail(@"Auth failed");
-    }];
+    }                         failure:self.failureCallback];
     [self waitForCompletion:5];
     done = NO;
 }
@@ -46,9 +51,7 @@
     [[RallyClient instance] getSecurityTokenWithSuccess:^(NSString *token1) {
         token = token1;
         done = YES;
-    }                                        andFailure:^{
-        done = YES;
-    }];
+    }                                        andFailure:self.failureCallback];
     [self waitForCompletion:5];
     STAssertNotNil(token, @"");
     STAssertFalse([token isEqualToString:@""], @"");
@@ -59,11 +62,32 @@
     [[RallyClient instance] authorize:^{
         done = YES;
         success = YES;
-    }                         failure:^{
-    }];
+    }                         failure:self.failureCallback];
 
     [self waitForCompletion:5];
     STAssertTrue(success, @"");
+}
+
+- (void)testCanUpdateStories {
+    [self waitForAuth];
+    RallyClient *client = [RallyClient instance];
+    [client getActiveStoriesForUser:TEST_USER success:^(NSArray *stories) {
+        NSDictionary *story = stories[0];
+        STAssertNotNil(story, @"");
+
+        NSString *newValue = [NSString stringWithFormat:@"%@%d", @"changed", 0];
+        [client updateFieldOnStory:story withName:@"Description" withValue:newValue withSuccess:^{
+            [client getActiveStoriesForUser:TEST_USER success:^(NSArray *stories) {
+                done = YES;
+                NSDictionary *story = stories[0];
+                STAssertEqualObjects([story objectForKey:@"Description"], newValue, @"");
+
+            }                       failure:self.failureCallback];
+        }               andFailure:self.failureCallback];
+    }                       failure:self.failureCallback];
+
+
+    [self waitForCompletion:10];
 }
 
 - (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs {

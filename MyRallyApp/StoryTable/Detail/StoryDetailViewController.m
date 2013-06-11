@@ -71,6 +71,7 @@
 }
 
 - (void)enableDisableForm:(BOOL)enabled {
+    [self.tableView endEditing:YES];
     [self.tableView setUserInteractionEnabled:enabled];
     [[self.navigationItem leftBarButtonItem] setEnabled:enabled];
     [[self.navigationItem rightBarButtonItem] setEnabled:enabled];

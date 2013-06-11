@@ -75,7 +75,7 @@
         NSDictionary *story = stories[0];
         STAssertNotNil(story, @"");
 
-        NSString *newValue = [NSString stringWithFormat:@"%@%d", @"changed", 0];
+        NSString *newValue = [NSString stringWithFormat:@"%@%d", @"changed", arc4random_uniform(1000)];
         [client updateFieldOnStory:story withName:@"Description" withValue:newValue withSuccess:^{
             [client getActiveStoriesForUser:TEST_USER success:^(NSArray *stories) {
                 done = YES;

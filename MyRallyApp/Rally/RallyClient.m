@@ -1,6 +1,8 @@
 #import "RallyClient.h"
 #import "AFJSONRequestOperation.h"
 #import "AFNetworkActivityIndicatorManager.h"
+#import "AFHTTPRequestOperationLogger.h"
+
 
 NSString *const TEST_USER = @"skendall@rallydev.com";
 NSString *const TEST_PASSWORD = @"Password";
@@ -65,8 +67,7 @@ NSString *const TEST_PASSWORD = @"Password";
     NSString *objectId = [story objectForKey:@"ObjectID"];
     NSString *updatePath = [self buildAuthorizedPostUrl:objectId];
 
-    NSMutableDictionary *updateStory = [story mutableCopy];
-    [updateStory setObject:value forKey:name];
+    NSDictionary *updateStory = @{@"HierarchicalRequirement": @{name : value}};
 
     void (^requestSuccess)(AFHTTPRequestOperation *, id) = ^(AFHTTPRequestOperation *op, id json) {
         NSLog(@"%@", json);

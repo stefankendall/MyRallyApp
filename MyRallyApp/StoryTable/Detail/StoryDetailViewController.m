@@ -1,6 +1,7 @@
 #import "StoryDetailViewController.h"
+#import "RallyClient.h"
 
-@interface StoryDetailViewController()
+@interface StoryDetailViewController ()
 @property(nonatomic, strong) EZForm *form;
 @property(nonatomic, strong) NSDictionary *cells;
 @end
@@ -35,8 +36,11 @@
     [self setupFields];
 }
 
+- (IBAction)saveButtonTapped:(id)sender {
+    [self saveForm];
+}
+
 - (void)setupFields {
-    NSLog(@"%@", self.story);
     self.navigationItem.title = self.story[@"FormattedID"];
     [self.nameTextField setText:self.story[@"Name"]];
     [self.featureLabel setText:[self replaceIfNull:self.story[@"Feature"]]];
@@ -52,15 +56,25 @@
     [self.acceptedDateLabel setText:[self replaceIfNull:self.story[@"AcceptedDate"]]];
 }
 
-- (void)form:(EZForm *)form fieldDidEndEditing:(EZFormField *)formField
-{
-    NSString *propertyName = [formField key];
-    id newValue = [formField fieldValue];
-
-
+- (void)saveForm {
+    [self enableDisableForm:NO];
+    NSDictionary *newValues = [self.form modelValues];
+    [[RallyClient instance] updateStory:self.story withValues:newValues withSuccess:^(id json) {
+        self.story = json;
+        [self setupFields];
+        [self enableDisableForm:YES];
+    }                        andFailure:^{
+        NSLog(@"%@", self.story);
+        [self setupFields];
+        [self enableDisableForm:YES];
+    }];
 }
 
-
+- (void)enableDisableForm:(BOOL)enabled {
+    [self.tableView setUserInteractionEnabled:enabled];
+    [[self.navigationItem leftBarButtonItem] setEnabled:enabled];
+    [[self.navigationItem rightBarButtonItem] setEnabled:enabled];
+}
 
 - (id)replaceIfNull:(id)field {
     if (![field isKindOfClass:NSNull.class]) {

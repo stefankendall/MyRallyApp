@@ -665,7 +665,13 @@
                             <outlet property="delegate" destination="PEv-Vp-0KV" id="QA9-fy-lV6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="S41529" id="gLJ-UM-h8j"/>
+                    <navigationItem key="navigationItem" title="S41529" id="gLJ-UM-h8j">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="OeO-FZ-xth">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="PEv-Vp-0KV" id="cZc-pW-JX3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="acceptedDateLabel" destination="O3Z-oP-Ndr" id="K95-Cd-6pk"/>
                         <outlet property="blockedLabel" destination="MqT-T8-6YZ" id="9Si-Ol-nqb"/>
@@ -676,6 +682,7 @@
                         <outlet property="planEstimateLabel" destination="Hjk-M6-Tho" id="C9W-G7-iVe"/>
                         <outlet property="readyLabel" destination="qSQ-nU-Y1a" id="Bwh-wP-bit"/>
                         <outlet property="releaseLabel" destination="w78-oO-QhF" id="GG7-q5-PMw"/>
+                        <outlet property="saveButton" destination="OeO-FZ-xth" id="aAd-Sj-ci7"/>
                         <outlet property="taskActualTotalLabel" destination="gyk-7U-Dap" id="EXw-WK-EkD"/>
                         <outlet property="taskEstimateTotalLabel" destination="FLi-JW-Q5m" id="rhk-Up-422"/>
                         <outlet property="taskRemainingTotalLabel" destination="vTJ-6r-Bb1" id="08o-Oq-JKL"/>
@@ -712,6 +719,7 @@
         <class className="StoryDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StoryDetailViewController.h"/>
             <relationships>
+                <relationship kind="action" name="saveButtonTapped:"/>
                 <relationship kind="outlet" name="acceptedDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="blockedLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="blockedReasonLabel" candidateClass="UILabel"/>

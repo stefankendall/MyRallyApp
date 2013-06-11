@@ -76,14 +76,14 @@
         STAssertNotNil(story, @"");
 
         NSString *newValue = [NSString stringWithFormat:@"%@%d", @"changed", arc4random_uniform(1000)];
-        [client updateFieldOnStory:story withName:@"Description" withValue:newValue withSuccess:^{
+        [client updateStory:story withValues:@{@"Description": newValue} withSuccess:^(id json){
             [client getActiveStoriesForUser:TEST_USER success:^(NSArray *stories) {
                 done = YES;
                 NSDictionary *story = stories[0];
                 STAssertEqualObjects([story objectForKey:@"Description"], newValue, @"");
 
             }                       failure:self.failureCallback];
-        }               andFailure:self.failureCallback];
+        }        andFailure:self.failureCallback];
     }                       failure:self.failureCallback];
 
 

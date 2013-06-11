@@ -1,8 +1,6 @@
 #import "RallyClient.h"
 #import "AFJSONRequestOperation.h"
 #import "AFNetworkActivityIndicatorManager.h"
-#import "AFHTTPRequestOperationLogger.h"
-
 
 NSString *const TEST_USER = @"skendall@rallydev.com";
 NSString *const TEST_PASSWORD = @"Password";
@@ -63,15 +61,21 @@ NSString *const TEST_PASSWORD = @"Password";
     [self getPath:@"hierarchicalrequirement" parameters:params success:requestSuccess failure:requestFailure];
 }
 
-- (void)updateFieldOnStory:(NSDictionary *)story withName:(NSString *)name withValue:(id)value withSuccess:(void (^)())successCallback andFailure:(void (^)())failureCallback {
+- (void)updateStory:(NSDictionary *)story withValues:(NSDictionary *)values withSuccess:(void (^)(id))successCallback andFailure:(void (^)())failureCallback {
     NSString *objectId = [story objectForKey:@"ObjectID"];
     NSString *updatePath = [self buildAuthorizedPostUrl:objectId];
 
-    NSDictionary *updateStory = @{@"HierarchicalRequirement": @{name : value}};
+    NSDictionary *updateStory = @{@"HierarchicalRequirement" : values};
 
     void (^requestSuccess)(AFHTTPRequestOperation *, id) = ^(AFHTTPRequestOperation *op, id json) {
-        NSLog(@"%@", json);
-        successCallback();
+        id object = [[json objectForKey:@"OperationResult"] objectForKey:@"Object"];
+        if (object != nil ) {
+            successCallback(object);
+        }
+        else {
+            failureCallback();
+        }
+
     };
     void (^requestFailure)(AFHTTPRequestOperation *, NSError *) = ^(AFHTTPRequestOperation *op, NSError *error) {
         NSLog(@"%@", [error localizedDescription]);

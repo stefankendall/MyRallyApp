@@ -326,29 +326,35 @@
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ready" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lh-TT-L4n">
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="nbo-E1-7Im"/>
                                                         <constraint firstAttribute="width" constant="96" id="qC4-h1-bNd"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSQ-nU-Y1a">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8H-yf-cri">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="206" id="YU7-Rx-vst"/>
+                                                        <constraint firstAttribute="height" constant="29" id="RtT-xt-Jar"/>
+                                                        <constraint firstAttribute="width" constant="86" id="yXE-sX-c1W"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="No">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="qSQ-nU-Y1a" firstAttribute="top" secondItem="0Lh-TT-L4n" secondAttribute="top" type="default" id="0xG-o9-FVE"/>
-                                            <constraint firstItem="0Lh-TT-L4n" firstAttribute="centerY" secondItem="abC-Hl-kS2" secondAttribute="centerY" type="default" id="C3b-hj-J7R"/>
-                                            <constraint firstItem="qSQ-nU-Y1a" firstAttribute="baseline" secondItem="0Lh-TT-L4n" secondAttribute="baseline" type="default" id="dK7-VI-mGw"/>
                                             <constraint firstItem="0Lh-TT-L4n" firstAttribute="leading" secondItem="abC-Hl-kS2" secondAttribute="leading" constant="30" id="hWW-ED-8bg"/>
-                                            <constraint firstItem="qSQ-nU-Y1a" firstAttribute="leading" secondItem="abC-Hl-kS2" secondAttribute="leading" constant="84" id="pK4-lH-Jgk"/>
+                                            <constraint firstItem="a8H-yf-cri" firstAttribute="leading" secondItem="abC-Hl-kS2" secondAttribute="leading" constant="204" id="iet-E7-djH"/>
+                                            <constraint firstItem="a8H-yf-cri" firstAttribute="centerY" secondItem="0Lh-TT-L4n" secondAttribute="centerY" type="default" id="oTc-rj-5SI"/>
+                                            <constraint firstItem="a8H-yf-cri" firstAttribute="centerY" secondItem="abC-Hl-kS2" secondAttribute="centerY" type="default" id="tgi-RK-mVT"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nik-Ch-Cmz">
@@ -361,28 +367,35 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Blocked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kw-UR-9cb">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="96" id="92K-cK-Kw4"/>
+                                                        <constraint firstAttribute="height" constant="21" id="Ppd-0C-vJ5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqT-T8-6YZ">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mW4-8g-dMF">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="156" id="6nD-0d-goe"/>
+                                                        <constraint firstAttribute="height" constant="29" id="Wk1-SR-98s"/>
+                                                        <constraint firstAttribute="width" constant="86" id="aDo-oM-300"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="No">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="MqT-T8-6YZ" firstAttribute="top" secondItem="3kw-UR-9cb" secondAttribute="top" type="default" id="ErG-V9-FU8"/>
-                                            <constraint firstItem="MqT-T8-6YZ" firstAttribute="baseline" secondItem="3kw-UR-9cb" secondAttribute="baseline" type="default" id="MH7-7k-Pq9"/>
+                                            <constraint firstAttribute="trailing" secondItem="mW4-8g-dMF" secondAttribute="trailing" constant="30" id="1uK-7q-ivl"/>
+                                            <constraint firstItem="mW4-8g-dMF" firstAttribute="baseline" secondItem="3kw-UR-9cb" secondAttribute="baseline" type="default" id="7tP-Ug-B7Y"/>
                                             <constraint firstItem="3kw-UR-9cb" firstAttribute="leading" secondItem="nik-Ch-Cmz" secondAttribute="leading" constant="30" id="Shb-c4-EP9"/>
-                                            <constraint firstItem="MqT-T8-6YZ" firstAttribute="leading" secondItem="3kw-UR-9cb" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="WXV-vW-plq"/>
                                             <constraint firstItem="3kw-UR-9cb" firstAttribute="top" secondItem="nik-Ch-Cmz" secondAttribute="top" constant="11" id="sYI-dY-aAU"/>
+                                            <constraint firstItem="mW4-8g-dMF" firstAttribute="centerY" secondItem="nik-Ch-Cmz" secondAttribute="centerY" type="default" id="ut0-PK-fpn"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yhq-BE-0Ps">
@@ -674,13 +687,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="acceptedDateLabel" destination="O3Z-oP-Ndr" id="K95-Cd-6pk"/>
-                        <outlet property="blockedLabel" destination="MqT-T8-6YZ" id="9Si-Ol-nqb"/>
+                        <outlet property="blockedButton" destination="mW4-8g-dMF" id="eYs-Qm-ijQ"/>
                         <outlet property="blockedReasonLabel" destination="YQX-yg-9S0" id="J8w-aO-jXj"/>
                         <outlet property="featureLabel" destination="uxM-oT-guc" id="nAz-rO-CXO"/>
                         <outlet property="iterationLabel" destination="jUR-OL-POh" id="bF2-HM-Sa3"/>
                         <outlet property="nameTextField" destination="TQh-JP-S0N" id="0At-Y2-k3J"/>
                         <outlet property="planEstimateLabel" destination="Hjk-M6-Tho" id="C9W-G7-iVe"/>
-                        <outlet property="readyLabel" destination="qSQ-nU-Y1a" id="Bwh-wP-bit"/>
+                        <outlet property="readyButton" destination="a8H-yf-cri" id="CdK-Tt-M6e"/>
                         <outlet property="releaseLabel" destination="w78-oO-QhF" id="GG7-q5-PMw"/>
                         <outlet property="saveButton" destination="OeO-FZ-xth" id="aAd-Sj-ci7"/>
                         <outlet property="taskActualTotalLabel" destination="gyk-7U-Dap" id="EXw-WK-EkD"/>
@@ -721,14 +734,16 @@
             <relationships>
                 <relationship kind="action" name="saveButtonTapped:"/>
                 <relationship kind="outlet" name="acceptedDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="blockedLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="blockedButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="blockedReasonLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="featureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="iterationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="planEstimateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="readyLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="readyButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="readySwitch" candidateClass="DCRoundSwitch"/>
                 <relationship kind="outlet" name="releaseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="saveButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="taskActualTotalLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="taskEstimateTotalLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="taskRemainingTotalLabel" candidateClass="UILabel"/>

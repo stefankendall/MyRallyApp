@@ -5,8 +5,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UILabel *featureLabel;
-@property (weak, nonatomic) IBOutlet UILabel *readyLabel;
-@property (weak, nonatomic) IBOutlet UILabel *blockedLabel;
+@property (weak, nonatomic) IBOutlet UIButton *readyButton;
+@property (weak, nonatomic) IBOutlet UIButton *blockedButton;
+
 @property (weak, nonatomic) IBOutlet UILabel *blockedReasonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *releaseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *iterationLabel;
@@ -19,6 +20,8 @@
 @property(nonatomic, strong) NSDictionary *story;
 - (IBAction)saveButtonTapped:(id)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+
+@property(nonatomic, strong) EZForm *form;
 
 - (void)setupFields;
 @end

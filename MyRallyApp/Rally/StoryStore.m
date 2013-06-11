@@ -1,4 +1,5 @@
 #import "StoryStore.h"
+#import "NSArray+Enumerable.h"
 
 @implementation StoryStore
 
@@ -25,6 +26,20 @@
     });
 
     return store;
+}
+
+- (void)updateStory:(NSDictionary *)updatedStory {
+    NSNumber *objectId = [updatedStory objectForKey:@"ObjectID"];
+    NSString *scheduleState = [updatedStory objectForKey:@"ScheduleState"];
+    NSArray *stories = self.storiesByScheduleState[scheduleState];
+
+    int index = [stories findIndexWithBlock:^BOOL(NSDictionary *story) {
+        return [[story objectForKey:@"ObjectID"] isEqual:objectId];
+    }];
+
+    NSMutableArray *newStories = [stories mutableCopy];
+    [newStories replaceObjectAtIndex:(NSUInteger) index withObject:updatedStory];
+    [self.storiesByScheduleState setObject:newStories forKey:scheduleState];
 }
 
 

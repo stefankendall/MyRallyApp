@@ -5,15 +5,37 @@
 @implementation StoryStoreTests
 
 - (void)testReturnsOrderedScheduleStates {
-    [[StoryStore instance] setStoriesByScheduleState:[[StoryDivider new] storiesByScheduleState:
+    [[StoryStore instance] setStoriesByScheduleState:[[[StoryDivider new] storiesByScheduleState:
             @[
                     @{@"Name" : @"Test Story", @"ScheduleState" : @"In-Progress"},
                     @{@"Name" : @"Test Story2", @"ScheduleState" : @"Completed"}
             ]
-    ]];
+    ] mutableCopy]];
 
     NSArray *orderedStates = [[StoryStore instance] getOrderedScheduleStates];
     STAssertTrue([orderedStates[0] isEqualToString:@"In-Progress"], @"");
+}
+
+- (void)testUpdateStoryReplacesExistingStory {
+    StoryStore *store = [StoryStore instance];
+    [store setStoriesByScheduleState:[[[StoryDivider new] storiesByScheduleState:
+            @[
+                    @{@"ObjectID" : @1, @"Name" : @"Test Story", @"ScheduleState" : @"In-Progress"},
+                    @{@"ObjectID" : @3, @"Name" : @"Test Story", @"ScheduleState" : @"In-Progress"},
+                    @{@"ObjectID" : @2, @"Name" : @"Test Story2", @"ScheduleState" : @"Completed"}
+            ]
+    ] mutableCopy]];
+
+    [store updateStory:@{@"ObjectID" : @1, @"Name" : @"Test Story Updated", @"ScheduleState" : @"In-Progress"}];
+
+    NSArray *inProgressStories = [store storiesByScheduleState][@"In-Progress"];
+    NSDictionary *story = inProgressStories[0];
+    STAssertEqualObjects([story objectForKey:@"Name"], @"Test Story Updated", @"");
+    STAssertEquals([inProgressStories count], 2U, @"");
+}
+
+- (void)testUpdateStoryNewScheduleStateMovesStory {
+    STFail(@"Write test");
 }
 
 @end

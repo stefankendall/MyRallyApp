@@ -46,8 +46,8 @@
 
     [store updateStory:@{@"ObjectID" : @1, @"ScheduleState" : @"Completed"}];
 
-    STAssertEquals([[store storiesByScheduleState][@"Completed"] count], 2, @"");
-    STAssertEquals([[store storiesByScheduleState][@"In-Progress"] count], 1, @"");
+    STAssertEquals([[store storiesByScheduleState][@"Completed"] count], 2U, @"");
+    STAssertEquals([[store storiesByScheduleState][@"In-Progress"] count], 1U, @"");
 }
 
 @end

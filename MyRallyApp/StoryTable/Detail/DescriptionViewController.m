@@ -30,7 +30,9 @@
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
-    [self.webView loadHTMLString:[self htmlFor:[textView text]] baseURL:nil];
+    NSString *description = [textView text];
+    [self.webView loadHTMLString:[self htmlFor:description] baseURL:nil];
+    [self.story setObject:description forKey:@"Description"];
 }
 
 @end

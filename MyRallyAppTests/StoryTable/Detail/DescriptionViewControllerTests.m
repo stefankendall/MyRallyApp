@@ -33,4 +33,14 @@
     STAssertEqualObjects([controller htmlFor: @"<em>hello</em>"], @"<html><body><em>hello</em></body></html>", @"");
 }
 
+- (void) testTextViewDidChangeUpdatesStory {
+    NSMutableDictionary *story = [@{} mutableCopy];
+    DescriptionViewController *controller = [[DescriptionViewController alloc] initWithNibName:@"DescriptionViewController" story:story];
+    [controller loadView];
+
+    [controller.textView setText:@"internal change"];
+    [controller textViewDidChange:controller.textView];
+    STAssertEqualObjects([story objectForKey:@"Description"], @"internal change", @"");
+}
+
 @end

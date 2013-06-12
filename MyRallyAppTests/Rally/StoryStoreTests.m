@@ -35,7 +35,19 @@
 }
 
 - (void)testUpdateStoryNewScheduleStateMovesStory {
-    STFail(@"Write test");
+    StoryStore *store = [StoryStore instance];
+    [store setStoriesByScheduleState:[[[StoryDivider new] storiesByScheduleState:
+            @[
+                    @{@"ObjectID" : @1, @"Name" : @"Test Story", @"ScheduleState" : @"In-Progress"},
+                    @{@"ObjectID" : @3, @"Name" : @"Test Story", @"ScheduleState" : @"In-Progress"},
+                    @{@"ObjectID" : @2, @"Name" : @"Test Story2", @"ScheduleState" : @"Completed"}
+            ]
+    ] mutableCopy]];
+
+    [store updateStory:@{@"ObjectID" : @1, @"ScheduleState" : @"Completed"}];
+
+    STAssertEquals([[store storiesByScheduleState][@"Completed"] count], 2, @"");
+    STAssertEquals([[store storiesByScheduleState][@"In-Progress"] count], 1, @"");
 }
 
 @end

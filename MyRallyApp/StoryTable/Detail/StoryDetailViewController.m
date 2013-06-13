@@ -26,6 +26,9 @@
 
     EZFormBooleanField *blockedField = [[EZFormBooleanField alloc] initWithKey:@"Blocked"];
     [self.form addFormField:blockedField];
+
+    EZFormTextField *planEstimateField = [[EZFormTextField alloc] initWithKey:@"PlanEstimate"];
+    [self.form addFormField:planEstimateField];
 }
 
 - (void)viewDidLoad {
@@ -41,6 +44,9 @@
 
     EZFormBooleanField *blockedField = [self.form formFieldForKey:@"Blocked"];
     [blockedField useButton:self.blockedButton];
+
+    EZFormTextField *planEstimateFormField = [self.form formFieldForKey:@"PlanEstimate"];
+    [planEstimateFormField useTextField:self.planEstimateField];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -61,7 +67,7 @@
     [self.blockedReasonLabel setText:[self replaceIfNull:self.story[@"BlockedReason"]]];
     [self.releaseLabel setText:[self replaceIfNull:self.story[@"Release"]]];
     [self.iterationLabel setText:[self replaceIfNull:self.story[@"Iteration"]]];
-    [self.planEstimateLabel setText:[self convertNumeric:self.story[@"PlanEstimate"]]];
+    [self.planEstimateField setText:[self convertNumeric:self.story[@"PlanEstimate"]]];
     [self.taskEstimateTotalLabel setText:[self convertNumeric:self.story[@"TaskEstimateTotal"]]];
     [self.taskRemainingTotalLabel setText:[self convertNumeric:self.story[@"TaskRemainingTotal"]]];
     [self.taskActualTotalLabel setText:[self convertNumeric:self.story[@"TaskActualTotal"]]];

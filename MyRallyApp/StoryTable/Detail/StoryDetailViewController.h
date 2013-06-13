@@ -7,11 +7,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *featureLabel;
 @property (weak, nonatomic) IBOutlet UIButton *readyButton;
 @property (weak, nonatomic) IBOutlet UIButton *blockedButton;
+@property (weak, nonatomic) IBOutlet UITextField *planEstimateField;
 
 @property (weak, nonatomic) IBOutlet UILabel *blockedReasonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *releaseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *iterationLabel;
-@property (weak, nonatomic) IBOutlet UILabel *planEstimateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *taskEstimateTotalLabel;
 @property (weak, nonatomic) IBOutlet UILabel *taskRemainingTotalLabel;
 @property (weak, nonatomic) IBOutlet UILabel *taskActualTotalLabel;

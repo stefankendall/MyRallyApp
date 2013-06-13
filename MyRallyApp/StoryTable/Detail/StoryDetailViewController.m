@@ -88,13 +88,20 @@
 
     [self showHideBlockedReason];
 
-    [self.releaseLabel setText:[self replaceIfNull:self.story[@"Release"]]];
+    [self.releaseLabel setText:[self getReleaseName:self.story[@"Release"]]];
     [self.iterationLabel setText:[self replaceIfNull:self.story[@"Iteration"]]];
     [self.planEstimateField setText:[self convertNumeric:self.story[@"PlanEstimate"]]];
     [self.taskEstimateTotalLabel setText:[self convertNumeric:self.story[@"TaskEstimateTotal"]]];
     [self.taskRemainingTotalLabel setText:[self convertNumeric:self.story[@"TaskRemainingTotal"]]];
     [self.taskActualTotalLabel setText:[self convertNumeric:self.story[@"TaskActualTotal"]]];
     [self.acceptedDateLabel setText:[self replaceIfNull:self.story[@"AcceptedDate"]]];
+}
+
+- (NSString *)getReleaseName:(NSDictionary *)release {
+    if([release isKindOfClass:NSNull.class]){
+        return @"";
+    }
+    return [release objectForKey:@"_refObjectName"];
 }
 
 - (void)showHideBlockedReason {

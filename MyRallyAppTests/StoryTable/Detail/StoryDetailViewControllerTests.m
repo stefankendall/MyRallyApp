@@ -44,11 +44,29 @@
     STAssertEqualObjects([controller.blockedReasonTextField text], @"reason", @"");
 }
 
-- (void) testPlanEstimate {
+- (void)testPlanEstimate {
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
     [controller setStory:[@{@"PlanEstimate" : @1} mutableCopy]];
     [controller setupFields];
     STAssertEqualObjects([controller.planEstimateField text], @"1", @"");
+}
+
+- (void)testRelease {
+    StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
+
+    [controller setStory:[@{@"Release" : @{@"_rallyAPIMajor" : @2,
+            @"_rallyAPIMinor" : @0, @"_ref" : @"https://rally1.rallydev.com/slm/webservice/v2.0/release/10073767343",
+            @"_refObjectName" : @"2013.01.16", @"_type" : @"Release"}} mutableCopy]];
+    [controller setupFields];
+    STAssertEqualObjects([controller.releaseLabel text], @"2013.01.16", @"");
+}
+
+- (void)testReleaseNull {
+    StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
+
+    [controller setStory:[@{@"Release" : [NSNull new]} mutableCopy]];
+    [controller setupFields];
+    STAssertEqualObjects([controller.releaseLabel text], @"", @"");
 }
 
 - (void) testUpdateBooleanFieldChangesText {

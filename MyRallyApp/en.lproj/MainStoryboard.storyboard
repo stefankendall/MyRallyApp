@@ -280,13 +280,20 @@
                                                         <constraint firstAttribute="width" constant="284" id="H5q-ax-WT9"/>
                                                     </constraints>
                                                 </webView>
+                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgM-DE-HQ3">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <accessibility key="accessibilityConfiguration" label=""/>
                                         <constraints>
-                                            <constraint firstItem="fdp-EU-2Fe" firstAttribute="top" secondItem="Vou-j7-KOp" secondAttribute="top" constant="9" id="T9c-No-CPp"/>
-                                            <constraint firstItem="fdp-EU-2Fe" firstAttribute="leading" secondItem="Vou-j7-KOp" secondAttribute="leading" constant="17" id="a9T-iU-TqB"/>
+                                            <constraint firstItem="MgM-DE-HQ3" firstAttribute="top" secondItem="fdp-EU-2Fe" secondAttribute="top" type="default" id="4jA-Rd-Ae2"/>
+                                            <constraint firstItem="MgM-DE-HQ3" firstAttribute="top" secondItem="Vou-j7-KOp" secondAttribute="top" constant="9" id="LD2-9X-IzE"/>
+                                            <constraint firstItem="MgM-DE-HQ3" firstAttribute="leading" secondItem="Vou-j7-KOp" secondAttribute="leading" constant="30" id="Rcc-dP-m7l"/>
+                                            <constraint firstItem="fdp-EU-2Fe" firstAttribute="leading" secondItem="Vou-j7-KOp" secondAttribute="leading" constant="17" id="d3Y-CK-bHd"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
@@ -702,6 +709,7 @@
                         <outlet property="acceptedDateLabel" destination="O3Z-oP-Ndr" id="K95-Cd-6pk"/>
                         <outlet property="blockedButton" destination="mW4-8g-dMF" id="eYs-Qm-ijQ"/>
                         <outlet property="blockedReasonLabel" destination="YQX-yg-9S0" id="J8w-aO-jXj"/>
+                        <outlet property="descriptionLabel" destination="MgM-DE-HQ3" id="Z5U-al-jzU"/>
                         <outlet property="descriptionWebView" destination="fdp-EU-2Fe" id="GqJ-Xe-V9c"/>
                         <outlet property="featureLabel" destination="uxM-oT-guc" id="nAz-rO-CXO"/>
                         <outlet property="iterationLabel" destination="jUR-OL-POh" id="bF2-HM-Sa3"/>
@@ -750,6 +758,7 @@
                 <relationship kind="outlet" name="acceptedDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="blockedButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="blockedReasonLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="descriptionWebView" candidateClass="UIWebView"/>
                 <relationship kind="outlet" name="featureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="iterationLabel" candidateClass="UILabel"/>

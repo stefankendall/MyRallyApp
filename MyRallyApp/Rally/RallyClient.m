@@ -70,7 +70,7 @@ NSString *const TEST_PASSWORD = @"Password";
     void (^requestSuccess)(AFHTTPRequestOperation *, id) = ^(AFHTTPRequestOperation *op, id json) {
         id object = [[json objectForKey:@"OperationResult"] objectForKey:@"Object"];
         if (object != nil ) {
-            successCallback(object);
+            successCallback([object mutableCopy]);
         }
         else {
             failureCallback();

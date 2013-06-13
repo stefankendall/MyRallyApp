@@ -8,6 +8,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *readyButton;
 @property (weak, nonatomic) IBOutlet UIButton *blockedButton;
 @property (weak, nonatomic) IBOutlet UITextField *planEstimateField;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+
 
 @property (weak, nonatomic) IBOutlet UIWebView *descriptionWebView;
 @property (weak, nonatomic) IBOutlet UILabel *blockedReasonLabel;

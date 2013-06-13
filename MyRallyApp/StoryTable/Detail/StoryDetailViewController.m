@@ -26,6 +26,9 @@
     EZFormBooleanField *readyField = [[EZFormBooleanField alloc] initWithKey:@"Ready"];
     [self.form addFormField:readyField];
 
+    EZFormTextField *descriptionField = [[EZFormTextField alloc] initWithKey:@"Description"];
+    [self.form addFormField:descriptionField];
+
     EZFormBooleanField *blockedField = [[EZFormBooleanField alloc] initWithKey:@"Blocked"];
     [self.form addFormField:blockedField];
 
@@ -40,6 +43,9 @@
 - (void)wireFormFields {
     EZFormTextField *nameFormField = [self.form formFieldForKey:@"Name"];
     [nameFormField useTextField:self.nameTextField];
+
+    EZFormTextField *descriptionFormField = [self.form formFieldForKey:@"Description"];
+    [descriptionFormField useLabel:self.descriptionLabel];
 
     EZFormBooleanField *readyField = [self.form formFieldForKey:@"Ready"];
     [readyField useButton:self.readyButton];
@@ -63,7 +69,9 @@
 - (void)setupFields {
     self.navigationItem.title = self.story[@"FormattedID"];
     [self.nameTextField setText:self.story[@"Name"]];
-    [self.descriptionWebView loadHTMLString:[[HtmlWrapper new] htmlFor:self.story[@"Description"]] baseURL:nil];
+    NSString *descriptionText = self.story[@"Description"];
+    [self.descriptionWebView loadHTMLString:[[HtmlWrapper new] htmlFor:descriptionText] baseURL:nil];
+    [self.descriptionLabel setText:descriptionText];
     [self.featureLabel setText:[self replaceIfNull:self.story[@"Feature"]]];
     [self setupBooleanField:self.readyButton withName:@"Ready"];
     [self setupBooleanField:self.blockedButton withName:@"Blocked"];
@@ -85,7 +93,8 @@
 
 - (void)saveForm {
     [self enableDisableForm:NO];
-    NSDictionary *newValues = [self.form modelValues];
+    NSMutableDictionary *newValues = [[self.form modelValues] mutableCopy];
+    [newValues setObject:self.story[@"Description"] forKey:@"Description"];
     [[RallyClient instance] updateStory:self.story withValues:newValues withSuccess:^(id json) {
         self.story = json;
         [self setupFields];

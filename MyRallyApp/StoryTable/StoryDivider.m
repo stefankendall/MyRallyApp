@@ -2,16 +2,16 @@
 
 @implementation StoryDivider
 
-- (NSDictionary *)storiesByScheduleState:(NSArray *)stories {
+- (NSMutableDictionary *)storiesByScheduleState:(NSArray *)stories {
     NSMutableDictionary *storiesByScheduleState = [NSMutableDictionary new];
 
     for (NSDictionary *story in stories) {
         NSString *state = [story objectForKey:@"ScheduleState"];
         NSMutableArray *existing = [storiesByScheduleState objectForKey:state];
-        if( !existing ){
+        if (!existing) {
             existing = [@[] mutableCopy];
         }
-        [existing addObject:story];
+        [existing addObject:[story mutableCopy]];
 
         [storiesByScheduleState setObject:existing forKey:state];
     }

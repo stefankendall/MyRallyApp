@@ -1,3 +1,3 @@
 @interface StoryDivider : NSObject
-- (NSDictionary *)storiesByScheduleState:(NSArray *)stories;
+- (NSMutableDictionary *)storiesByScheduleState:(NSArray *)stories;
 @end

@@ -1,6 +1,7 @@
 #import "StoryDetailViewController.h"
 #import "RallyClient.h"
 #import "StoryStore.h"
+#import "DescriptionViewController.h"
 
 @interface StoryDetailViewController ()
 @property(nonatomic, strong) NSDictionary *cells;
@@ -87,7 +88,7 @@
         self.story = json;
         [self setupFields];
         [self enableDisableForm:YES];
-        [[StoryStore instance] updateStory: json];
+        [[StoryStore instance] updateStory:json];
     }                        andFailure:^{
         NSLog(@"%@", self.story);
         [self setupFields];
@@ -106,6 +107,13 @@
     if ([formField isKindOfClass:EZFormBooleanField.class]) {
         UIButton *button = (UIButton *) formField.userView;
         [button setTitle:[self booleanNameOf:[formField fieldValue]] forState:UIControlStateNormal];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([indexPath section] == 1) {
+        DescriptionViewController *controller = [[DescriptionViewController alloc] initWithNibName:@"DescriptionViewController" story:self.story];
+        [self.navigationController pushViewController:controller animated:YES];
     }
 }
 

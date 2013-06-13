@@ -23,6 +23,7 @@
     [self.textView setText:description];
     [self.textView setDelegate:self];
     [self.webView loadHTMLString:[self htmlFor:description] baseURL:nil];
+    [self.navigationItem setTitle:@"Description"];
 }
 
 - (NSString *)htmlFor:(NSString *)description {

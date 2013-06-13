@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *taskActualTotalLabel;
 @property (weak, nonatomic) IBOutlet UILabel *acceptedDateLabel;
 
-@property(nonatomic, strong) NSDictionary *story;
+@property(nonatomic, strong) NSMutableDictionary *story;
 - (IBAction)saveButtonTapped:(id)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 

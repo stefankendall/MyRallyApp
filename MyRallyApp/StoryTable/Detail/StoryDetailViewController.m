@@ -1,3 +1,4 @@
+#import <QuartzCore/QuartzCore.h>
 #import "StoryDetailViewController.h"
 #import "RallyClient.h"
 #import "StoryStore.h"
@@ -76,13 +77,16 @@
     self.navigationItem.title = self.story[@"FormattedID"];
     [self.nameTextField setText:self.story[@"Name"]];
     NSString *descriptionText = self.story[@"Description"];
+
+
     [self.descriptionWebView loadHTMLString:[[HtmlWrapper new] htmlFor:descriptionText] baseURL:nil];
     [self.descriptionLabel setText:descriptionText];
     [self.featureLabel setText:[self replaceIfNull:self.story[@"Feature"]]];
     [self setupBooleanField:self.readyButton withName:@"Ready"];
     [self setupBooleanField:self.blockedButton withName:@"Blocked"];
     [self.blockedReasonTextField setText:[self replaceIfNull:self.story[@"BlockedReason"]]];
-    [self.blockedReasonCell setHidden:!([self storyIsBlocked])];
+
+    [self showHideBlockedReason];
 
     [self.releaseLabel setText:[self replaceIfNull:self.story[@"Release"]]];
     [self.iterationLabel setText:[self replaceIfNull:self.story[@"Iteration"]]];
@@ -93,8 +97,20 @@
     [self.acceptedDateLabel setText:[self replaceIfNull:self.story[@"AcceptedDate"]]];
 }
 
+- (void)showHideBlockedReason {
+    [CATransaction begin];
+    [self.tableView beginUpdates];
+    [CATransaction setCompletionBlock:^{
+        [[self.blockedReasonCell contentView] setHidden:NO];
+    }];
+    [[self.blockedReasonCell contentView] setHidden:YES];
+    [self.blockedReasonCell setHidden:!([self storyIsBlocked])];
+    [self.tableView endUpdates];
+    [CATransaction commit];
+}
+
 - (BOOL)storyIsBlocked {
-    return [self.story[@"Blocked"] intValue] > 0;
+    return [[[self.form modelValues] objectForKey:@"Blocked"] intValue] > 0;
 }
 
 - (void)setupBooleanField:(UIButton *)button withName:(NSString *)name {
@@ -131,6 +147,7 @@
     if ([formField isKindOfClass:EZFormBooleanField.class]) {
         UIButton *button = (UIButton *) formField.userView;
         [button setTitle:[self booleanNameOf:[formField fieldValue]] forState:UIControlStateNormal];
+        [self showHideBlockedReason];
     }
 }
 
@@ -142,7 +159,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if([indexPath section] == 3 && [indexPath row] == 2 && ![self storyIsBlocked]){
+    if ([indexPath section] == 3 && [indexPath row] == 2 && ![self storyIsBlocked]) {
         return 0;
     }
     else {
@@ -176,4 +193,5 @@
         return @"No";
     }
 }
+
 @end

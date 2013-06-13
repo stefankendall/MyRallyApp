@@ -509,22 +509,12 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBj-bu-zcT">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="116" id="Urb-Et-Bce"/>
-                                                        <constraint firstAttribute="height" constant="30" id="kcT-f4-y5b"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="NBj-bu-zcT" firstAttribute="leading" secondItem="mxw-ap-pR5" secondAttribute="leading" constant="167" id="5en-UO-TZz"/>
                                             <constraint firstItem="p7y-Du-u83" firstAttribute="leading" secondItem="mxw-ap-pR5" secondAttribute="leading" constant="30" id="B0k-pa-r6i"/>
-                                            <constraint firstItem="NBj-bu-zcT" firstAttribute="centerX" secondItem="jUR-OL-POh" secondAttribute="centerX" type="default" id="FCf-kj-e2e"/>
-                                            <constraint firstItem="NBj-bu-zcT" firstAttribute="top" secondItem="mxw-ap-pR5" secondAttribute="top" constant="20" type="default" id="UxE-S2-uci"/>
+                                            <constraint firstAttribute="trailing" secondItem="jUR-OL-POh" secondAttribute="trailing" constant="30" id="cnC-dR-YSM"/>
                                             <constraint firstItem="jUR-OL-POh" firstAttribute="top" secondItem="p7y-Du-u83" secondAttribute="top" type="default" id="dZK-dW-qY7"/>
                                             <constraint firstItem="jUR-OL-POh" firstAttribute="baseline" secondItem="p7y-Du-u83" secondAttribute="baseline" type="default" id="ggZ-vg-WfG"/>
                                             <constraint firstItem="p7y-Du-u83" firstAttribute="top" secondItem="mxw-ap-pR5" secondAttribute="top" constant="11" id="oxM-om-5cy"/>
@@ -546,12 +536,22 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBj-bu-zcT">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="kcT-f4-y5b"/>
+                                                        <constraint firstAttribute="width" constant="138" id="xY5-TP-Irw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="w2D-Kz-6UE" firstAttribute="top" secondItem="V96-EG-Eqd" secondAttribute="top" constant="11" id="FJh-ej-hkl"/>
+                                            <constraint firstItem="NBj-bu-zcT" firstAttribute="leading" secondItem="V96-EG-Eqd" secondAttribute="leading" constant="152" id="Za0-Jy-37X"/>
                                             <constraint firstItem="w2D-Kz-6UE" firstAttribute="leading" secondItem="V96-EG-Eqd" secondAttribute="leading" constant="30" id="mRo-cg-wgD"/>
+                                            <constraint firstItem="NBj-bu-zcT" firstAttribute="centerY" secondItem="V96-EG-Eqd" secondAttribute="centerY" type="default" id="qBe-IO-wWf"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="K4Z-H4-4TD">
@@ -758,6 +758,7 @@
                 <relationship kind="action" name="saveButtonTapped:"/>
                 <relationship kind="outlet" name="acceptedDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="blockedButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="blockedReasonCell" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="blockedReasonTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="descriptionWebView" candidateClass="UIWebView"/>

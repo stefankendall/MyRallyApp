@@ -41,6 +41,7 @@
 		D03D021294220E6040FB1F69 /* StoriesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D080937F28342C3FCAC9B /* StoriesViewControllerTests.m */; };
 		D03D021AED36A8A5F52F45B2 /* SenTestCase+ControllerTestAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0BC4413D71DAA650FA81 /* SenTestCase+ControllerTestAdditions.m */; };
 		D03D038491B199CDCF0161BA /* StoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D046DB31A8543825D324D /* StoryStore.m */; };
+		D03D060FA9F66479413A3B33 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D024E310A11DF855F43CF /* QuartzCore.framework */; };
 		D03D0809E6D0E681EE933963 /* StoryDetailViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0CF9577C97871357FC1A /* StoryDetailViewControllerTests.m */; };
 		D03D09A2B1A89C8090EB24F9 /* HtmlWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0027D0A610E812711CE2 /* HtmlWrapper.m */; };
 		D03D09BEFFAA480D5286F278 /* RALoginControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0F5C853F2ED1FE009FC0 /* RALoginControllerTests.m */; };
@@ -110,6 +111,7 @@
 		A4A742FE260F4A77B297B6F4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D03D0027D0A610E812711CE2 /* HtmlWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlWrapper.m; sourceTree = "<group>"; };
 		D03D01C0D3B7668F6BFCBE6F /* StoryStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryStoreTests.h; sourceTree = "<group>"; };
+		D03D024E310A11DF855F43CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D03D0403226C80CA2F1FA9B0 /* HtmlWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlWrapper.h; sourceTree = "<group>"; };
 		D03D045A5039416BEC8C9E93 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
 		D03D046DB31A8543825D324D /* StoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryStore.m; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				545902ABD9D18500C3A1DD70 /* Foundation.framework in Frameworks */,
 				545905203FC6E07D21036752 /* CoreGraphics.framework in Frameworks */,
 				0AE5404DAC9F4043BBF954F4 /* libPods.a in Frameworks */,
+				D03D060FA9F66479413A3B33 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +191,7 @@
 				5459038A56F7BD684A5FA8A7 /* CoreGraphics.framework */,
 				54590F3FD60D1C25D15DD9BA /* SenTestingKit.framework */,
 				DC9E32D4976144D9A69143C6 /* libPods.a */,
+				D03D024E310A11DF855F43CF /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

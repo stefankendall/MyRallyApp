@@ -31,12 +31,52 @@
 - (void)updateStory:(NSDictionary *)updatedStory {
     NSNumber *objectId = [updatedStory objectForKey:@"ObjectID"];
     NSString *scheduleState = [updatedStory objectForKey:@"ScheduleState"];
-    NSArray *stories = self.storiesByScheduleState[scheduleState];
 
-    int index = [stories findIndexWithBlock:^BOOL(NSDictionary *story) {
+    int index = [self.storiesByScheduleState[scheduleState] findIndexWithBlock:^BOOL(NSDictionary *story) {
         return [[story objectForKey:@"ObjectID"] isEqual:objectId];
     }];
 
+    if (index >= 0) {
+        [self replaceStoryInScheduleState:updatedStory scheduleState:scheduleState index:index];
+    }
+    else {
+        NSArray *existing = self.storiesByScheduleState[scheduleState];
+        if (!existing) {
+            [self.storiesByScheduleState setObject:@[updatedStory] forKey:scheduleState];
+        }
+        else {
+            NSArray *stories = self.storiesByScheduleState[scheduleState];
+            NSMutableArray *newStories = [stories mutableCopy];
+            [newStories addObject:updatedStory];
+            self.storiesByScheduleState[scheduleState] = newStories;
+        }
+        [self removeExistingStoryInAnotherScheduleState:updatedStory];
+    }
+}
+
+- (void)removeExistingStoryInAnotherScheduleState:(NSDictionary *)story {
+    NSString *scheduleState = [story objectForKey:@"ScheduleState"];
+    NSArray *otherScheduleStates = [[self getOrderedScheduleStates] select:^BOOL(NSString *state) {
+        return ![state isEqualToString:scheduleState];
+    }];
+
+    [otherScheduleStates each:^(NSString *state) {
+        NSArray *stories = self.storiesByScheduleState[state];
+        NSDictionary *matchingStory = [stories detect:^BOOL(NSDictionary *otherStory) {
+            return [[otherStory objectForKey:@"ObjectID"] isEqual:[story objectForKey:@"ObjectID"]];
+        }];
+
+        if (matchingStory) {
+            NSArray *newStories = [stories reject:^BOOL(NSDictionary *otherStory) {
+                return otherStory == matchingStory;
+            }];
+            self.storiesByScheduleState[state] = newStories;
+        }
+    }];
+}
+
+- (void)replaceStoryInScheduleState:(NSDictionary *)updatedStory scheduleState:(NSString *)scheduleState index:(int)index {
+    NSArray *stories = self.storiesByScheduleState[scheduleState];
     NSMutableArray *newStories = [stories mutableCopy];
     [newStories replaceObjectAtIndex:(NSUInteger) index withObject:updatedStory];
     [self.storiesByScheduleState setObject:newStories forKey:scheduleState];

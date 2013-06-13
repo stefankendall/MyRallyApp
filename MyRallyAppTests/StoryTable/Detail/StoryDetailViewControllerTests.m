@@ -48,7 +48,7 @@
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
     [controller setStory:@{@"PlanEstimate" : @1}];
     [controller setupFields];
-    STAssertEqualObjects([controller.planEstimateLabel text], @"1", @"");
+    STAssertEqualObjects([controller.planEstimateField text], @"1", @"");
 }
 
 - (void) testUpdateBooleanFieldChangesText {

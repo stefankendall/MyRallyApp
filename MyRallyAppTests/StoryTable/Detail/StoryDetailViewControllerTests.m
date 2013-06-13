@@ -9,7 +9,7 @@
     NSString *formattedId = @"S34567";
     NSString *name = @"Do the work";
     NSString *feature = @"S23456";
-    [controller setStory:@{@"FormattedID" : formattedId, @"Name" : name, @"Feature" : feature}];
+    [controller setStory:[@{@"FormattedID" : formattedId, @"Name" : name, @"Feature" : feature} mutableCopy]];
     [controller setupFields];
     STAssertEqualObjects(controller.navigationItem.title, formattedId, @"");
     STAssertEqualObjects([controller.nameTextField text], name, @"");
@@ -18,35 +18,35 @@
 
 - (void)testSetStoryFeatureNull {
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
-    [controller setStory:@{@"Feature" : [NSNull new]}];
+    [controller setStory:[@{@"Feature" : [NSNull new]} mutableCopy]];
     [controller setupFields];
     STAssertEqualObjects([controller.featureLabel text], @"", @"");
 }
 
 - (void)testReadyField {
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
-    [controller setStory:@{@"Ready" : @0}];
+    [controller setStory:[@{@"Ready" : @0} mutableCopy]];
     [controller setupFields];
     STAssertEqualObjects([controller.readyButton titleForState:UIControlStateNormal], @"No", @"");
 }
 
 - (void)testBlockedField {
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
-    [controller setStory:@{@"Blocked" : @1}];
+    [controller setStory:[@{@"Blocked" : @1} mutableCopy]];
     [controller setupFields];
     STAssertEqualObjects([controller.blockedButton titleForState:UIControlStateNormal], @"Yes", @"");
 }
 
 - (void)testBlockedReasonField {
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
-    [controller setStory:@{@"BlockedReason" : @"reason"}];
+    [controller setStory:[@{@"BlockedReason" : @"reason"} mutableCopy]];
     [controller setupFields];
     STAssertEqualObjects([controller.blockedReasonLabel text], @"reason", @"");
 }
 
 - (void) testPlanEstimate {
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
-    [controller setStory:@{@"PlanEstimate" : @1}];
+    [controller setStory:[@{@"PlanEstimate" : @1} mutableCopy]];
     [controller setupFields];
     STAssertEqualObjects([controller.planEstimateField text], @"1", @"");
 }

@@ -1,4 +1,5 @@
 #import "DescriptionViewController.h"
+#import "HtmlWrapper.h"
 
 @implementation DescriptionViewController
 
@@ -22,17 +23,13 @@
     NSString *description = [self.story objectForKey:@"Description"];
     [self.textView setText:description];
     [self.textView setDelegate:self];
-    [self.webView loadHTMLString:[self htmlFor:description] baseURL:nil];
+    [self.webView loadHTMLString:[[HtmlWrapper new] htmlFor:description] baseURL:nil];
     [self.navigationItem setTitle:@"Description"];
-}
-
-- (NSString *)htmlFor:(NSString *)description {
-    return [NSString stringWithFormat:@"<html><body>%@</body></html>", description];
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
     NSString *description = [textView text];
-    [self.webView loadHTMLString:[self htmlFor:description] baseURL:nil];
+    [self.webView loadHTMLString:[[HtmlWrapper new] htmlFor:description] baseURL:nil];
     [self.story setObject:description forKey:@"Description"];
 }
 

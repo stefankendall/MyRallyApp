@@ -43,6 +43,7 @@
 		D03D021AED36A8A5F52F45B2 /* SenTestCase+ControllerTestAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0BC4413D71DAA650FA81 /* SenTestCase+ControllerTestAdditions.m */; };
 		D03D038491B199CDCF0161BA /* StoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D046DB31A8543825D324D /* StoryStore.m */; };
 		D03D0809E6D0E681EE933963 /* StoryDetailViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0CF9577C97871357FC1A /* StoryDetailViewControllerTests.m */; };
+		D03D09A2B1A89C8090EB24F9 /* HtmlWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0027D0A610E812711CE2 /* HtmlWrapper.m */; };
 		D03D09BEFFAA480D5286F278 /* RALoginControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0F5C853F2ED1FE009FC0 /* RALoginControllerTests.m */; };
 		D03D0C15068CA820574A481D /* StoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0A39395CCF39373B5E52 /* StoryDetailViewController.m */; };
 		D03D0D27B7ED3DAC2B5F848F /* StoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D03D0CCA50DC51C6015BF658 /* StoryDataSource.m */; };
@@ -109,7 +110,9 @@
 		54590F8E9464851CEAC9F593 /* StoryDividerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDividerTests.h; sourceTree = "<group>"; };
 		54590F9798347B62499F9D67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A4A742FE260F4A77B297B6F4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D03D0027D0A610E812711CE2 /* HtmlWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlWrapper.m; sourceTree = "<group>"; };
 		D03D01C0D3B7668F6BFCBE6F /* StoryStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryStoreTests.h; sourceTree = "<group>"; };
+		D03D0403226C80CA2F1FA9B0 /* HtmlWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlWrapper.h; sourceTree = "<group>"; };
 		D03D045A5039416BEC8C9E93 /* StoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewController.h; sourceTree = "<group>"; };
 		D03D046DB31A8543825D324D /* StoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryStore.m; sourceTree = "<group>"; };
 		D03D06E361AF7C59D4DFE397 /* StoriesViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesViewControllerTests.h; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 			children = (
 				54590BE03D81C4F8EB8305AD /* CTCustomTableViewCell.m */,
 				545906C8CAC7177E64851A11 /* CTCustomTableViewCell.h */,
+				D03D0027D0A610E812711CE2 /* HtmlWrapper.m */,
+				D03D0403226C80CA2F1FA9B0 /* HtmlWrapper.h */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				D03D038491B199CDCF0161BA /* StoryStore.m in Sources */,
 				D03D0D27B7ED3DAC2B5F848F /* StoryDataSource.m in Sources */,
 				545907B8BAE1A8A11FCCAB6E /* DescriptionViewController.m in Sources */,
+				D03D09A2B1A89C8090EB24F9 /* HtmlWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

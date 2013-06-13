@@ -2,6 +2,7 @@
 #import "RallyClient.h"
 #import "StoryStore.h"
 #import "DescriptionViewController.h"
+#import "HtmlWrapper.h"
 
 @interface StoryDetailViewController ()
 @property(nonatomic, strong) NSDictionary *cells;
@@ -62,6 +63,7 @@
 - (void)setupFields {
     self.navigationItem.title = self.story[@"FormattedID"];
     [self.nameTextField setText:self.story[@"Name"]];
+    [self.descriptionWebView loadHTMLString:[[HtmlWrapper new] htmlFor:self.story[@"Description"]] baseURL:nil];
     [self.featureLabel setText:[self replaceIfNull:self.story[@"Feature"]]];
     [self setupBooleanField:self.readyButton withName:@"Ready"];
     [self setupBooleanField:self.blockedButton withName:@"Blocked"];

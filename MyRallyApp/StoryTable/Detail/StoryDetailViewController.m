@@ -123,7 +123,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([indexPath section] == 1) {
-        DescriptionViewController *controller = [[DescriptionViewController alloc] initWithNibName:@"DescriptionViewController" story:self.story];
+        DescriptionViewController *controller = [[DescriptionViewController alloc] initWithStory:self.story];
         [self.navigationController pushViewController:controller animated:YES];
     }
 }

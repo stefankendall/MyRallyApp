@@ -1,28 +1,18 @@
 #import "DescriptionViewController.h"
-#import "HtmlWrapper.h"
 
 @implementation DescriptionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil story:(NSMutableDictionary *)story1 {
-    self = [super initWithNibName:nibNameOrNil bundle:nil];
-    if (self) {
+- (id)initWithStory:(NSMutableDictionary *)story1 {
+    if (self = [super initWithText:story1[@"Description"]]) {
         self.story = story1;
     }
-
     return self;
 }
 
-- (IBAction)editViewValueChanged:(id)sender {
-    int index = [sender selectedSegmentIndex];
-    BOOL editing = index == 0;
-    [self.textView setHidden:!editing];
-}
-
 - (void)viewDidLoad {
-    NSString *description = [self.story objectForKey:@"Description"];
-    [self.textView setText:description];
-    [self.textView setDelegate:self];
+    [super viewDidLoad];
     [self.navigationItem setTitle:@"Description"];
+    [self.textView setDelegate:self];
 }
 
 - (void)textViewDidChange:(UITextView *)textView {

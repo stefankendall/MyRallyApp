@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking 3
 #define COCOAPODS_VERSION_PATCH_AFNetworking 0
 
+// BWLongTextViewController
+#define COCOAPODS_POD_AVAILABLE_BWLongTextViewController
+#define COCOAPODS_VERSION_MAJOR_BWLongTextViewController 1
+#define COCOAPODS_VERSION_MINOR_BWLongTextViewController 0
+#define COCOAPODS_VERSION_PATCH_BWLongTextViewController 0
+
 // EZForm
 #define COCOAPODS_POD_AVAILABLE_EZForm
 #define COCOAPODS_VERSION_MAJOR_EZForm 1

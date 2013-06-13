@@ -7,406 +7,421 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00464AC061E6454BBE2CADFD /* EZFormInputControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ACADB2F6FC478EAA649161 /* EZFormInputControl.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		00F0FB4537BD46E09CD3AF94 /* EZFormDateField.h in Headers */ = {isa = PBXBuildFile; fileRef = 70B53CD02A0242FE93CDD47A /* EZFormDateField.h */; settings = {}; };
-		030FDA99F789428DB427F6C7 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 316BD1FDB323447395830BFC /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		09454D47F7E945689427BCEF /* UIView+EZFormUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F84D456087440BACC682EC /* UIView+EZFormUtility.h */; settings = {}; };
-		0C266872E0F6457A96C9A6C5 /* EZFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B271EE8ACC8F4207918C2E00 /* EZFormTextField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		139C4191546D4486A0D077F7 /* EZForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 25701B37882F4890AF2FCE6D /* EZForm.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		140F021239794E1FAE5610A0 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D7B7E5BCD34BDC8A83C13C /* UIScrollView+SVPullToRefresh.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		155059E9AB3A476BAD90A661 /* AFHTTPRequestOperationLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA4A85CFA7D49F58E7EEA04 /* AFHTTPRequestOperationLogger.h */; settings = {}; };
-		1586972B8E3042D888DDB1A2 /* NSSet+Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 55907F5FA6B6433D9D6C47A4 /* NSSet+Enumerable.h */; settings = {}; };
-		15CC3F9D195D4A6A8CFBEE03 /* AFHTTPRequestOperationLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C9093EADF94CFCA2DD33A2 /* AFHTTPRequestOperationLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		1CF41A9A69CC496D8403EE58 /* EZFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = FA868DA5259A4A7A8B0442C4 /* EZFormField.h */; settings = {}; };
-		1CF6409C6AB1456BAFF231E1 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E14E0D937A9B4E1D9D81CC84 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		206AE7C4D7204B82A4ECF487 /* EZFormRadioField.m in Sources */ = {isa = PBXBuildFile; fileRef = F96378A49B4F47189196D019 /* EZFormRadioField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		234A61C017F148FC9AB67911 /* NSDictionary+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A51A19EAC2E4B008B88B867 /* NSDictionary+Enumerable.m */; settings = {}; };
-		259159D1C8A7468DAC6DFE8D /* UIScrollView+SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B02179C683F4D418C3365F5 /* UIScrollView+SVPullToRefresh.h */; settings = {}; };
-		26EC639BC3CB4DA29A6FA956 /* NSSet+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE89239D3E47F899DB0F2B /* NSSet+Enumerable.m */; settings = {}; };
-		2BDAAEC9792C44B3A9A468A0 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0A3D2CA6FA423BBA4601C4 /* AFImageRequestOperation.h */; settings = {}; };
-		386E7B063F6C41F9ADB496B7 /* EZFormInputControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ED925495A304EF39ED0C8C1 /* EZFormInputControl.h */; settings = {}; };
-		3D67ACCABF5B4030B6BE0921 /* EZFormMultiRadioFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2AA9E4EAFE4DAFB7D3FF95 /* EZFormMultiRadioFormField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		3E6CCACE0E7F4B61ABC3EC04 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D59354CF574C44AFABB70E /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		42EB485220AA4868AA9F967D /* NSArray+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CA7198AE6043658DCE6910 /* NSArray+Enumerable.m */; settings = {}; };
-		44BC95F6A2A14CA99DC97DEE /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF5EBE628F448769C763296 /* AFXMLRequestOperation.h */; settings = {}; };
-		47BA75D89C6842188D111A57 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D58ACAB4EED147A8A47016CD /* Pods-dummy.m */; settings = {}; };
-		48DB4334DF234CEDAF6C423F /* EZFormFieldConcreteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D47D70B8CC1B41D991E9F3B9 /* EZFormFieldConcreteProtocol.h */; settings = {}; };
-		4D61E9D652B94353B4584688 /* EZFormGenericField.m in Sources */ = {isa = PBXBuildFile; fileRef = 155E5D8A32A0402AAC2BCC38 /* EZFormGenericField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		4F3BE3A5E2EA4AC2949E9E23 /* EZFormBooleanField.m in Sources */ = {isa = PBXBuildFile; fileRef = E086FBAD658A4C81B9E2A01F /* EZFormBooleanField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		505B684723E24259B83693CF /* EZFormDateField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1F3D2508E4EC696B24D35 /* EZFormDateField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		5AB3C4291CB249958A1AC24E /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF6FD85E7F04F1B950ACB80 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		60FE48468E7848619CB96ED8 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C654C3F4C59B46AC8398A9D3 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		692E628A0A4849B088D145B0 /* NSSet+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6D47350D0436A92DBBAF4 /* NSSet+Utilities.m */; settings = {}; };
-		6E0A38EDC8F14667B8D07ACD /* UIScrollView+SVInfiniteScrolling.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF02FCB0465406C8600FFEC /* UIScrollView+SVInfiniteScrolling.h */; settings = {}; };
-		7A57F796C8AE487898A5449B /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDDB8F5964B4484BF403B04 /* AFHTTPRequestOperation.h */; settings = {}; };
-		7D105D35E1514420AAA2E260 /* EZFormInvalidIndicatorTriangleExclamationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E757A6BAC54817AF4F69A3 /* EZFormInvalidIndicatorTriangleExclamationView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		818AAA6170C14E72A31B92A6 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E5997D9B6D4AFFBAAF874E /* AFNetworking.h */; settings = {}; };
-		828F10CDC54C428E8703A9ED /* EZFormField+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 37FAFECC309B487894307A4B /* EZFormField+Private.h */; settings = {}; };
-		9ACB95EA8C004A9283BFC6FD /* SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E3883C1CEC49C0ABA28B1D /* SVPullToRefresh.h */; settings = {}; };
-		9BB4C5DE9C2945DCBAE3E9AB /* EZFormInvalidIndicatorTriangleExclamationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 80808C7A8CFA400DBCE7E2AF /* EZFormInvalidIndicatorTriangleExclamationView.h */; settings = {}; };
-		9F0D23F9D0254FBD8E32ED1F /* EZFormMultiRadioFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = C31A9652FA834D56809CB6F3 /* EZFormMultiRadioFormField.h */; settings = {}; };
-		A8C00D260EF24AF1B31D69B8 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = ADEBB64A2E754FC58F17CB83 /* AFJSONRequestOperation.h */; settings = {}; };
-		AA29BB6A705240B69E080AD5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5A49245B354966B20F8A17 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		AAEC1334CC0D4D4FA9B40903 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 66789B8922AE4459893F97BA /* UIScrollView+SVInfiniteScrolling.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		AC99FA4EF0594DE9A1C3EC18 /* EZFormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 380567619CC342B6A40C2967 /* EZFormTextField.h */; settings = {}; };
-		AE6E7AC431AC4C32B206C13C /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD2F82DD14599962C57AC /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		B1A9B41BA7E74146815BF7E3 /* EZFormRadioChoiceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95790A282C204D01807B09C3 /* EZFormRadioChoiceViewController.h */; settings = {}; };
-		B2A717395AEF453692997484 /* EZFormGenericField.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E19E6143E64CF58C89E1CB /* EZFormGenericField.h */; settings = {}; };
-		B383BF90EF6A460EB7DE6135 /* NSDictionary+Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF9AFA0EF194490876322E8 /* NSDictionary+Enumerable.h */; settings = {}; };
-		B3D01761170E489CB2134B2F /* EZFormInputAccessoryViewProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 882108FC1287438594986409 /* EZFormInputAccessoryViewProtocols.h */; settings = {}; };
-		B40FBE45574548FBAB901C6E /* MRCEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7621192BD1094ED3A12F6A80 /* MRCEnumerable.h */; settings = {}; };
-		B956DE184F034383A8C3774F /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF1F63798024F1788D0BEBB /* AFHTTPClient.h */; settings = {}; };
-		BC4BA3B2C9B64031963B6854 /* EZFormRadioField.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D9B45C63794C04A473BE8E /* EZFormRadioField.h */; settings = {}; };
-		BF6FD4A084D84E4095D0C74B /* EZFormStandardInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B6367C00634822926F60FB /* EZFormStandardInputAccessoryView.h */; settings = {}; };
-		C2808BCD28B04F298FF4F148 /* EZFormCommonValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DE65BC361F4DA3A4741874 /* EZFormCommonValidators.h */; settings = {}; };
-		CACE4FBEC5104BD2BAE375D9 /* UIView+EZFormUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 22616299980D46EF83FEE9A1 /* UIView+EZFormUtility.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		CDE70738FA5F455790003022 /* EZForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 819E6EEB8A744430BC4C7417 /* EZForm.h */; settings = {}; };
-		D010CAEBA4534F14AEA587F5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D8618A88DD6D4D9AA36C9CB0 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		D0FA66382201446F9CF31CCA /* EZFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA00F7AFB6F43EF9F77FF7D /* EZFormField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		D84C836280654E38BB3F253B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5020C449036C4822B218E7B2 /* Foundation.framework */; settings = {}; };
-		DAECEBECEE2D4F6BAC9E5B76 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 579F23DDA8E74AC294F04846 /* AFPropertyListRequestOperation.h */; settings = {}; };
-		DDFC3A2B8C3E4C668733FF5A /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CD9935ECC4993A34E0215 /* NSArray+Utilities.m */; settings = {}; };
-		E6363DE2CD14450B94E3C0A6 /* NSArray+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E3E214D111E94753A2A80988 /* NSArray+Utilities.h */; settings = {}; };
-		E764701173AD475A8BA0863F /* EZFormBooleanField.h in Headers */ = {isa = PBXBuildFile; fileRef = 75158528ECCD4D71A8690F5D /* EZFormBooleanField.h */; settings = {}; };
-		E77FE8424F074DE4B6656ED1 /* NSArray+Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 006ED4438FAD4626A2D8D35A /* NSArray+Enumerable.h */; settings = {}; };
-		E9C261E3963B40B59A99D137 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B32082C62EF40498A1F199E /* UIImageView+AFNetworking.h */; settings = {}; };
-		EA9E22ACC4D24D03B1BD0F1F /* EZFormStandardInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE6EF1C56B446986FF1F8C /* EZFormStandardInputAccessoryView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		F0BE1694865B49AEBA199D77 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 02349B5E0AB34BA68F156DF1 /* AFNetworkActivityIndicatorManager.h */; settings = {}; };
-		F181A4CBC15D491881BF16EF /* EZForm+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6F6F42FE0445BF8E495B1E /* EZForm+Private.h */; settings = {}; };
-		F1940320A43E413DB04D2D7D /* EZFormRadioChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189EDA27624D40F592495D22 /* EZFormRadioChoiceViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		F2E95381978D4C8F9AB29026 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B04C023C174E68BD897E8E /* AFURLConnectionOperation.h */; settings = {}; };
-		F5B9CC2A6AAC46B9B76896B4 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05611F0D7E1D47BBBEB4ABC5 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		F7B17EA9AD9A473F8AD249A3 /* NSSet+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E72E565AE9140D1BE97EEE8 /* NSSet+Utilities.h */; settings = {}; };
-		FE3B0642AAD34FBB97B6A96B /* EZFormCommonValidators.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAF98AC3E14A7F97D7FD72 /* EZFormCommonValidators.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		00D45120734D4564B4E127B4 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2A073106904DBFA4714072 /* AFURLConnectionOperation.h */; settings = {}; };
+		03579CD8F5DF4CC786B5FAB7 /* UIView+EZFormUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6502D9D87549378D9E82AC /* UIView+EZFormUtility.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		08000CCDC5124D08A229E8E7 /* EZFormBooleanField.h in Headers */ = {isa = PBXBuildFile; fileRef = 1327C2A766DD4A1F8882C01C /* EZFormBooleanField.h */; settings = {}; };
+		093359B8FB16489282766117 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E721F642C0456BA2D69455 /* AFPropertyListRequestOperation.h */; settings = {}; };
+		0C2F0DABE86B4062A5C26EB9 /* BWLongTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82542DFB074B4BB1A9C972B0 /* BWLongTextViewController.m */; settings = {}; };
+		0D68901C526640C9A6BC7003 /* NSDictionary+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D972BEF334AC28D427665 /* NSDictionary+Enumerable.m */; settings = {}; };
+		0E1347F1DF14492DA9693C31 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC93659B1EC4493A1F2CFEE /* AFJSONRequestOperation.h */; settings = {}; };
+		103FD85EA88147DC84D82F96 /* EZFormRadioChoiceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 05799752DFA64DFCB879848E /* EZFormRadioChoiceViewController.h */; settings = {}; };
+		1176E94E16BB4C919AEE54A4 /* NSArray+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 512CF95A134142A281EFA355 /* NSArray+Enumerable.m */; settings = {}; };
+		1778474A4ABB4A07860B2957 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B461BB45940E4174AFD588DB /* Pods-dummy.m */; settings = {}; };
+		177ECDBEAAC64B92A582568C /* MRCEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AB68AF3B8442B8828EA88B /* MRCEnumerable.h */; settings = {}; };
+		1C3EAFADA55B476DB6743020 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606675AF4F1418F88CDD5A8 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		212C1D5AE0AC475BB83A4AAA /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E26E487D42B46499B5C5888 /* AFHTTPClient.h */; settings = {}; };
+		268527DE67BE4A3685E84134 /* SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDF4F4FEBEE42C8999C3B17 /* SVPullToRefresh.h */; settings = {}; };
+		2ED0D1B177674C86AA34B3EC /* EZFormFieldConcreteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA164566FD940598216EE24 /* EZFormFieldConcreteProtocol.h */; settings = {}; };
+		39D54ECABFC047F0BA486367 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C82891C912A40B7BA7A82D3 /* AFNetworking.h */; settings = {}; };
+		3CFB8137C4194E299E4FB250 /* EZFormCommonValidators.m in Sources */ = {isa = PBXBuildFile; fileRef = 492DF691430D4511B0AC336D /* EZFormCommonValidators.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		482E17EFC8F345699D16E7B3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7C8E3180B426BA1E03A18 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		4A5D6C99849B441BA3F85F95 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0690153C66FC4466A5ACE859 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		53A4D5FA8CCA44EDA8332380 /* UIView+EZFormUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = E27B8095BBBA40BE9C34CD1A /* UIView+EZFormUtility.h */; settings = {}; };
+		56DF7A4D12744C30A71006D4 /* EZFormDateField.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0EAD5BD88B4FEA818578A2 /* EZFormDateField.h */; settings = {}; };
+		63469E149553444D88BAB0AA /* EZFormGenericField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7645EBC4F01C4CC0BD18D349 /* EZFormGenericField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		64B693B0260244869495B82B /* EZFormBooleanField.m in Sources */ = {isa = PBXBuildFile; fileRef = 89476844D6644F57A92D5A69 /* EZFormBooleanField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		665CC557DDD14814AA66C304 /* EZFormRadioField.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EDFD431FC44FB09A826E3B /* EZFormRadioField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6953770C2C11495699F35246 /* NSArray+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8DB164ADFE49DFA2043C63 /* NSArray+Utilities.h */; settings = {}; };
+		6D99339C0B0647C29CE91881 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F94B1D0C34B9B94986B22 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6E7429AC47C24224AF34697F /* NSDictionary+Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = B2AC8A53E3A4432091F34EBE /* NSDictionary+Enumerable.h */; settings = {}; };
+		710960294EAA413AA3481DAA /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD281A5BF0A43E88E4FCC7E /* UIScrollView+SVPullToRefresh.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		724C2488196845DCA6A33E8C /* EZFormGenericField.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B420CA414640BCBB8AA7F0 /* EZFormGenericField.h */; settings = {}; };
+		72C864B62FC347D18814D3E6 /* EZFormMultiRadioFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 330A7E4A870A4B48AB2D7611 /* EZFormMultiRadioFormField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		75F7F43DDDC04F9FA61E403A /* EZFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = E38257F6AFD043B3983E8064 /* EZFormField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		7BA200AB931E46E981AD8189 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2962F444B7D0413A9FC2AC0E /* AFXMLRequestOperation.h */; settings = {}; };
+		7BA3C306AADB4BAA8F288948 /* EZFormInvalidIndicatorTriangleExclamationView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE8EDB85E424652A1762C2D /* EZFormInvalidIndicatorTriangleExclamationView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		7EB45F3F65B94AD7BA7BE630 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDE0329C3F42E0927D1542 /* UIScrollView+SVInfiniteScrolling.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		84F741F5BDFA4F12B96A4DC0 /* NSSet+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C7508F502DEC43BA8BC47500 /* NSSet+Utilities.h */; settings = {}; };
+		869B5843658F4FB2B4C59DC9 /* AFHTTPRequestOperationLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BF575286B687460A873F73E1 /* AFHTTPRequestOperationLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		89ED5C1C3A454CAFA8AFAA60 /* NSSet+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = AF39452E7E4A478C8B8B2B7A /* NSSet+Enumerable.m */; settings = {}; };
+		8BC548CCB6B241E4905B0114 /* EZFormCommonValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = F6914736D19E48A8A52A8D9A /* EZFormCommonValidators.h */; settings = {}; };
+		8DA0366ADFED495D996582CA /* BWLongTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 93172D5A689F441A9C6B76C0 /* BWLongTextViewController.h */; settings = {}; };
+		8DCBEDE505144ED6BE5FB69E /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC3D800024BF8B17E6422 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		8E60968266364CE1B6610566 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDAC7A39B104B649D9DB90E /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		8FD4B82B8A5941B6B5FB4F50 /* EZFormField+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B6279CEA88E41E192AF59E9 /* EZFormField+Private.h */; settings = {}; };
+		91DCFCDF675F4F47BEE26B6E /* AFHTTPRequestOperationLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD464C6ACB4466FA21190A5 /* AFHTTPRequestOperationLogger.h */; settings = {}; };
+		97F50752E4C0432DA8FC9846 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF66F4CB1F421CA4435BDA /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9E5052D2275C4E86AC509815 /* EZForm+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB3196C9B9B4A70A7F13742 /* EZForm+Private.h */; settings = {}; };
+		A486320AD73443E5B4001843 /* EZForm.m in Sources */ = {isa = PBXBuildFile; fileRef = F260FE5C4D3C498B87D6F606 /* EZForm.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A4A38E6EE6F54A8AB8E84224 /* EZFormStandardInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E4DDABF1441E380A5E39A /* EZFormStandardInputAccessoryView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A4ABDE348D5A4D74983CC59C /* EZFormRadioChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D479822B9CA641178B593EB6 /* EZFormRadioChoiceViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A78980D6885C44839731D8DC /* EZFormRadioField.h in Headers */ = {isa = PBXBuildFile; fileRef = B326E55062A145B2A1A87D8D /* EZFormRadioField.h */; settings = {}; };
+		AE225C254442407396164EA3 /* UIScrollView+SVInfiniteScrolling.h in Headers */ = {isa = PBXBuildFile; fileRef = 290F94D70C2943928F263A0D /* UIScrollView+SVInfiniteScrolling.h */; settings = {}; };
+		B054040E863543F78CB03949 /* NSSet+Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D038C2AEE64467D981FCBEA /* NSSet+Enumerable.h */; settings = {}; };
+		B27F3F5DA90C49278438CE52 /* EZForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 32163EDF5DAE4B2F99775EC9 /* EZForm.h */; settings = {}; };
+		B3F3BA386137469783B5CD57 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C8BDC28DCC7446B492AC3283 /* UIImageView+AFNetworking.h */; settings = {}; };
+		B73C63D05E4C44FFAE4C7675 /* EZFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BA9A6164374BABBF33E97F /* EZFormTextField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B9AEC4C260CD480982F47F11 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5933C430B45B197E6AED9 /* AFImageRequestOperation.h */; settings = {}; };
+		BD86173054134193B8BB122A /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 39562B44BBE94403A8CF4AB4 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BF3AC7EF528644FE83132186 /* EZFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA465121355436EAAC5F3BE /* EZFormField.h */; settings = {}; };
+		D2DF648C33754AB3B819FC37 /* EZFormInputControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18787B7016FA4BE4907CE5E2 /* EZFormInputControl.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D36999CF550345A2BC1021A0 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D841124E18CF4F22B26A2AC4 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D449A98E439B4FCB9DC61948 /* EZFormInvalidIndicatorTriangleExclamationView.h in Headers */ = {isa = PBXBuildFile; fileRef = D78296B302394FDA96070062 /* EZFormInvalidIndicatorTriangleExclamationView.h */; settings = {}; };
+		D5E6945FC9A54FD2A97F57C9 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82D96F869F5C429980108A35 /* AFNetworkActivityIndicatorManager.h */; settings = {}; };
+		DC2230C409E54CBCA5E5FE82 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EC818195A5E144D18FF2434D /* AFHTTPRequestOperation.h */; settings = {}; };
+		DE52596BBF784E989FEE9810 /* EZFormStandardInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A98521882A4CA8A139EBBC /* EZFormStandardInputAccessoryView.h */; settings = {}; };
+		DE8209A3435446D181A7212C /* EZFormInputAccessoryViewProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 7335FE2E22F24F2EB826A52D /* EZFormInputAccessoryViewProtocols.h */; settings = {}; };
+		E69862A004A248FEA94A61EE /* EZFormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 5983FE95D67343BA8C792D48 /* EZFormTextField.h */; settings = {}; };
+		E6CFB3848AD04DC7B8406ED1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31E3E25CA64150A3283677 /* Foundation.framework */; settings = {}; };
+		EA30B17E70BA42DFA1D97418 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B87CCA2663049FCAC94B99D /* NSArray+Utilities.m */; settings = {}; };
+		EFF5D929CE1842FCB6972DDE /* NSArray+Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = A562D85C8845477EA38EA6EA /* NSArray+Enumerable.h */; settings = {}; };
+		F53A7BD218594BD69750B554 /* EZFormMultiRadioFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D101413F06E477380E286A8 /* EZFormMultiRadioFormField.h */; settings = {}; };
+		F7262F88837A44688D64B12D /* NSSet+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 56116ACE1E244140AFDDB71A /* NSSet+Utilities.m */; settings = {}; };
+		F7859A03499348FEA8C64CF5 /* UIScrollView+SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA745DAF35C43F5AF6BAEC5 /* UIScrollView+SVPullToRefresh.h */; settings = {}; };
+		F87DE9C384BE4C798186F0A7 /* EZFormDateField.m in Sources */ = {isa = PBXBuildFile; fileRef = 300638E1C96B48468E1A8D31 /* EZFormDateField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FA6A92E353CE4B5EB30DEFC0 /* EZFormInputControl.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E4BBE374EA4AE1B13B8424 /* EZFormInputControl.h */; settings = {}; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		006ED4438FAD4626A2D8D35A /* NSArray+Enumerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Enumerable.h"; path = "MRCEnumerable/NSArray+Enumerable.h"; sourceTree = SOURCE_ROOT; };
-		00E5997D9B6D4AFFBAAF874E /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking/AFNetworking.h; sourceTree = SOURCE_ROOT; };
-		02349B5E0AB34BA68F156DF1 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = SOURCE_ROOT; };
-		04D9B45C63794C04A473BE8E /* EZFormRadioField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormRadioField.h; path = EZForm/EZForm/EZForm/src/EZFormRadioField.h; sourceTree = SOURCE_ROOT; };
-		05611F0D7E1D47BBBEB4ABC5 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = SOURCE_ROOT; };
-		0B2199096BD1455AA6D8F017 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.markdown"; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
-		0B68D00E87DB46C19D12B454 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		155E5D8A32A0402AAC2BCC38 /* EZFormGenericField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormGenericField.m; path = EZForm/EZForm/EZForm/src/EZFormGenericField.m; sourceTree = SOURCE_ROOT; };
-		17D59354CF574C44AFABB70E /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
-		189EDA27624D40F592495D22 /* EZFormRadioChoiceViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormRadioChoiceViewController.m; path = EZForm/EZForm/EZForm/src/EZFormRadioChoiceViewController.m; sourceTree = SOURCE_ROOT; };
-		1CF9AFA0EF194490876322E8 /* NSDictionary+Enumerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Enumerable.h"; path = "MRCEnumerable/NSDictionary+Enumerable.h"; sourceTree = SOURCE_ROOT; };
-		22616299980D46EF83FEE9A1 /* UIView+EZFormUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+EZFormUtility.m"; path = "EZForm/EZForm/EZForm/src/UIView+EZFormUtility.m"; sourceTree = SOURCE_ROOT; };
-		25701B37882F4890AF2FCE6D /* EZForm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZForm.m; path = EZForm/EZForm/EZForm/src/EZForm.m; sourceTree = SOURCE_ROOT; };
-		2ED925495A304EF39ED0C8C1 /* EZFormInputControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormInputControl.h; path = EZForm/EZForm/EZForm/src/EZFormInputControl.h; sourceTree = SOURCE_ROOT; };
-		316BD1FDB323447395830BFC /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		35DE65BC361F4DA3A4741874 /* EZFormCommonValidators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormCommonValidators.h; path = EZForm/EZForm/EZForm/src/EZFormCommonValidators.h; sourceTree = SOURCE_ROOT; };
-		3646D404F90546ABBF109D9B /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.plist"; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
-		37FAFECC309B487894307A4B /* EZFormField+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZFormField+Private.h"; path = "EZForm/EZForm/EZForm/src/EZFormField+Private.h"; sourceTree = SOURCE_ROOT; };
-		380567619CC342B6A40C2967 /* EZFormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormTextField.h; path = EZForm/EZForm/EZForm/src/EZFormTextField.h; sourceTree = SOURCE_ROOT; };
-		395C1F14D99145BD91A3072F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		39B6367C00634822926F60FB /* EZFormStandardInputAccessoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormStandardInputAccessoryView.h; path = EZForm/EZForm/EZForm/src/EZFormStandardInputAccessoryView.h; sourceTree = SOURCE_ROOT; };
-		4570164B90384C118A3BD73F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		4A0A3D2CA6FA423BBA4601C4 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		4DA6D47350D0436A92DBBAF4 /* NSSet+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Utilities.m"; path = "MRCEnumerable/NSSet+Utilities.m"; sourceTree = SOURCE_ROOT; };
-		4DC1F3D2508E4EC696B24D35 /* EZFormDateField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormDateField.m; path = EZForm/EZForm/EZForm/src/EZFormDateField.m; sourceTree = SOURCE_ROOT; };
-		5020C449036C4822B218E7B2 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		54C9093EADF94CFCA2DD33A2 /* AFHTTPRequestOperationLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationLogger.m; path = AFHTTPRequestOperationLogger/AFHTTPRequestOperationLogger.m; sourceTree = SOURCE_ROOT; };
-		54F49E2F71734617AE81165F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-environment.h"; path = "Pods-environment.h"; sourceTree = SOURCE_ROOT; };
-		55907F5FA6B6433D9D6C47A4 /* NSSet+Enumerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+Enumerable.h"; path = "MRCEnumerable/NSSet+Enumerable.h"; sourceTree = SOURCE_ROOT; };
-		579F23DDA8E74AC294F04846 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		5B9485E08ADE4CF59030B938 /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-prefix.pch"; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
-		5CEAF98AC3E14A7F97D7FD72 /* EZFormCommonValidators.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormCommonValidators.m; path = EZForm/EZForm/EZForm/src/EZFormCommonValidators.m; sourceTree = SOURCE_ROOT; };
-		5E72E565AE9140D1BE97EEE8 /* NSSet+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+Utilities.h"; path = "MRCEnumerable/NSSet+Utilities.h"; sourceTree = SOURCE_ROOT; };
-		66789B8922AE4459893F97BA /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVInfiniteScrolling.m"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.m"; sourceTree = SOURCE_ROOT; };
-		6A51A19EAC2E4B008B88B867 /* NSDictionary+Enumerable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Enumerable.m"; path = "MRCEnumerable/NSDictionary+Enumerable.m"; sourceTree = SOURCE_ROOT; };
-		6B02179C683F4D418C3365F5 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVPullToRefresh.h"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVPullToRefresh.h"; sourceTree = SOURCE_ROOT; };
-		6CDDB8F5964B4484BF403B04 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		70B53CD02A0242FE93CDD47A /* EZFormDateField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormDateField.h; path = EZForm/EZForm/EZForm/src/EZFormDateField.h; sourceTree = SOURCE_ROOT; };
-		70FFD2F82DD14599962C57AC /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		75158528ECCD4D71A8690F5D /* EZFormBooleanField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormBooleanField.h; path = EZForm/EZForm/EZForm/src/EZFormBooleanField.h; sourceTree = SOURCE_ROOT; };
-		7621192BD1094ED3A12F6A80 /* MRCEnumerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRCEnumerable.h; path = MRCEnumerable/MRCEnumerable.h; sourceTree = SOURCE_ROOT; };
-		7B32082C62EF40498A1F199E /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = SOURCE_ROOT; };
-		7CF5EBE628F448769C763296 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		80808C7A8CFA400DBCE7E2AF /* EZFormInvalidIndicatorTriangleExclamationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormInvalidIndicatorTriangleExclamationView.h; path = EZForm/EZForm/EZForm/src/EZFormInvalidIndicatorTriangleExclamationView.h; sourceTree = SOURCE_ROOT; };
-		819E6EEB8A744430BC4C7417 /* EZForm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZForm.h; path = EZForm/EZForm/EZForm/src/EZForm.h; sourceTree = SOURCE_ROOT; };
-		83FDE4D23FDE4637B8CBBEA7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		882108FC1287438594986409 /* EZFormInputAccessoryViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormInputAccessoryViewProtocols.h; path = EZForm/EZForm/EZForm/src/EZFormInputAccessoryViewProtocols.h; sourceTree = SOURCE_ROOT; };
-		88F84D456087440BACC682EC /* UIView+EZFormUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+EZFormUtility.h"; path = "EZForm/EZForm/EZForm/src/UIView+EZFormUtility.h"; sourceTree = SOURCE_ROOT; };
-		91E757A6BAC54817AF4F69A3 /* EZFormInvalidIndicatorTriangleExclamationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormInvalidIndicatorTriangleExclamationView.m; path = EZForm/EZForm/EZForm/src/EZFormInvalidIndicatorTriangleExclamationView.m; sourceTree = SOURCE_ROOT; };
-		95790A282C204D01807B09C3 /* EZFormRadioChoiceViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormRadioChoiceViewController.h; path = EZForm/EZForm/EZForm/src/EZFormRadioChoiceViewController.h; sourceTree = SOURCE_ROOT; };
-		9BA4A85CFA7D49F58E7EEA04 /* AFHTTPRequestOperationLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationLogger.h; path = AFHTTPRequestOperationLogger/AFHTTPRequestOperationLogger.h; sourceTree = SOURCE_ROOT; };
-		9BF1F63798024F1788D0BEBB /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
-		ADEBB64A2E754FC58F17CB83 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = SOURCE_ROOT; };
-		AF2AA9E4EAFE4DAFB7D3FF95 /* EZFormMultiRadioFormField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormMultiRadioFormField.m; path = EZForm/EZForm/EZForm/src/EZFormMultiRadioFormField.m; sourceTree = SOURCE_ROOT; };
-		B271EE8ACC8F4207918C2E00 /* EZFormTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormTextField.m; path = EZForm/EZForm/EZForm/src/EZFormTextField.m; sourceTree = SOURCE_ROOT; };
-		B28CD9935ECC4993A34E0215 /* NSArray+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Utilities.m"; path = "MRCEnumerable/NSArray+Utilities.m"; sourceTree = SOURCE_ROOT; };
-		B292A4E0DACD4A308DD98F04 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-resources.sh"; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
-		BC2844E96E19414C9BE94B04 /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		BC5A49245B354966B20F8A17 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = SOURCE_ROOT; };
-		BEF02FCB0465406C8600FFEC /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVInfiniteScrolling.h"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.h"; sourceTree = SOURCE_ROOT; };
-		BEFE89239D3E47F899DB0F2B /* NSSet+Enumerable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Enumerable.m"; path = "MRCEnumerable/NSSet+Enumerable.m"; sourceTree = SOURCE_ROOT; };
-		C0ACADB2F6FC478EAA649161 /* EZFormInputControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormInputControl.m; path = EZForm/EZForm/EZForm/src/EZFormInputControl.m; sourceTree = SOURCE_ROOT; };
-		C3021B1639B747C490E6D912 /* Security.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		C31A9652FA834D56809CB6F3 /* EZFormMultiRadioFormField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormMultiRadioFormField.h; path = EZForm/EZForm/EZForm/src/EZFormMultiRadioFormField.h; sourceTree = SOURCE_ROOT; };
-		C4DE6EF1C56B446986FF1F8C /* EZFormStandardInputAccessoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormStandardInputAccessoryView.m; path = EZForm/EZForm/EZForm/src/EZFormStandardInputAccessoryView.m; sourceTree = SOURCE_ROOT; };
-		C654C3F4C59B46AC8398A9D3 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		C8E19E6143E64CF58C89E1CB /* EZFormGenericField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormGenericField.h; path = EZForm/EZForm/EZForm/src/EZFormGenericField.h; sourceTree = SOURCE_ROOT; };
-		CAA00F7AFB6F43EF9F77FF7D /* EZFormField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormField.m; path = EZForm/EZForm/EZForm/src/EZFormField.m; sourceTree = SOURCE_ROOT; };
-		D2CA7198AE6043658DCE6910 /* NSArray+Enumerable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Enumerable.m"; path = "MRCEnumerable/NSArray+Enumerable.m"; sourceTree = SOURCE_ROOT; };
-		D2D7B7E5BCD34BDC8A83C13C /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVPullToRefresh.m"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVPullToRefresh.m"; sourceTree = SOURCE_ROOT; };
-		D47D70B8CC1B41D991E9F3B9 /* EZFormFieldConcreteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormFieldConcreteProtocol.h; path = EZForm/EZForm/EZForm/src/EZFormFieldConcreteProtocol.h; sourceTree = SOURCE_ROOT; };
-		D58ACAB4EED147A8A47016CD /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-dummy.m"; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
-		D8618A88DD6D4D9AA36C9CB0 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		E086FBAD658A4C81B9E2A01F /* EZFormBooleanField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormBooleanField.m; path = EZForm/EZForm/EZForm/src/EZFormBooleanField.m; sourceTree = SOURCE_ROOT; };
-		E14E0D937A9B4E1D9D81CC84 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		E1B04C023C174E68BD897E8E /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = SOURCE_ROOT; };
-		E3E214D111E94753A2A80988 /* NSArray+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Utilities.h"; path = "MRCEnumerable/NSArray+Utilities.h"; sourceTree = SOURCE_ROOT; };
-		E5E3883C1CEC49C0ABA28B1D /* SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVPullToRefresh.h; path = SVPullToRefresh/SVPullToRefresh/SVPullToRefresh.h; sourceTree = SOURCE_ROOT; };
-		EBF6FD85E7F04F1B950ACB80 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = SOURCE_ROOT; };
-		F8730F673E5A415482C9D82D /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F96378A49B4F47189196D019 /* EZFormRadioField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormRadioField.m; path = EZForm/EZForm/EZForm/src/EZFormRadioField.m; sourceTree = SOURCE_ROOT; };
-		FA868DA5259A4A7A8B0442C4 /* EZFormField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormField.h; path = EZForm/EZForm/EZForm/src/EZFormField.h; sourceTree = SOURCE_ROOT; };
-		FC5C8EC5E20E45B08157063F /* MobileCoreServices.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		FE6F6F42FE0445BF8E495B1E /* EZForm+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZForm+Private.h"; path = "EZForm/EZForm/EZForm/src/EZForm+Private.h"; sourceTree = SOURCE_ROOT; };
+		03EDFD431FC44FB09A826E3B /* EZFormRadioField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormRadioField.m; path = EZForm/EZForm/EZForm/src/EZFormRadioField.m; sourceTree = SOURCE_ROOT; };
+		04BDE0329C3F42E0927D1542 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVInfiniteScrolling.m"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.m"; sourceTree = SOURCE_ROOT; };
+		05799752DFA64DFCB879848E /* EZFormRadioChoiceViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormRadioChoiceViewController.h; path = EZForm/EZForm/EZForm/src/EZFormRadioChoiceViewController.h; sourceTree = SOURCE_ROOT; };
+		0690153C66FC4466A5ACE859 /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
+		0B87CCA2663049FCAC94B99D /* NSArray+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Utilities.m"; path = "MRCEnumerable/NSArray+Utilities.m"; sourceTree = SOURCE_ROOT; };
+		0FFF66F4CB1F421CA4435BDA /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		12DE52EE27E04450B7261FC7 /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1327C2A766DD4A1F8882C01C /* EZFormBooleanField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormBooleanField.h; path = EZForm/EZForm/EZForm/src/EZFormBooleanField.h; sourceTree = SOURCE_ROOT; };
+		13B3E523AE174F9B8CE7CCA2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		18787B7016FA4BE4907CE5E2 /* EZFormInputControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormInputControl.m; path = EZForm/EZForm/EZForm/src/EZFormInputControl.m; sourceTree = SOURCE_ROOT; };
+		1956EFFD2DB9406D88CA3AA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		1A2A073106904DBFA4714072 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = SOURCE_ROOT; };
+		1D0EAD5BD88B4FEA818578A2 /* EZFormDateField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormDateField.h; path = EZForm/EZForm/EZForm/src/EZFormDateField.h; sourceTree = SOURCE_ROOT; };
+		1E0F94B1D0C34B9B94986B22 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = SOURCE_ROOT; };
+		20694A8E1FB04FE6A05D4ABD /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.markdown"; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
+		20AB68AF3B8442B8828EA88B /* MRCEnumerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRCEnumerable.h; path = MRCEnumerable/MRCEnumerable.h; sourceTree = SOURCE_ROOT; };
+		20B420CA414640BCBB8AA7F0 /* EZFormGenericField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormGenericField.h; path = EZForm/EZForm/EZForm/src/EZFormGenericField.h; sourceTree = SOURCE_ROOT; };
+		23D4865FC61741EBBE60621B /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-environment.h"; path = "Pods-environment.h"; sourceTree = SOURCE_ROOT; };
+		290F94D70C2943928F263A0D /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVInfiniteScrolling.h"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.h"; sourceTree = SOURCE_ROOT; };
+		2962F444B7D0413A9FC2AC0E /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		2EDF4F4FEBEE42C8999C3B17 /* SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVPullToRefresh.h; path = SVPullToRefresh/SVPullToRefresh/SVPullToRefresh.h; sourceTree = SOURCE_ROOT; };
+		300638E1C96B48468E1A8D31 /* EZFormDateField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormDateField.m; path = EZForm/EZForm/EZForm/src/EZFormDateField.m; sourceTree = SOURCE_ROOT; };
+		32163EDF5DAE4B2F99775EC9 /* EZForm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZForm.h; path = EZForm/EZForm/EZForm/src/EZForm.h; sourceTree = SOURCE_ROOT; };
+		330A7E4A870A4B48AB2D7611 /* EZFormMultiRadioFormField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormMultiRadioFormField.m; path = EZForm/EZForm/EZForm/src/EZFormMultiRadioFormField.m; sourceTree = SOURCE_ROOT; };
+		39562B44BBE94403A8CF4AB4 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		3ACEC3D800024BF8B17E6422 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		3B6279CEA88E41E192AF59E9 /* EZFormField+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZFormField+Private.h"; path = "EZForm/EZForm/EZForm/src/EZFormField+Private.h"; sourceTree = SOURCE_ROOT; };
+		47B610097648437380CE0BD2 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		492DF691430D4511B0AC336D /* EZFormCommonValidators.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormCommonValidators.m; path = EZForm/EZForm/EZForm/src/EZFormCommonValidators.m; sourceTree = SOURCE_ROOT; };
+		4FD281A5BF0A43E88E4FCC7E /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVPullToRefresh.m"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVPullToRefresh.m"; sourceTree = SOURCE_ROOT; };
+		512CF95A134142A281EFA355 /* NSArray+Enumerable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Enumerable.m"; path = "MRCEnumerable/NSArray+Enumerable.m"; sourceTree = SOURCE_ROOT; };
+		56116ACE1E244140AFDDB71A /* NSSet+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Utilities.m"; path = "MRCEnumerable/NSSet+Utilities.m"; sourceTree = SOURCE_ROOT; };
+		5983FE95D67343BA8C792D48 /* EZFormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormTextField.h; path = EZForm/EZForm/EZForm/src/EZFormTextField.h; sourceTree = SOURCE_ROOT; };
+		5DA465121355436EAAC5F3BE /* EZFormField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormField.h; path = EZForm/EZForm/EZForm/src/EZFormField.h; sourceTree = SOURCE_ROOT; };
+		6C82891C912A40B7BA7A82D3 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking/AFNetworking.h; sourceTree = SOURCE_ROOT; };
+		6EC93659B1EC4493A1F2CFEE /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		7335FE2E22F24F2EB826A52D /* EZFormInputAccessoryViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormInputAccessoryViewProtocols.h; path = EZForm/EZForm/EZForm/src/EZFormInputAccessoryViewProtocols.h; sourceTree = SOURCE_ROOT; };
+		7645EBC4F01C4CC0BD18D349 /* EZFormGenericField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormGenericField.m; path = EZForm/EZForm/EZForm/src/EZFormGenericField.m; sourceTree = SOURCE_ROOT; };
+		7B8DB164ADFE49DFA2043C63 /* NSArray+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Utilities.h"; path = "MRCEnumerable/NSArray+Utilities.h"; sourceTree = SOURCE_ROOT; };
+		7D038C2AEE64467D981FCBEA /* NSSet+Enumerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+Enumerable.h"; path = "MRCEnumerable/NSSet+Enumerable.h"; sourceTree = SOURCE_ROOT; };
+		80BA9A6164374BABBF33E97F /* EZFormTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormTextField.m; path = EZForm/EZForm/EZForm/src/EZFormTextField.m; sourceTree = SOURCE_ROOT; };
+		82542DFB074B4BB1A9C972B0 /* BWLongTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BWLongTextViewController.m; path = BWLongTextViewController/BWLongTextViewController/BWLongTextViewController.m; sourceTree = SOURCE_ROOT; };
+		82D96F869F5C429980108A35 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = SOURCE_ROOT; };
+		89476844D6644F57A92D5A69 /* EZFormBooleanField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormBooleanField.m; path = EZForm/EZForm/EZForm/src/EZFormBooleanField.m; sourceTree = SOURCE_ROOT; };
+		93172D5A689F441A9C6B76C0 /* BWLongTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BWLongTextViewController.h; path = BWLongTextViewController/BWLongTextViewController/BWLongTextViewController.h; sourceTree = SOURCE_ROOT; };
+		95D6CF1CB147420780851BA6 /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-prefix.pch"; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
+		9606675AF4F1418F88CDD5A8 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		97A98521882A4CA8A139EBBC /* EZFormStandardInputAccessoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormStandardInputAccessoryView.h; path = EZForm/EZForm/EZForm/src/EZFormStandardInputAccessoryView.h; sourceTree = SOURCE_ROOT; };
+		995D972BEF334AC28D427665 /* NSDictionary+Enumerable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Enumerable.m"; path = "MRCEnumerable/NSDictionary+Enumerable.m"; sourceTree = SOURCE_ROOT; };
+		9D101413F06E477380E286A8 /* EZFormMultiRadioFormField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormMultiRadioFormField.h; path = EZForm/EZForm/EZForm/src/EZFormMultiRadioFormField.h; sourceTree = SOURCE_ROOT; };
+		9E26E487D42B46499B5C5888 /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
+		A562D85C8845477EA38EA6EA /* NSArray+Enumerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Enumerable.h"; path = "MRCEnumerable/NSArray+Enumerable.h"; sourceTree = SOURCE_ROOT; };
+		AAB3196C9B9B4A70A7F13742 /* EZForm+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZForm+Private.h"; path = "EZForm/EZForm/EZForm/src/EZForm+Private.h"; sourceTree = SOURCE_ROOT; };
+		AB31E3E25CA64150A3283677 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ABB5933C430B45B197E6AED9 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		ACE8EDB85E424652A1762C2D /* EZFormInvalidIndicatorTriangleExclamationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormInvalidIndicatorTriangleExclamationView.m; path = EZForm/EZForm/EZForm/src/EZFormInvalidIndicatorTriangleExclamationView.m; sourceTree = SOURCE_ROOT; };
+		AF39452E7E4A478C8B8B2B7A /* NSSet+Enumerable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Enumerable.m"; path = "MRCEnumerable/NSSet+Enumerable.m"; sourceTree = SOURCE_ROOT; };
+		B2AC8A53E3A4432091F34EBE /* NSDictionary+Enumerable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Enumerable.h"; path = "MRCEnumerable/NSDictionary+Enumerable.h"; sourceTree = SOURCE_ROOT; };
+		B326E55062A145B2A1A87D8D /* EZFormRadioField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormRadioField.h; path = EZForm/EZForm/EZForm/src/EZFormRadioField.h; sourceTree = SOURCE_ROOT; };
+		B461BB45940E4174AFD588DB /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-dummy.m"; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
+		B8117AEDED9649A8A39626CB /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-resources.sh"; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
+		B8E721F642C0456BA2D69455 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		BB300CA14F7C4A25ABD8A7B7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BDA745DAF35C43F5AF6BAEC5 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVPullToRefresh.h"; path = "SVPullToRefresh/SVPullToRefresh/UIScrollView+SVPullToRefresh.h"; sourceTree = SOURCE_ROOT; };
+		BF575286B687460A873F73E1 /* AFHTTPRequestOperationLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationLogger.m; path = AFHTTPRequestOperationLogger/AFHTTPRequestOperationLogger.m; sourceTree = SOURCE_ROOT; };
+		C1F0341544794A1690985EA6 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.plist"; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
+		C7508F502DEC43BA8BC47500 /* NSSet+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+Utilities.h"; path = "MRCEnumerable/NSSet+Utilities.h"; sourceTree = SOURCE_ROOT; };
+		C8BDC28DCC7446B492AC3283 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = SOURCE_ROOT; };
+		D479822B9CA641178B593EB6 /* EZFormRadioChoiceViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormRadioChoiceViewController.m; path = EZForm/EZForm/EZForm/src/EZFormRadioChoiceViewController.m; sourceTree = SOURCE_ROOT; };
+		D4C14E867C264B1AB5A89987 /* Security.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		D78296B302394FDA96070062 /* EZFormInvalidIndicatorTriangleExclamationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormInvalidIndicatorTriangleExclamationView.h; path = EZForm/EZForm/EZForm/src/EZFormInvalidIndicatorTriangleExclamationView.h; sourceTree = SOURCE_ROOT; };
+		D841124E18CF4F22B26A2AC4 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = SOURCE_ROOT; };
+		D8E4BBE374EA4AE1B13B8424 /* EZFormInputControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormInputControl.h; path = EZForm/EZForm/EZForm/src/EZFormInputControl.h; sourceTree = SOURCE_ROOT; };
+		D97AB7471F274F65BF83DC34 /* MobileCoreServices.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		DCD464C6ACB4466FA21190A5 /* AFHTTPRequestOperationLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationLogger.h; path = AFHTTPRequestOperationLogger/AFHTTPRequestOperationLogger.h; sourceTree = SOURCE_ROOT; };
+		DF2E4DDABF1441E380A5E39A /* EZFormStandardInputAccessoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormStandardInputAccessoryView.m; path = EZForm/EZForm/EZForm/src/EZFormStandardInputAccessoryView.m; sourceTree = SOURCE_ROOT; };
+		E27B8095BBBA40BE9C34CD1A /* UIView+EZFormUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+EZFormUtility.h"; path = "EZForm/EZForm/EZForm/src/UIView+EZFormUtility.h"; sourceTree = SOURCE_ROOT; };
+		E38257F6AFD043B3983E8064 /* EZFormField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZFormField.m; path = EZForm/EZForm/EZForm/src/EZFormField.m; sourceTree = SOURCE_ROOT; };
+		E912D13EE9314F9E9385EC2A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EAA164566FD940598216EE24 /* EZFormFieldConcreteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormFieldConcreteProtocol.h; path = EZForm/EZForm/EZForm/src/EZFormFieldConcreteProtocol.h; sourceTree = SOURCE_ROOT; };
+		EC818195A5E144D18FF2434D /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		F260FE5C4D3C498B87D6F606 /* EZForm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZForm.m; path = EZForm/EZForm/EZForm/src/EZForm.m; sourceTree = SOURCE_ROOT; };
+		F6914736D19E48A8A52A8D9A /* EZFormCommonValidators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZFormCommonValidators.h; path = EZForm/EZForm/EZForm/src/EZFormCommonValidators.h; sourceTree = SOURCE_ROOT; };
+		F7A7C8E3180B426BA1E03A18 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		FF6502D9D87549378D9E82AC /* UIView+EZFormUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+EZFormUtility.m"; path = "EZForm/EZForm/EZForm/src/UIView+EZFormUtility.m"; sourceTree = SOURCE_ROOT; };
+		FFDAC7A39B104B649D9DB90E /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		30F9CAEE44D44C58AE298125 /* Frameworks */ = {
+		3A8DB56BB4A9467AAD27A647 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84C836280654E38BB3F253B /* Foundation.framework in Frameworks */,
+				E6CFB3848AD04DC7B8406ED1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B5F9103D7E74481AC54E33C /* AFNetworking */ = {
+		1C500548F6F5447FA4F093F6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9BF1F63798024F1788D0BEBB /* AFHTTPClient.h */,
-				17D59354CF574C44AFABB70E /* AFHTTPClient.m */,
-				6CDDB8F5964B4484BF403B04 /* AFHTTPRequestOperation.h */,
-				D8618A88DD6D4D9AA36C9CB0 /* AFHTTPRequestOperation.m */,
-				4A0A3D2CA6FA423BBA4601C4 /* AFImageRequestOperation.h */,
-				C654C3F4C59B46AC8398A9D3 /* AFImageRequestOperation.m */,
-				ADEBB64A2E754FC58F17CB83 /* AFJSONRequestOperation.h */,
-				E14E0D937A9B4E1D9D81CC84 /* AFJSONRequestOperation.m */,
-				02349B5E0AB34BA68F156DF1 /* AFNetworkActivityIndicatorManager.h */,
-				05611F0D7E1D47BBBEB4ABC5 /* AFNetworkActivityIndicatorManager.m */,
-				00E5997D9B6D4AFFBAAF874E /* AFNetworking.h */,
-				579F23DDA8E74AC294F04846 /* AFPropertyListRequestOperation.h */,
-				70FFD2F82DD14599962C57AC /* AFPropertyListRequestOperation.m */,
-				E1B04C023C174E68BD897E8E /* AFURLConnectionOperation.h */,
-				BC5A49245B354966B20F8A17 /* AFURLConnectionOperation.m */,
-				7CF5EBE628F448769C763296 /* AFXMLRequestOperation.h */,
-				316BD1FDB323447395830BFC /* AFXMLRequestOperation.m */,
-				7B32082C62EF40498A1F199E /* UIImageView+AFNetworking.h */,
-				EBF6FD85E7F04F1B950ACB80 /* UIImageView+AFNetworking.m */,
-			);
-			name = AFNetworking;
-			sourceTree = "<group>";
-		};
-		1D0F47CE7895457DB026C0CA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5020C449036C4822B218E7B2 /* Foundation.framework */,
-				FC5C8EC5E20E45B08157063F /* MobileCoreServices.framework */,
-				BC2844E96E19414C9BE94B04 /* QuartzCore.framework */,
-				C3021B1639B747C490E6D912 /* Security.framework */,
-				83FDE4D23FDE4637B8CBBEA7 /* SystemConfiguration.framework */,
-				4570164B90384C118A3BD73F /* UIKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		310FA5AC59EA45CE8E530358 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				36AF257D918346F6B1A0AA32 /* Pods */,
+				D97FE5BB8D97406BA7F85690 /* Pods */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		36AF257D918346F6B1A0AA32 /* Pods */ = {
+		2355F40CF26E4688BD94EA4A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				395C1F14D99145BD91A3072F /* Pods.xcconfig */,
-				54F49E2F71734617AE81165F /* Pods-environment.h */,
-				5B9485E08ADE4CF59030B938 /* Pods-prefix.pch */,
-				B292A4E0DACD4A308DD98F04 /* Pods-resources.sh */,
-				3646D404F90546ABBF109D9B /* Pods-acknowledgements.plist */,
-				0B2199096BD1455AA6D8F017 /* Pods-acknowledgements.markdown */,
-				D58ACAB4EED147A8A47016CD /* Pods-dummy.m */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3CD4DB97A0CD40C39FE4A169 /* EZForm */ = {
-			isa = PBXGroup;
-			children = (
-				FE6F6F42FE0445BF8E495B1E /* EZForm+Private.h */,
-				819E6EEB8A744430BC4C7417 /* EZForm.h */,
-				25701B37882F4890AF2FCE6D /* EZForm.m */,
-				75158528ECCD4D71A8690F5D /* EZFormBooleanField.h */,
-				E086FBAD658A4C81B9E2A01F /* EZFormBooleanField.m */,
-				35DE65BC361F4DA3A4741874 /* EZFormCommonValidators.h */,
-				5CEAF98AC3E14A7F97D7FD72 /* EZFormCommonValidators.m */,
-				70B53CD02A0242FE93CDD47A /* EZFormDateField.h */,
-				4DC1F3D2508E4EC696B24D35 /* EZFormDateField.m */,
-				37FAFECC309B487894307A4B /* EZFormField+Private.h */,
-				FA868DA5259A4A7A8B0442C4 /* EZFormField.h */,
-				CAA00F7AFB6F43EF9F77FF7D /* EZFormField.m */,
-				D47D70B8CC1B41D991E9F3B9 /* EZFormFieldConcreteProtocol.h */,
-				C8E19E6143E64CF58C89E1CB /* EZFormGenericField.h */,
-				155E5D8A32A0402AAC2BCC38 /* EZFormGenericField.m */,
-				882108FC1287438594986409 /* EZFormInputAccessoryViewProtocols.h */,
-				2ED925495A304EF39ED0C8C1 /* EZFormInputControl.h */,
-				C0ACADB2F6FC478EAA649161 /* EZFormInputControl.m */,
-				80808C7A8CFA400DBCE7E2AF /* EZFormInvalidIndicatorTriangleExclamationView.h */,
-				91E757A6BAC54817AF4F69A3 /* EZFormInvalidIndicatorTriangleExclamationView.m */,
-				C31A9652FA834D56809CB6F3 /* EZFormMultiRadioFormField.h */,
-				AF2AA9E4EAFE4DAFB7D3FF95 /* EZFormMultiRadioFormField.m */,
-				95790A282C204D01807B09C3 /* EZFormRadioChoiceViewController.h */,
-				189EDA27624D40F592495D22 /* EZFormRadioChoiceViewController.m */,
-				04D9B45C63794C04A473BE8E /* EZFormRadioField.h */,
-				F96378A49B4F47189196D019 /* EZFormRadioField.m */,
-				39B6367C00634822926F60FB /* EZFormStandardInputAccessoryView.h */,
-				C4DE6EF1C56B446986FF1F8C /* EZFormStandardInputAccessoryView.m */,
-				380567619CC342B6A40C2967 /* EZFormTextField.h */,
-				B271EE8ACC8F4207918C2E00 /* EZFormTextField.m */,
-				88F84D456087440BACC682EC /* UIView+EZFormUtility.h */,
-				22616299980D46EF83FEE9A1 /* UIView+EZFormUtility.m */,
-			);
-			name = EZForm;
-			sourceTree = "<group>";
-		};
-		4CA6AE8102BB4AC185C093D0 /* MRCEnumerable */ = {
-			isa = PBXGroup;
-			children = (
-				7621192BD1094ED3A12F6A80 /* MRCEnumerable.h */,
-				006ED4438FAD4626A2D8D35A /* NSArray+Enumerable.h */,
-				D2CA7198AE6043658DCE6910 /* NSArray+Enumerable.m */,
-				E3E214D111E94753A2A80988 /* NSArray+Utilities.h */,
-				B28CD9935ECC4993A34E0215 /* NSArray+Utilities.m */,
-				1CF9AFA0EF194490876322E8 /* NSDictionary+Enumerable.h */,
-				6A51A19EAC2E4B008B88B867 /* NSDictionary+Enumerable.m */,
-				55907F5FA6B6433D9D6C47A4 /* NSSet+Enumerable.h */,
-				BEFE89239D3E47F899DB0F2B /* NSSet+Enumerable.m */,
-				5E72E565AE9140D1BE97EEE8 /* NSSet+Utilities.h */,
-				4DA6D47350D0436A92DBBAF4 /* NSSet+Utilities.m */,
-			);
-			name = MRCEnumerable;
-			sourceTree = "<group>";
-		};
-		8EC640CBE1684EAA9ED9BDCE = {
-			isa = PBXGroup;
-			children = (
-				1D0F47CE7895457DB026C0CA /* Frameworks */,
-				EF9C2ACC230A4469AC6C16F6 /* Pods */,
-				BD9227060BE7423281198C66 /* Products */,
-				310FA5AC59EA45CE8E530358 /* Targets Support Files */,
-				F8730F673E5A415482C9D82D /* Podfile */,
-			);
-			sourceTree = "<group>";
-		};
-		A53B181F38F34B9D99525500 /* SVPullToRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				E5E3883C1CEC49C0ABA28B1D /* SVPullToRefresh.h */,
-				BEF02FCB0465406C8600FFEC /* UIScrollView+SVInfiniteScrolling.h */,
-				66789B8922AE4459893F97BA /* UIScrollView+SVInfiniteScrolling.m */,
-				6B02179C683F4D418C3365F5 /* UIScrollView+SVPullToRefresh.h */,
-				D2D7B7E5BCD34BDC8A83C13C /* UIScrollView+SVPullToRefresh.m */,
-			);
-			name = SVPullToRefresh;
-			sourceTree = "<group>";
-		};
-		BD9227060BE7423281198C66 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0B68D00E87DB46C19D12B454 /* libPods.a */,
+				13B3E523AE174F9B8CE7CCA2 /* libPods.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA14383DC314487490E8B6B1 /* AFHTTPRequestOperationLogger */ = {
+		3F85C29C8A644D8986053A12 /* BWLongTextViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9BA4A85CFA7D49F58E7EEA04 /* AFHTTPRequestOperationLogger.h */,
-				54C9093EADF94CFCA2DD33A2 /* AFHTTPRequestOperationLogger.m */,
+				93172D5A689F441A9C6B76C0 /* BWLongTextViewController.h */,
+				82542DFB074B4BB1A9C972B0 /* BWLongTextViewController.m */,
+			);
+			name = BWLongTextViewController;
+			sourceTree = "<group>";
+		};
+		4AEBB736461B46C2A979F5DB /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF4F4FEBEE42C8999C3B17 /* SVPullToRefresh.h */,
+				290F94D70C2943928F263A0D /* UIScrollView+SVInfiniteScrolling.h */,
+				04BDE0329C3F42E0927D1542 /* UIScrollView+SVInfiniteScrolling.m */,
+				BDA745DAF35C43F5AF6BAEC5 /* UIScrollView+SVPullToRefresh.h */,
+				4FD281A5BF0A43E88E4FCC7E /* UIScrollView+SVPullToRefresh.m */,
+			);
+			name = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
+		53E41163CB5D464EB051F074 /* AFHTTPRequestOperationLogger */ = {
+			isa = PBXGroup;
+			children = (
+				DCD464C6ACB4466FA21190A5 /* AFHTTPRequestOperationLogger.h */,
+				BF575286B687460A873F73E1 /* AFHTTPRequestOperationLogger.m */,
 			);
 			name = AFHTTPRequestOperationLogger;
 			sourceTree = "<group>";
 		};
-		EF9C2ACC230A4469AC6C16F6 /* Pods */ = {
+		B0CBBB4AC63944A5B88230D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA14383DC314487490E8B6B1 /* AFHTTPRequestOperationLogger */,
-				0B5F9103D7E74481AC54E33C /* AFNetworking */,
-				3CD4DB97A0CD40C39FE4A169 /* EZForm */,
-				4CA6AE8102BB4AC185C093D0 /* MRCEnumerable */,
-				A53B181F38F34B9D99525500 /* SVPullToRefresh */,
+				AB31E3E25CA64150A3283677 /* Foundation.framework */,
+				D97AB7471F274F65BF83DC34 /* MobileCoreServices.framework */,
+				12DE52EE27E04450B7261FC7 /* QuartzCore.framework */,
+				D4C14E867C264B1AB5A89987 /* Security.framework */,
+				1956EFFD2DB9406D88CA3AA8 /* SystemConfiguration.framework */,
+				47B610097648437380CE0BD2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA36EFCE8CAF4DC6ADCF87A3 = {
+			isa = PBXGroup;
+			children = (
+				B0CBBB4AC63944A5B88230D5 /* Frameworks */,
+				CF283EAB0ACB47E2B15A51D6 /* Pods */,
+				2355F40CF26E4688BD94EA4A /* Products */,
+				1C500548F6F5447FA4F093F6 /* Targets Support Files */,
+				E912D13EE9314F9E9385EC2A /* Podfile */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF15B48E35D4D1D8733762E /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9E26E487D42B46499B5C5888 /* AFHTTPClient.h */,
+				0690153C66FC4466A5ACE859 /* AFHTTPClient.m */,
+				EC818195A5E144D18FF2434D /* AFHTTPRequestOperation.h */,
+				F7A7C8E3180B426BA1E03A18 /* AFHTTPRequestOperation.m */,
+				ABB5933C430B45B197E6AED9 /* AFImageRequestOperation.h */,
+				3ACEC3D800024BF8B17E6422 /* AFImageRequestOperation.m */,
+				6EC93659B1EC4493A1F2CFEE /* AFJSONRequestOperation.h */,
+				0FFF66F4CB1F421CA4435BDA /* AFJSONRequestOperation.m */,
+				82D96F869F5C429980108A35 /* AFNetworkActivityIndicatorManager.h */,
+				1E0F94B1D0C34B9B94986B22 /* AFNetworkActivityIndicatorManager.m */,
+				6C82891C912A40B7BA7A82D3 /* AFNetworking.h */,
+				B8E721F642C0456BA2D69455 /* AFPropertyListRequestOperation.h */,
+				39562B44BBE94403A8CF4AB4 /* AFPropertyListRequestOperation.m */,
+				1A2A073106904DBFA4714072 /* AFURLConnectionOperation.h */,
+				D841124E18CF4F22B26A2AC4 /* AFURLConnectionOperation.m */,
+				2962F444B7D0413A9FC2AC0E /* AFXMLRequestOperation.h */,
+				9606675AF4F1418F88CDD5A8 /* AFXMLRequestOperation.m */,
+				C8BDC28DCC7446B492AC3283 /* UIImageView+AFNetworking.h */,
+				FFDAC7A39B104B649D9DB90E /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		CF283EAB0ACB47E2B15A51D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53E41163CB5D464EB051F074 /* AFHTTPRequestOperationLogger */,
+				BAF15B48E35D4D1D8733762E /* AFNetworking */,
+				3F85C29C8A644D8986053A12 /* BWLongTextViewController */,
+				F3746D8DA3CC4BA799806568 /* EZForm */,
+				DAEA8C8445814B22AA240C1E /* MRCEnumerable */,
+				4AEBB736461B46C2A979F5DB /* SVPullToRefresh */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D97FE5BB8D97406BA7F85690 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB300CA14F7C4A25ABD8A7B7 /* Pods.xcconfig */,
+				23D4865FC61741EBBE60621B /* Pods-environment.h */,
+				95D6CF1CB147420780851BA6 /* Pods-prefix.pch */,
+				B8117AEDED9649A8A39626CB /* Pods-resources.sh */,
+				C1F0341544794A1690985EA6 /* Pods-acknowledgements.plist */,
+				20694A8E1FB04FE6A05D4ABD /* Pods-acknowledgements.markdown */,
+				B461BB45940E4174AFD588DB /* Pods-dummy.m */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DAEA8C8445814B22AA240C1E /* MRCEnumerable */ = {
+			isa = PBXGroup;
+			children = (
+				20AB68AF3B8442B8828EA88B /* MRCEnumerable.h */,
+				A562D85C8845477EA38EA6EA /* NSArray+Enumerable.h */,
+				512CF95A134142A281EFA355 /* NSArray+Enumerable.m */,
+				7B8DB164ADFE49DFA2043C63 /* NSArray+Utilities.h */,
+				0B87CCA2663049FCAC94B99D /* NSArray+Utilities.m */,
+				B2AC8A53E3A4432091F34EBE /* NSDictionary+Enumerable.h */,
+				995D972BEF334AC28D427665 /* NSDictionary+Enumerable.m */,
+				7D038C2AEE64467D981FCBEA /* NSSet+Enumerable.h */,
+				AF39452E7E4A478C8B8B2B7A /* NSSet+Enumerable.m */,
+				C7508F502DEC43BA8BC47500 /* NSSet+Utilities.h */,
+				56116ACE1E244140AFDDB71A /* NSSet+Utilities.m */,
+			);
+			name = MRCEnumerable;
+			sourceTree = "<group>";
+		};
+		F3746D8DA3CC4BA799806568 /* EZForm */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3196C9B9B4A70A7F13742 /* EZForm+Private.h */,
+				32163EDF5DAE4B2F99775EC9 /* EZForm.h */,
+				F260FE5C4D3C498B87D6F606 /* EZForm.m */,
+				1327C2A766DD4A1F8882C01C /* EZFormBooleanField.h */,
+				89476844D6644F57A92D5A69 /* EZFormBooleanField.m */,
+				F6914736D19E48A8A52A8D9A /* EZFormCommonValidators.h */,
+				492DF691430D4511B0AC336D /* EZFormCommonValidators.m */,
+				1D0EAD5BD88B4FEA818578A2 /* EZFormDateField.h */,
+				300638E1C96B48468E1A8D31 /* EZFormDateField.m */,
+				3B6279CEA88E41E192AF59E9 /* EZFormField+Private.h */,
+				5DA465121355436EAAC5F3BE /* EZFormField.h */,
+				E38257F6AFD043B3983E8064 /* EZFormField.m */,
+				EAA164566FD940598216EE24 /* EZFormFieldConcreteProtocol.h */,
+				20B420CA414640BCBB8AA7F0 /* EZFormGenericField.h */,
+				7645EBC4F01C4CC0BD18D349 /* EZFormGenericField.m */,
+				7335FE2E22F24F2EB826A52D /* EZFormInputAccessoryViewProtocols.h */,
+				D8E4BBE374EA4AE1B13B8424 /* EZFormInputControl.h */,
+				18787B7016FA4BE4907CE5E2 /* EZFormInputControl.m */,
+				D78296B302394FDA96070062 /* EZFormInvalidIndicatorTriangleExclamationView.h */,
+				ACE8EDB85E424652A1762C2D /* EZFormInvalidIndicatorTriangleExclamationView.m */,
+				9D101413F06E477380E286A8 /* EZFormMultiRadioFormField.h */,
+				330A7E4A870A4B48AB2D7611 /* EZFormMultiRadioFormField.m */,
+				05799752DFA64DFCB879848E /* EZFormRadioChoiceViewController.h */,
+				D479822B9CA641178B593EB6 /* EZFormRadioChoiceViewController.m */,
+				B326E55062A145B2A1A87D8D /* EZFormRadioField.h */,
+				03EDFD431FC44FB09A826E3B /* EZFormRadioField.m */,
+				97A98521882A4CA8A139EBBC /* EZFormStandardInputAccessoryView.h */,
+				DF2E4DDABF1441E380A5E39A /* EZFormStandardInputAccessoryView.m */,
+				5983FE95D67343BA8C792D48 /* EZFormTextField.h */,
+				80BA9A6164374BABBF33E97F /* EZFormTextField.m */,
+				E27B8095BBBA40BE9C34CD1A /* UIView+EZFormUtility.h */,
+				FF6502D9D87549378D9E82AC /* UIView+EZFormUtility.m */,
+			);
+			name = EZForm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		06AA2D07F4CA46D6B9A15119 /* Headers */ = {
+		3C011584C7164461B8767CDD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				155059E9AB3A476BAD90A661 /* AFHTTPRequestOperationLogger.h in Headers */,
-				B956DE184F034383A8C3774F /* AFHTTPClient.h in Headers */,
-				7A57F796C8AE487898A5449B /* AFHTTPRequestOperation.h in Headers */,
-				2BDAAEC9792C44B3A9A468A0 /* AFImageRequestOperation.h in Headers */,
-				A8C00D260EF24AF1B31D69B8 /* AFJSONRequestOperation.h in Headers */,
-				F0BE1694865B49AEBA199D77 /* AFNetworkActivityIndicatorManager.h in Headers */,
-				818AAA6170C14E72A31B92A6 /* AFNetworking.h in Headers */,
-				DAECEBECEE2D4F6BAC9E5B76 /* AFPropertyListRequestOperation.h in Headers */,
-				F2E95381978D4C8F9AB29026 /* AFURLConnectionOperation.h in Headers */,
-				44BC95F6A2A14CA99DC97DEE /* AFXMLRequestOperation.h in Headers */,
-				E9C261E3963B40B59A99D137 /* UIImageView+AFNetworking.h in Headers */,
-				F181A4CBC15D491881BF16EF /* EZForm+Private.h in Headers */,
-				CDE70738FA5F455790003022 /* EZForm.h in Headers */,
-				E764701173AD475A8BA0863F /* EZFormBooleanField.h in Headers */,
-				C2808BCD28B04F298FF4F148 /* EZFormCommonValidators.h in Headers */,
-				00F0FB4537BD46E09CD3AF94 /* EZFormDateField.h in Headers */,
-				828F10CDC54C428E8703A9ED /* EZFormField+Private.h in Headers */,
-				1CF41A9A69CC496D8403EE58 /* EZFormField.h in Headers */,
-				48DB4334DF234CEDAF6C423F /* EZFormFieldConcreteProtocol.h in Headers */,
-				B2A717395AEF453692997484 /* EZFormGenericField.h in Headers */,
-				B3D01761170E489CB2134B2F /* EZFormInputAccessoryViewProtocols.h in Headers */,
-				386E7B063F6C41F9ADB496B7 /* EZFormInputControl.h in Headers */,
-				9BB4C5DE9C2945DCBAE3E9AB /* EZFormInvalidIndicatorTriangleExclamationView.h in Headers */,
-				9F0D23F9D0254FBD8E32ED1F /* EZFormMultiRadioFormField.h in Headers */,
-				B1A9B41BA7E74146815BF7E3 /* EZFormRadioChoiceViewController.h in Headers */,
-				BC4BA3B2C9B64031963B6854 /* EZFormRadioField.h in Headers */,
-				BF6FD4A084D84E4095D0C74B /* EZFormStandardInputAccessoryView.h in Headers */,
-				AC99FA4EF0594DE9A1C3EC18 /* EZFormTextField.h in Headers */,
-				09454D47F7E945689427BCEF /* UIView+EZFormUtility.h in Headers */,
-				B40FBE45574548FBAB901C6E /* MRCEnumerable.h in Headers */,
-				E77FE8424F074DE4B6656ED1 /* NSArray+Enumerable.h in Headers */,
-				E6363DE2CD14450B94E3C0A6 /* NSArray+Utilities.h in Headers */,
-				B383BF90EF6A460EB7DE6135 /* NSDictionary+Enumerable.h in Headers */,
-				1586972B8E3042D888DDB1A2 /* NSSet+Enumerable.h in Headers */,
-				F7B17EA9AD9A473F8AD249A3 /* NSSet+Utilities.h in Headers */,
-				9ACB95EA8C004A9283BFC6FD /* SVPullToRefresh.h in Headers */,
-				6E0A38EDC8F14667B8D07ACD /* UIScrollView+SVInfiniteScrolling.h in Headers */,
-				259159D1C8A7468DAC6DFE8D /* UIScrollView+SVPullToRefresh.h in Headers */,
+				91DCFCDF675F4F47BEE26B6E /* AFHTTPRequestOperationLogger.h in Headers */,
+				212C1D5AE0AC475BB83A4AAA /* AFHTTPClient.h in Headers */,
+				DC2230C409E54CBCA5E5FE82 /* AFHTTPRequestOperation.h in Headers */,
+				B9AEC4C260CD480982F47F11 /* AFImageRequestOperation.h in Headers */,
+				0E1347F1DF14492DA9693C31 /* AFJSONRequestOperation.h in Headers */,
+				D5E6945FC9A54FD2A97F57C9 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				39D54ECABFC047F0BA486367 /* AFNetworking.h in Headers */,
+				093359B8FB16489282766117 /* AFPropertyListRequestOperation.h in Headers */,
+				00D45120734D4564B4E127B4 /* AFURLConnectionOperation.h in Headers */,
+				7BA200AB931E46E981AD8189 /* AFXMLRequestOperation.h in Headers */,
+				B3F3BA386137469783B5CD57 /* UIImageView+AFNetworking.h in Headers */,
+				8DA0366ADFED495D996582CA /* BWLongTextViewController.h in Headers */,
+				9E5052D2275C4E86AC509815 /* EZForm+Private.h in Headers */,
+				B27F3F5DA90C49278438CE52 /* EZForm.h in Headers */,
+				08000CCDC5124D08A229E8E7 /* EZFormBooleanField.h in Headers */,
+				8BC548CCB6B241E4905B0114 /* EZFormCommonValidators.h in Headers */,
+				56DF7A4D12744C30A71006D4 /* EZFormDateField.h in Headers */,
+				8FD4B82B8A5941B6B5FB4F50 /* EZFormField+Private.h in Headers */,
+				BF3AC7EF528644FE83132186 /* EZFormField.h in Headers */,
+				2ED0D1B177674C86AA34B3EC /* EZFormFieldConcreteProtocol.h in Headers */,
+				724C2488196845DCA6A33E8C /* EZFormGenericField.h in Headers */,
+				DE8209A3435446D181A7212C /* EZFormInputAccessoryViewProtocols.h in Headers */,
+				FA6A92E353CE4B5EB30DEFC0 /* EZFormInputControl.h in Headers */,
+				D449A98E439B4FCB9DC61948 /* EZFormInvalidIndicatorTriangleExclamationView.h in Headers */,
+				F53A7BD218594BD69750B554 /* EZFormMultiRadioFormField.h in Headers */,
+				103FD85EA88147DC84D82F96 /* EZFormRadioChoiceViewController.h in Headers */,
+				A78980D6885C44839731D8DC /* EZFormRadioField.h in Headers */,
+				DE52596BBF784E989FEE9810 /* EZFormStandardInputAccessoryView.h in Headers */,
+				E69862A004A248FEA94A61EE /* EZFormTextField.h in Headers */,
+				53A4D5FA8CCA44EDA8332380 /* UIView+EZFormUtility.h in Headers */,
+				177ECDBEAAC64B92A582568C /* MRCEnumerable.h in Headers */,
+				EFF5D929CE1842FCB6972DDE /* NSArray+Enumerable.h in Headers */,
+				6953770C2C11495699F35246 /* NSArray+Utilities.h in Headers */,
+				6E7429AC47C24224AF34697F /* NSDictionary+Enumerable.h in Headers */,
+				B054040E863543F78CB03949 /* NSSet+Enumerable.h in Headers */,
+				84F741F5BDFA4F12B96A4DC0 /* NSSet+Utilities.h in Headers */,
+				268527DE67BE4A3685E84134 /* SVPullToRefresh.h in Headers */,
+				AE225C254442407396164EA3 /* UIScrollView+SVInfiniteScrolling.h in Headers */,
+				F7859A03499348FEA8C64CF5 /* UIScrollView+SVPullToRefresh.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		313EBB2882F44C6EA1424970 /* Pods */ = {
+		96EE9721033C46E09D9B0C5E /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD7BF55BE9184C98A3557460 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = BDF90FCA33B1470DBCB43EDF /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				7CD464605E874C2F91FFDB80 /* Sources */,
-				30F9CAEE44D44C58AE298125 /* Frameworks */,
-				06AA2D07F4CA46D6B9A15119 /* Headers */,
+				4FC98F7C763E466CABACC9FC /* Sources */,
+				3A8DB56BB4A9467AAD27A647 /* Frameworks */,
+				3C011584C7164461B8767CDD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -414,80 +429,81 @@
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 0B68D00E87DB46C19D12B454 /* libPods.a */;
+			productReference = 13B3E523AE174F9B8CE7CCA2 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		140B10108A89402A92B4CF3C /* Project object */ = {
+		7AF6E2EC52F04ABBA2763220 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
 			};
-			buildConfigurationList = C88C75EB348B42CBAC54EFC6 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F5580881ABC84A2A9F04A016 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8EC640CBE1684EAA9ED9BDCE;
-			productRefGroup = BD9227060BE7423281198C66 /* Products */;
+			mainGroup = BA36EFCE8CAF4DC6ADCF87A3;
+			productRefGroup = 2355F40CF26E4688BD94EA4A /* Products */;
 			projectReferences = (
 			);
 			targets = (
-				313EBB2882F44C6EA1424970 /* Pods */,
+				96EE9721033C46E09D9B0C5E /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7CD464605E874C2F91FFDB80 /* Sources */ = {
+		4FC98F7C763E466CABACC9FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CC3F9D195D4A6A8CFBEE03 /* AFHTTPRequestOperationLogger.m in Sources */,
-				3E6CCACE0E7F4B61ABC3EC04 /* AFHTTPClient.m in Sources */,
-				D010CAEBA4534F14AEA587F5 /* AFHTTPRequestOperation.m in Sources */,
-				60FE48468E7848619CB96ED8 /* AFImageRequestOperation.m in Sources */,
-				1CF6409C6AB1456BAFF231E1 /* AFJSONRequestOperation.m in Sources */,
-				F5B9CC2A6AAC46B9B76896B4 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				AE6E7AC431AC4C32B206C13C /* AFPropertyListRequestOperation.m in Sources */,
-				AA29BB6A705240B69E080AD5 /* AFURLConnectionOperation.m in Sources */,
-				030FDA99F789428DB427F6C7 /* AFXMLRequestOperation.m in Sources */,
-				5AB3C4291CB249958A1AC24E /* UIImageView+AFNetworking.m in Sources */,
-				139C4191546D4486A0D077F7 /* EZForm.m in Sources */,
-				4F3BE3A5E2EA4AC2949E9E23 /* EZFormBooleanField.m in Sources */,
-				FE3B0642AAD34FBB97B6A96B /* EZFormCommonValidators.m in Sources */,
-				505B684723E24259B83693CF /* EZFormDateField.m in Sources */,
-				D0FA66382201446F9CF31CCA /* EZFormField.m in Sources */,
-				4D61E9D652B94353B4584688 /* EZFormGenericField.m in Sources */,
-				00464AC061E6454BBE2CADFD /* EZFormInputControl.m in Sources */,
-				7D105D35E1514420AAA2E260 /* EZFormInvalidIndicatorTriangleExclamationView.m in Sources */,
-				3D67ACCABF5B4030B6BE0921 /* EZFormMultiRadioFormField.m in Sources */,
-				F1940320A43E413DB04D2D7D /* EZFormRadioChoiceViewController.m in Sources */,
-				206AE7C4D7204B82A4ECF487 /* EZFormRadioField.m in Sources */,
-				EA9E22ACC4D24D03B1BD0F1F /* EZFormStandardInputAccessoryView.m in Sources */,
-				0C266872E0F6457A96C9A6C5 /* EZFormTextField.m in Sources */,
-				CACE4FBEC5104BD2BAE375D9 /* UIView+EZFormUtility.m in Sources */,
-				42EB485220AA4868AA9F967D /* NSArray+Enumerable.m in Sources */,
-				DDFC3A2B8C3E4C668733FF5A /* NSArray+Utilities.m in Sources */,
-				234A61C017F148FC9AB67911 /* NSDictionary+Enumerable.m in Sources */,
-				26EC639BC3CB4DA29A6FA956 /* NSSet+Enumerable.m in Sources */,
-				692E628A0A4849B088D145B0 /* NSSet+Utilities.m in Sources */,
-				AAEC1334CC0D4D4FA9B40903 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
-				140F021239794E1FAE5610A0 /* UIScrollView+SVPullToRefresh.m in Sources */,
-				47BA75D89C6842188D111A57 /* Pods-dummy.m in Sources */,
+				869B5843658F4FB2B4C59DC9 /* AFHTTPRequestOperationLogger.m in Sources */,
+				4A5D6C99849B441BA3F85F95 /* AFHTTPClient.m in Sources */,
+				482E17EFC8F345699D16E7B3 /* AFHTTPRequestOperation.m in Sources */,
+				8DCBEDE505144ED6BE5FB69E /* AFImageRequestOperation.m in Sources */,
+				97F50752E4C0432DA8FC9846 /* AFJSONRequestOperation.m in Sources */,
+				6D99339C0B0647C29CE91881 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				BD86173054134193B8BB122A /* AFPropertyListRequestOperation.m in Sources */,
+				D36999CF550345A2BC1021A0 /* AFURLConnectionOperation.m in Sources */,
+				1C3EAFADA55B476DB6743020 /* AFXMLRequestOperation.m in Sources */,
+				8E60968266364CE1B6610566 /* UIImageView+AFNetworking.m in Sources */,
+				0C2F0DABE86B4062A5C26EB9 /* BWLongTextViewController.m in Sources */,
+				A486320AD73443E5B4001843 /* EZForm.m in Sources */,
+				64B693B0260244869495B82B /* EZFormBooleanField.m in Sources */,
+				3CFB8137C4194E299E4FB250 /* EZFormCommonValidators.m in Sources */,
+				F87DE9C384BE4C798186F0A7 /* EZFormDateField.m in Sources */,
+				75F7F43DDDC04F9FA61E403A /* EZFormField.m in Sources */,
+				63469E149553444D88BAB0AA /* EZFormGenericField.m in Sources */,
+				D2DF648C33754AB3B819FC37 /* EZFormInputControl.m in Sources */,
+				7BA3C306AADB4BAA8F288948 /* EZFormInvalidIndicatorTriangleExclamationView.m in Sources */,
+				72C864B62FC347D18814D3E6 /* EZFormMultiRadioFormField.m in Sources */,
+				A4ABDE348D5A4D74983CC59C /* EZFormRadioChoiceViewController.m in Sources */,
+				665CC557DDD14814AA66C304 /* EZFormRadioField.m in Sources */,
+				A4A38E6EE6F54A8AB8E84224 /* EZFormStandardInputAccessoryView.m in Sources */,
+				B73C63D05E4C44FFAE4C7675 /* EZFormTextField.m in Sources */,
+				03579CD8F5DF4CC786B5FAB7 /* UIView+EZFormUtility.m in Sources */,
+				1176E94E16BB4C919AEE54A4 /* NSArray+Enumerable.m in Sources */,
+				EA30B17E70BA42DFA1D97418 /* NSArray+Utilities.m in Sources */,
+				0D68901C526640C9A6BC7003 /* NSDictionary+Enumerable.m in Sources */,
+				89ED5C1C3A454CAFA8AFAA60 /* NSSet+Enumerable.m in Sources */,
+				F7262F88837A44688D64B12D /* NSSet+Utilities.m in Sources */,
+				7EB45F3F65B94AD7BA7BE630 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				710960294EAA413AA3481DAA /* UIScrollView+SVPullToRefresh.m in Sources */,
+				1778474A4ABB4A07860B2957 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		20E4513C14124678ABC28A61 /* Release */ = {
+		885A1D9FBEE246799CCD7B97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 395C1F14D99145BD91A3072F /* Pods.xcconfig */;
+			baseConfigurationReference = BB300CA14F7C4A25ABD8A7B7 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -518,23 +534,9 @@
 			};
 			name = Release;
 		};
-		640E7FB4448048E7A5AB0D58 /* Debug */ = {
+		8A799400B8A742088311034D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-			};
-			name = Debug;
-		};
-		903BD554478B4682B193D351 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-			};
-			name = Release;
-		};
-		F8DD6E33640C455593D9191C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 395C1F14D99145BD91A3072F /* Pods.xcconfig */;
+			baseConfigurationReference = BB300CA14F7C4A25ABD8A7B7 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -563,28 +565,42 @@
 			};
 			name = Debug;
 		};
+		A1294C24241D4E8AB66A9B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		B5C48FD22BF74BD189F265D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C88C75EB348B42CBAC54EFC6 /* Build configuration list for PBXProject "Pods" */ = {
+		BDF90FCA33B1470DBCB43EDF /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				903BD554478B4682B193D351 /* Release */,
-				640E7FB4448048E7A5AB0D58 /* Debug */,
+				885A1D9FBEE246799CCD7B97 /* Release */,
+				8A799400B8A742088311034D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD7BF55BE9184C98A3557460 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		F5580881ABC84A2A9F04A016 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20E4513C14124678ABC28A61 /* Release */,
-				F8DD6E33640C455593D9191C /* Debug */,
+				A1294C24241D4E8AB66A9B47 /* Release */,
+				B5C48FD22BF74BD189F265D1 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 140B10108A89402A92B4CF3C /* Project object */;
+	rootObject = 7AF6E2EC52F04ABBA2763220 /* Project object */;
 }

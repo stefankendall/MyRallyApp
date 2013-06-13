@@ -2,7 +2,7 @@ ALWAYS_SEARCH_USER_PATHS = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
 OTHER_LDFLAGS = -ObjC -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration -framework UIKit
-PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFHTTPRequestOperationLogger" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/EZForm" "${PODS_ROOT}/BuildHeaders/MRCEnumerable" "${PODS_ROOT}/BuildHeaders/SVPullToRefresh"
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFHTTPRequestOperationLogger" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/BWLongTextViewController" "${PODS_ROOT}/BuildHeaders/EZForm" "${PODS_ROOT}/BuildHeaders/MRCEnumerable" "${PODS_ROOT}/BuildHeaders/SVPullToRefresh"
 PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
-PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFHTTPRequestOperationLogger" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/EZForm" "${PODS_ROOT}/Headers/MRCEnumerable" "${PODS_ROOT}/Headers/SVPullToRefresh"
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFHTTPRequestOperationLogger" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/BWLongTextViewController" "${PODS_ROOT}/Headers/EZForm" "${PODS_ROOT}/Headers/MRCEnumerable" "${PODS_ROOT}/Headers/SVPullToRefresh"
 PODS_ROOT = ${SRCROOT}/Pods

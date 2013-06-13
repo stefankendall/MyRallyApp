@@ -2,6 +2,7 @@ PODS:
   - AFHTTPRequestOperationLogger (0.10.0):
     - AFNetworking (>= 0.9.0)
   - AFNetworking (1.3.0)
+  - BWLongTextViewController (1.0)
   - EZForm (1.2.0)
   - MRCEnumerable (0.0.1)
   - SVPullToRefresh (0.4.1)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - AFHTTPRequestOperationLogger
   - AFNetworking
+  - BWLongTextViewController
   - EZForm (= 1.2.0)
   - MRCEnumerable
   - SVPullToRefresh
@@ -16,6 +18,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFHTTPRequestOperationLogger: 34ba125cb9eeb77a3b67aaaca105720ba3a0798c
   AFNetworking: e528f20d06b1b818c3571266fb5efa20031a8ace
+  BWLongTextViewController: d635a34e88958c44286e80db0ae8843d08a07159
   EZForm: ffdae67df0cdae6c06c3c27f03efe227d5eb9875
   MRCEnumerable: 4c48c6d30c6bea426d91403b8b1c30246ffe1991
   SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2

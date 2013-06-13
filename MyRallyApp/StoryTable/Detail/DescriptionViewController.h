@@ -1,12 +1,8 @@
-@interface DescriptionViewController : UIViewController <UITextViewDelegate> {}
+#import "BWLongTextViewController.h"
 
-- (id)initWithNibName:(NSString *)nibNameOrNil story: (NSMutableDictionary *) story1;
+@interface DescriptionViewController : BWLongTextViewController <UITextViewDelegate> {}
 
-- (IBAction) editViewValueChanged: (id) sender;
-
-- (NSString *)htmlFor:(NSString *)description;
-
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+- (id)initWithStory: (NSMutableDictionary *) story1;
 
 @property (nonatomic, strong) NSMutableDictionary *story;
 

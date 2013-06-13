@@ -6,8 +6,6 @@
 
 - (NSString *)htmlFor:(NSString *)description;
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *editViewSegment;
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @property (nonatomic, strong) NSMutableDictionary *story;

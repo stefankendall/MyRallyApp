@@ -41,7 +41,7 @@
     StoryDetailViewController *controller = [self getControllerByStoryboardIdentifier:@"detailView"];
     [controller setStory:[@{@"BlockedReason" : @"reason"} mutableCopy]];
     [controller setupFields];
-    STAssertEqualObjects([controller.blockedReasonLabel text], @"reason", @"");
+    STAssertEqualObjects([controller.blockedReasonTextField text], @"reason", @"");
 }
 
 - (void) testPlanEstimate {

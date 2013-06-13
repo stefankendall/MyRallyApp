@@ -5,7 +5,7 @@
 
 - (void)testSetsTextViewAndWebViewWhenViewLoads {
     NSMutableDictionary *story = [@{@"Description" : @"<em>hello</em>"} mutableCopy];
-    DescriptionViewController *controller = [[DescriptionViewController alloc] initWithNibName:@"DescriptionViewController" story:story];
+    DescriptionViewController *controller = [[DescriptionViewController alloc] initWithStory:story];
     [controller loadView];
     [controller viewDidLoad];
 
@@ -14,7 +14,7 @@
 
 - (void) testTextViewDidChangeUpdatesStory {
     NSMutableDictionary *story = [@{} mutableCopy];
-    DescriptionViewController *controller = [[DescriptionViewController alloc] initWithNibName:@"DescriptionViewController" story:story];
+    DescriptionViewController *controller = [[DescriptionViewController alloc] initWithStory:story];
     [controller loadView];
 
     [controller.textView setText:@"internal change"];

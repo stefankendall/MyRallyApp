@@ -32,6 +32,9 @@
     EZFormBooleanField *blockedField = [[EZFormBooleanField alloc] initWithKey:@"Blocked"];
     [self.form addFormField:blockedField];
 
+    EZFormTextField *blockedReasonField = [[EZFormTextField alloc] initWithKey:@"BlockedReason"];
+    [self.form addFormField:blockedReasonField];
+
     EZFormTextField *planEstimateField = [[EZFormTextField alloc] initWithKey:@"PlanEstimate"];
     [self.form addFormField:planEstimateField];
 }
@@ -46,6 +49,9 @@
 
     EZFormTextField *descriptionFormField = [self.form formFieldForKey:@"Description"];
     [descriptionFormField useLabel:self.descriptionLabel];
+
+    EZFormTextField *blockedReasonFormField = [self.form formFieldForKey:@"BlockedReason"];
+    [blockedReasonFormField useTextField:self.blockedReasonTextField];
 
     EZFormBooleanField *readyField = [self.form formFieldForKey:@"Ready"];
     [readyField useButton:self.readyButton];
@@ -75,7 +81,9 @@
     [self.featureLabel setText:[self replaceIfNull:self.story[@"Feature"]]];
     [self setupBooleanField:self.readyButton withName:@"Ready"];
     [self setupBooleanField:self.blockedButton withName:@"Blocked"];
-    [self.blockedReasonLabel setText:[self replaceIfNull:self.story[@"BlockedReason"]]];
+    [self.blockedReasonTextField setText:[self replaceIfNull:self.story[@"BlockedReason"]]];
+    [self.blockedReasonCell setHidden:!([self storyIsBlocked])];
+
     [self.releaseLabel setText:[self replaceIfNull:self.story[@"Release"]]];
     [self.iterationLabel setText:[self replaceIfNull:self.story[@"Iteration"]]];
     [self.planEstimateField setText:[self convertNumeric:self.story[@"PlanEstimate"]]];
@@ -83,6 +91,10 @@
     [self.taskRemainingTotalLabel setText:[self convertNumeric:self.story[@"TaskRemainingTotal"]]];
     [self.taskActualTotalLabel setText:[self convertNumeric:self.story[@"TaskActualTotal"]]];
     [self.acceptedDateLabel setText:[self replaceIfNull:self.story[@"AcceptedDate"]]];
+}
+
+- (BOOL)storyIsBlocked {
+    return [self.story[@"Blocked"] intValue] > 0;
 }
 
 - (void)setupBooleanField:(UIButton *)button withName:(NSString *)name {
@@ -100,6 +112,7 @@
         [self setupFields];
         [self enableDisableForm:YES];
         [[StoryStore instance] updateStory:json];
+        [self.tableView reloadData];
     }                        andFailure:^{
         NSLog(@"%@", self.story);
         [self setupFields];
@@ -127,6 +140,16 @@
         [self.navigationController pushViewController:controller animated:YES];
     }
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if([indexPath section] == 3 && [indexPath row] == 2 && ![self storyIsBlocked]){
+        return 0;
+    }
+    else {
+        return [super tableView:tableView heightForRowAtIndexPath:indexPath];
+    }
+}
+
 
 - (id)replaceIfNull:(id)field {
     if (![field isKindOfClass:NSNull.class]) {
